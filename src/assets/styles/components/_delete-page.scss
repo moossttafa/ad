@@ -1,0 +1,39 @@
+.action-wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  // height: calc(100vh - 277px);
+  .actions-form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 20px;
+    justify-content: center;
+    .title-h3{
+      margin-bottom: .5em;
+    }
+    .body-1{
+      margin-bottom: 2.5em;
+    }
+  }
+  .emoji {
+    position: absolute;
+    right: 50px;
+    font-size: 500px;
+    opacity: 0.05;
+    top: 0;
+    // bottom: 0;
+  }
+  .card-content__card-description {
+    margin-bottom: 15px;
+  }
+}
+html[dir="rtl"]{
+  .action-wrapper {  
+    .emoji { 
+      left: 0;
+      right: auto; 
+    } 
+  }
+}

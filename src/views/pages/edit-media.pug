@@ -1,0 +1,65 @@
+extends ../layouts/admin.pug
+block title
+	title Edit Media-library
+
+block content
+	.container-fluid
+		.row
+			.col-lg-12
+				.d-flex.flex-column.my-3
+					.d-flex.justify-content-between.align-items-center
+						h1.title-h1.mb-0 Edit Media
+
+		.row
+			.col-lg-9
+				.update-media
+					form(action="/media-library.html" class="dropzone" id="my-awesome-dropzone")
+						.fallback#myId
+							input(name="file" type="file" multiple)
+					form(action="")
+						.field-wrapper
+							label.field-wrapper__label File Name
+								abbr(title="required") *
+							.field-wrapper__content
+								input(
+									class="field-wrapper__input"
+									type='text'
+									placeholder='Name'
+									name='name'
+									maxlength=''
+									required
+									)
+							ul.messages
+								li Please provide a valid city.
+						.field-wrapper
+							label.field-wrapper__label Insert your course description
+								abbr(title="required") *
+							.field-wrapper__content
+								textarea(
+									class="textarea mb-2"
+									name="description"
+									placeholder='Insert your course description'
+									maxlength=''
+									required
+									)
+							ul.messages
+								li Please provide a valid city.
+						.d-flex.justify-content-end
+							a(class="btn btn--secondary btn--text convert text-2 bold" href="#") cancel
+							a(class="btn btn--primary btn--rounded convert text-2 bold" href="#") Submit
+			.col-lg-3
+				.general-wrapper.general-wrapper--card-details
+					.general-wrapper__content
+						.d-flex
+							span.description__name Id
+								strong :
+							p.description__details Lorem ipsum, dolor sit amet consectetur
+						.d-flex
+							span.description__name Author
+								strong :
+							p.description__details Lorem ipsum, dolor sit amet consectetur
+						.d-flex
+							span.description__name Author
+								strong :
+							p.description__details Lorem ipsum, dolor sit amet consectetur
+

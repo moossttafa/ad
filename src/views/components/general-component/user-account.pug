@@ -1,0 +1,18 @@
+mixin user-account(className,srcImg,userText,userName)
+  .user-wrapper__account(class=className)
+    .account__live-user
+      .live-user__content
+        a.content__user-img(href='#')
+          img.user-img__img(src=srcImg alt='')
+      .live-user__user-content
+        a.user-content__text(class=userName href='#')= userText
+        block
+
+//- user-account rating
+mixin account-review(srcImg,userName,time)
+  .item__reviews-user
+    img.reviews-user__img(src=srcImg alt='')
+    .reviews-user__title
+      a(class="btn--link-text btn--secondary btn" href="#")= userName
+      span(class="title__time")= time
+    block dropdown

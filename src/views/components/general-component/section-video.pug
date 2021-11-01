@@ -1,0 +1,27 @@
+section.course-video
+	img(src="/assets/images/sign.svg", alt="")
+	.container-fluid
+		.description-enroll
+			.row.justify-content-center
+				.col-xl-4.col-lg-5.col-md-6
+					block course-video
+						//- include ./course-video.pug
+					block img
+						//- include ./course-img.pug
+				.col-xl-8.col-lg-7.col-md-6
+					article.wrapper__header
+						h2.header__title The Web Developer Bootcamp
+						span.header__description
+							| The only course you need to learn web development - HTML, CSS, JS, Node, and More!
+					.wrapper__review-video
+						.review-video__review.mr-2
+							i.uil.uil-star.review__icon
+							| 4.5
+						|   (81,665 ratings)
+					.wrapper__enrolled-text
+						| 114,521 students enrolled
+          block btn-action
+            ul.wrapper__btn-list
+              li.btn-list__list-item
+                include ./btn.pug
+                +btn-link('list-item--btn-Enrole', 'Enroll' , '#create_new_course.html')

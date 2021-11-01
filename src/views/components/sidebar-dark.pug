@@ -1,0 +1,9 @@
+mixin sidebar-dark(className)
+	nav.sidebar-dark
+		.sidebar-dark__menu
+			.sidebar-dark__header(class=className)
+				h3.sidebar-dark__title Table of Contents
+				a(href="#" class="btn btn--default btn--icon btn--ripple sidebar-dark__close")
+					i.fas.fa-times
+			block
+		

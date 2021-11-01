@@ -1,0 +1,63 @@
+extends ../layouts/category-filter.pug
+
+block title
+	title Category Page
+block content
+
+	// Menu
+	//- +menu('Explore')
+		//- Desktop page
+
+	.container-fluid
+		.row
+			.col-xl-12.col-lg-12
+				section.section-header
+					h2.item_title Category Item
+					p.item__result results (
+						span.num-result 15 )
+			.col-xl-2.col-lg-3.col-md-3 
+				include ../components/filter.pug
+			.col-xl-10.col-lg-9.col-md-9
+				section.category-results
+					.filter__selector
+						.ui.inline.dropdown.selector--dropdown
+							.selector__text Sort
+							i.dropdown.icon.selector__icon
+							.menu.selector--menu
+								.item.selector__item Most Relevant
+								.item.selector__item Most Reviewed
+								.item.selector__item Highest Rated
+								.item.selector__item Newest
+								.item.selector__item Lowest Price
+								.item.selector__item Highest Price
+					.display
+						span.list <i class="fas fa-stream"></i>
+						span.grid.active <i class="fas fa-th"></i>
+				section.all-courses.mb-15.mt-25
+					include ../components/course-card.pug
+					+course-card("course-card--grid-view ") 
+					+course-card("course-card--grid-view ")
+					+course-card("course-card--grid-view ")
+					+course-card("course-card--grid-view ")
+					+course-card("course-card--grid-view ")
+					+course-card("course-card--grid-view ")
+					+course-card("course-card--grid-view ")
+
+					//- .row
+					//- 	.col-xl-3.col-lg-4.col-md-4.col-sm-6
+					//- 		include ../components/course-card.pug
+					//- 	.col-xl-3.col-lg-4.col-md-4.col-sm-6
+					//- 		include ../components/course-card.pug
+					//- 	.col-xl-3.col-lg-4.col-md-4.col-sm-6
+					//- 		include ../components/course-card.pug
+					//- 	.col-xl-3.col-lg-4.col-md-4.col-sm-6
+					//- 		include ../components/course-card.pug
+					//- 	.col-xl-3.col-lg-4.col-md-4.col-sm-6
+					//- 		include ../components/course-card.pug
+					//- 	.col-xl-3.col-lg-4.col-md-4.col-sm-6
+					//- 		include ../components/course-card.pug
+					//- 	.col-xl-3.col-lg-4.col-md-4.col-sm-6
+					//- 		include ../components/course-card.pug
+					//- 	.col-xl-3.col-lg-4.col-md-4.col-sm-6
+					//- 		include ../components/course-card.pug
+				include ../components/general-component/pagination.pug

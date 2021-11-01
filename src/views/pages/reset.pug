@@ -1,0 +1,23 @@
+extends ../layouts/auth.pug
+
+
+block title
+
+	title forget
+
+block content
+	h2.title-h4.semi-bold  Mobile Phone Verification
+	p.text-4.gray semi-bold gray  Enter the code we just send on your mobile phone
+		span  +20155028165
+		form(class="form" name="verify")
+			.verification.d-flex.justify-content-center.my-2#verification
+				input(class="verification__input" id="vcode1" type="tel" maxlength="1" pattern="[0-9]")
+				input(class="verification__input" id="vcode2" type="tel" maxlength="1" pattern="[0-9]")
+				input(class="verification__input" id="vcode3" type="tel" maxlength="1" pattern="[0-9]")
+				input(class="verification__input" id="vcode4" type="tel" maxlength="1" pattern="[0-9]")
+				input(class="verification__input" id="vcode5" type="tel" maxlength="1" pattern="[0-9]")
+				input(class="verification__input" id="vcode6" type="tel" maxlength="1" pattern="[0-9]")
+			.d-flex.justify-content-around
+				button(class="btn btn--primary btn--ripple btn--sm btn--rounded" type="submit")  Reset
+			p.title-2.terms-link  don't receive the code ? 
+				a(href="#" class="text-3")  Reset

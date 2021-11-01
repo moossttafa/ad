@@ -1,0 +1,46 @@
+//- Master layout
+doctype html
+html(lang='en' dir="ltr")
+	head
+		//- Stylesheets
+		link(href='../assets/vendor/semantic/semantic.min.css' rel='stylesheet' type='text/css' )
+		link(href='../assets/vendor/unicons-2.0.1/css/unicons.css' rel='stylesheet' type='text/css')
+		link(href='../assets/vendor/fontawesome-free/css/all.min.css' rel='stylesheet')
+		link(href='../assets/vendor/bootstrap/css/bootstrap-grid.min.css' rel='stylesheet')
+		link(href='../assets/vendor/OwlCarousel/assets/owl.carousel.css' rel='stylesheet')
+		link(href='../assets/vendor/OwlCarousel/assets/owl.theme.default.min.css' rel='stylesheet')
+		link(href='../assets/vendor/bootstrap/css/bootstrap.min.css' rel='stylesheet')
+		link(href='../assets/vendor/select2.min.css' rel='stylesheet')
+		link(rel="icon" href="../../assets/images/Etqadem_Icon.png")
+		meta(name="viewport" content="width=device-width, shrink-to-fit=9")
+
+		//- Title
+		block title
+			title Your project!
+
+	body
+		.wrapper.wrapper--minify
+			//- Menu
+			include ../components/headers/header
+
+				//- block category
+			//- block content
+			.page-content
+				block content
+				include ../components/footers/footer
+
+
+
+			//- Footer
+
+			//- block scripts
+		block scripts
+
+
+		//- script(src='../assets/scripts/jquery-3.3.1.min.js')
+		//- script(src='../assets/scripts/vertical-responsive-menu.min.js')
+		//- script(src='../assets/styles/vendor/bootstrap/js/bootstrap.bundle.min.js')
+		//- script(src='../assets/styles/vendor/OwlCarousel/owl.carousel.js')
+		//- script(src='../assets/styles/vendor/semantic/semantic.min.js')
+		//- script(src='../assets/scripts/custom.js')
+		//- script(src='../assets/scripts/night-mode.js')

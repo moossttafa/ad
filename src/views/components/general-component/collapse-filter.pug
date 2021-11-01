@@ -1,0 +1,19 @@
+mixin collapse-filter(collapseData , collapseId)
+	.filter__panel
+		#headingOne.panel__header
+			.panel__title
+				a.collapsed.panel--collapsed(data-toggle='collapse' data-target=collapseData href='#collapseOne' aria-expanded='false' aria-controls='collapseOne')
+					| Topic
+		.collapse.collapse--wrapper(id=collapseId aria-labelledby='headingOne' data-parent='#accordionfilter')
+			//- include ./filter-checkbox.pug
+			include /filter-checkbox.pug
+
+mixin collapse-filter-rating(collapseData , collapseId)
+	.filter__panel
+		#headingOne.panel__header
+			.panel__title
+				a.collapsed.panel--collapsed(data-toggle='collapse' data-target=collapseData href='#collapseOne' aria-expanded='false' aria-controls='collapseOne')
+					| Rating
+		.collapse.collapse--wrapper(id=collapseId aria-labelledby='headingOne' data-parent='#accordionfilter')
+			include /filter-rating.pug
+

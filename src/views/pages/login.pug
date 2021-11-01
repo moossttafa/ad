@@ -1,0 +1,100 @@
+extends ../layouts/auth.pug
+block title
+	title login
+block content
+	//- h2.title-h4.semi-bold  Welcome Back
+	//- p Log In to Your Edututs+ Account!
+	.tabs.tabs--center
+		a(href="#tab1" class="tab tab--active ") Login With Email
+		a(href="#tab2" class="tab") Login With Phone
+	.tabs-panels
+		#tab1.tab-panel.tab-panel--active
+			form(action='register/')
+				.field-wrapper
+					label.field-wrapper__label Course Title
+						abbr(title="required") *
+					.field-wrapper__content
+						input(
+							class="field field--with-icon"
+							type='email'
+							placeholder='Email Address'
+							name='email address'
+							maxlength=''
+							value=''
+							)
+						i.far.fa-envelope.field-wrapper__icon
+					ul.field-wrapper__messages
+						li Please provide a valid city.
+				.field-wrapper
+					label.field-wrapper__label Course Title
+						abbr(title="required") *
+					.field-wrapper__content
+						input(
+							class="field field--with-icon"
+							type='Password'
+							placeholder='Password'
+							name='Password'
+							maxlength=''
+							required
+							)
+						i.fas.fa-key.field-wrapper__icon
+					ul.field-wrapper__messages
+						li Please provide a valid city.
+				.field-wrapper
+					div
+						input(class="field" type="checkbox" id="checkbox-1" name="checkname")
+						label(for="checkbox-1") Lorem ipsum dolor.
+				.d-flex.justify-content-around
+					button(class="btn btn--primary btn--ripple btn--sm btn--rounded" type="submit")  Sign Up
+		#tab2.tab-panel
+			form
+				.field-wrapper
+					label.field-wrapper__label Course Title
+						abbr(title="required") *
+					.field-wrapper__content.w-100
+						input(
+							id="phone"
+							class="field field--with-icon"
+							type="tel"
+							name="phone"
+							)
+					ul.field-wrapper__messages
+						li Invalid phone number.
+				.field-wrapper
+					label.field-wrapper__label
+						|	Course Title
+						abbr(title="required") *
+					.field-wrapper__content
+						input(
+							class ="field field--with-icon"
+							type='Password'
+							placeholder='Password'
+							name='Password'
+							maxlength=''
+							required
+							)
+						i.fas.fa-key.field-wrapper__icon
+					ul.field-wrapper__messages
+						li Please provide a valid city.
+				.field-wrapper
+					div
+						input(class="field" type="checkbox" id="checkbox-2" name="checkname")
+						label(for="checkbox-2") Lorem ipsum dolor.
+				.d-flex.justify-content-around
+					button(class="btn btn--primary btn--ripple btn--sm btn--rounded" type="submit")  Sign Up
+
+	p.title-2
+		a(href="forget.html" class="")  Forgot Password
+	.middle-or.d-flex
+		hr
+		p.text-2  Or
+		hr
+	.socialMedia.d-flex.justify-content-center
+		a(href="#" class="social-icon__link social-icon--fa-bg social-icon--ml")
+			i.fab.fa-facebook-f
+		a(href="#" class="social-icon__link social-icon--tw-bg social-icon--ml")
+			i.fab.fa-twitter
+		a(href="#" class="social-icon__link social-icon--go-bg social-icon--ml")
+			i.fab.fa-google
+	p.title-2 Don't have an account ?
+		a(href="signup.html" class="text-3")  Sign Up

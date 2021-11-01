@@ -1,0 +1,14 @@
+extends ./master
+block body
+	include ../components/headers/header
+
+	.drawers-container
+		block left
+
+		// block content
+		.page
+			.page__content
+				block content
+			include ../components/footers/footer
+
+		block right

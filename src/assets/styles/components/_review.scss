@@ -1,0 +1,208 @@
+@mixin rating-star {
+  font-size: 1.3rem;
+  width: 1.3rem;
+  height: 1.3rem;
+  position: relative;
+  display: block;
+  float: left;
+  margin-right: 7px;
+}
+@mixin full-star-before {
+  color: $yellow;
+  content: "\f005";
+  position: absolute;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  left: 0;
+}
+@mixin hulf-star-before {
+  color: $yellow;
+  content: "\f005";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  width: 60%;
+  position: absolute;
+  left: 0;
+  overflow: hidden;
+}
+@mixin hulf-star-after {
+  content: "\f005";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  left: 1.5rem;
+  width: 60%;
+  text-indent: -1.5rem;
+  color: #ddd;
+}
+@mixin empty-star {
+  font-size: 1.3rem;
+  width: 1.3rem;
+  height: 1.3rem;
+  position: relative;
+  display: block;
+  float: left;
+  margin-right: 7px;
+  color: #ddd;
+}
+@mixin empty-star-before {
+  content: "\f005";
+  position: absolute;
+  left: 0;
+  overflow: hidden;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+.reviews__all-reviews {
+  float: left;
+  width: 100%;
+  background: $white;
+  padding: 20px;
+  border: 1px solid $light-white;
+  border-radius: 10px;
+  .all-reviews__title {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: 20px;
+    color: $primary;
+  }
+  .all-reviews__total-rating {
+    display: flex;
+    width: 100%;
+    font-size: 16px;
+    justify-items: center;
+    background: #f7f7f7;
+    border: 1px solid $light-white;
+    padding: 10px 14px;
+    border-radius: 20px;
+    .total-rating__number {
+      font-size: 16px;
+      font-weight: 500;
+      text-align: left;
+      margin-bottom: 0;
+      color: #333;
+      margin-right: 5px;
+      line-height: 22px;
+    }
+    .total-rating__rating-box {
+      color: #dedfe0;
+      display: flex;
+      flex-basis: 30%;
+    }
+    .total-rating__title {
+      font-size: 13px;
+      font-weight: 500;
+      text-align: left;
+      margin-bottom: 0;
+      color: #333;
+      margin-left: 5px;
+      line-height: 22px;
+      white-space: nowrap;
+    }
+  }
+  .all-reviews__details-rate {
+    .details-rate__rating {
+      cursor: pointer;
+      height: auto;
+      margin-top: 20px;
+      border-radius: 0;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      .rating__progress {
+        flex-basis: 50%;
+        margin-right: 20px;
+        height: 1.4rem !important;
+        display: flex;
+        overflow: hidden;
+        font-size: 0.75rem;
+        background-color: #e9ecef;
+        border-radius: 0.25rem;
+        .progress--progress-bar {
+          background-color: $accent;
+          flex-direction: column;
+          justify-content: center;
+          color: #fff;
+          text-align: center;
+          white-space: nowrap;
+          background-color: $blue;
+          transition: width 0.6s ease;
+        }
+      }
+      .rating__rating-box {
+        color: #dedfe0;
+        display: flex;
+        flex-basis: 30%;
+        .rating-box__rating-star {
+          @include rating-star;
+        }
+        .rating-box--full-star {
+          &::before {
+            @include full-star-before;
+          }
+        }
+        .rating-box--half-star {
+          &::before {
+            @include hulf-star-before;
+          }
+          &::after {
+            @include hulf-star-after;
+          }
+        }
+        .rating-box--empty-star {
+          @include empty-star;
+          &:before {
+            @include empty-star-before;
+          }
+        }
+      }
+      .rating--total {
+        font-size: 13px;
+        font-weight: 500;
+        text-align: left;
+        margin-bottom: 0;
+        color: #333;
+        margin-left: 10px;
+        line-height: 22px;
+      }
+    }
+  }
+}
+.rating-box__rating-star {
+  @include rating-star;
+}
+.rating-box--full-star {
+  &::before {
+    @include full-star-before;
+  }
+}
+.rating-box--half-star {
+  &::before {
+    @include hulf-star-before;
+  }
+  &::after {
+    @include hulf-star-after;
+  }
+}
+.rating-box--empty-star {
+  @include empty-star;
+  &:before {
+    @include empty-star-before;
+  }
+}
+
+html[dir="rtl"]{
+  .reviews__all-reviews{
+    .all-reviews__total-rating {
+      .total-rating__title{
+        white-space: nowrap;
+        margin-left: 0;
+        margin-right: 5px;
+      }
+      .total-rating__number{
+        margin-right: 0;
+        margin-left: 5px;
+      }
+    }
+  }
+}

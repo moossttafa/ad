@@ -1,0 +1,221 @@
+extends ../../../layouts/admin.pug
+block title
+  title buttons
+
+
+block content
+  .container
+    .row
+      .col-lg-12
+        .card
+          .card__title
+            h3 Default
+          .card__content
+            h4 Buttons
+            p with hover background-color and click event
+            .d-flex.justify-content-around.align-items-center.py-2
+              button.btn default
+              button.btn.btn--primary primary
+              button.btn.btn--secondary secondary
+              button.btn.btn--accent accent
+            .d-flex.justify-content-around.align-items-center.py-2
+              button.btn.btn--success success
+              button.btn.btn--info info
+              button.btn.btn--warning warning
+              button.btn.btn--danger danger
+            button(class="btn" disabled="disabled") disabled
+            hr
+            h4 Links
+            p with hover background-color and click event
+            .d-flex.justify-content-around.align-items-end.py-2
+              a(href="javascript:void(0)" class="btn btn--primary") primary
+              a(class="btn btn--disabled" href="javascript:void(0)") disabled
+            hr
+            h4 Sizes
+            h6 buttons
+            .d-flex.justify-content-around.align-items-end.py-2
+              button.btn.btn--primary.btn--xs primary
+              button.btn.btn--secondary.btn--sm secondary
+              button.btn.btn--accent accent
+              button.btn.btn--success.btn--lg success
+              button.btn.btn--info.btn--xl info
+            hr
+            h6 Links
+            .d-flex.justify-content-around.align-items-end.py-2
+              a(href="javascript:void(0)" class="btn btn--primary btn--xs") primary
+              a(href="javascript:void(0)" class="btn btn--secondary btn--sm") secondary
+              a(href="javascript:void(0)" class="btn btn--accent") accent
+              a(href="javascript:void(0)" class="btn btn--success btn--lg") success
+              a(href="javascript:void(0)" class="btn btn--info btn--xl") info
+            hr
+            h3 With-Icon
+            button.btn.btn--secondary
+              i.fa.fa-info
+              | default
+
+
+    .row
+      .col-lg-12
+        .card
+          .card__title
+            h3 Rounded
+          .card__content
+            h4 Buttons
+            p with click event
+            .d-flex.justify-content-around.align-items-end.py-2
+              button.btn.btn--rounded default
+              button.btn.btn--primary.btn--rounded primary
+              button.btn.btn--accent.btn--rounded accent
+              button.btn.btn--secondary.btn--rounded secondary
+            .d-flex.justify-content-around.align-items-end.py-2
+              button.btn.btn--success.btn--rounded success
+              button.btn.btn--info.btn--rounded info
+              button.btn.btn--warning.btn--rounded warning
+              button.btn.btn--danger.btn--rounded danger
+            .d-flex.justify-content-around.align-items-end.py-2
+              button(class="btn btn--rounded" disabled="disabled") disabled
+
+            hr
+            h4 Links
+            p with click event and hover
+            .d-flex.justify-content-around.align-items-end.py-2
+              a(href="javascript:void(0)" class="btn btn--default btn--rounded") default
+              a(href="javascript:void(0)" class="btn btn--disabled btn--rounded") disabled
+
+            hr
+            h3 With-Icon
+            button.btn.btn--accent.btn--rounded
+              i.fa.fa-info
+              | default
+
+    .row
+      .col-lg-12
+        .card
+          .card__title
+            h3 Outlined
+          .card__content
+            h4 Buttons
+            p with hover
+            .d-flex.justify-content-around.align-items-end.py-2
+              button.btn.btn--outlined default
+              button.btn.btn--primary.btn--outlined primary
+              button.btn.btn--accent.btn--outlined accent
+              button.btn.btn--secondary.btn--outlined secondary
+            .d-flex.justify-content-around.align-items-end.py-2
+              button.btn.btn--success.btn--outlined success
+              button.btn.btn--info.btn--outlined info
+              button.btn.btn--warning.btn--outlined warning
+              button.btn.btn--danger.btn--outlined danger
+            .d-flex.justify-content-around.align-items-end.py-2
+              button.btn.btn--outlined.btn--disabled disabled
+
+            hr
+            h4 links
+            p with hover
+            .d-flex.justify-content-around.align-items-end.py-2
+              a(href="javascript:void(0)" class="btn btn--default btn--outlined") default
+              a(href="javascript:void(0)" class="btn btn--outlined btn--disabled") disabled
+            p with hover
+            .d-flex.justify-content-around.align-items-end.py-2
+              button.btn.btn--primary.btn--outlined.btn--rounded outlined and rounded
+            hr
+            h3 With-Icon
+            button.btn.btn--accent.btn--outlined
+              i.fa.fa-info
+              | default
+
+    .row
+      .col-lg-12
+        .card
+          .card__title
+            h3 Text
+          .card__content
+            h4 Buttons
+            .d-flex.justify-content-around.align-items-end.py-2
+              button.btn.btn--text default
+              button.btn.btn--primary.btn--text primary
+              button.btn.btn--accent.btn--text accent
+              button.btn.btn--secondary.btn--text secondary
+            .d-flex.justify-content-around.align-items-end.py-2
+              button.btn.btn--success.btn--text.btn--hover-rounded success
+              button.btn.btn--info.btn--text.btn--hover-rounded info
+              button.btn.btn--warning.btn--text.btn--hover-rounded warning
+              button.btn.btn--danger.btn--text.btn--hover-rounded danger
+            .d-flex.justify-content-around.align-items-end.py-2
+              button(class="btn btn--text" disabled="disabled") disabled
+            hr
+            h4 links
+            .d-flex.justify-content-around.align-items-end.py-2
+              a(href="javascript:void(0)" class="btn btn--default btn--text") default
+              a(href="javascript:void(0)" class="btn btn--text btn--disabled") disabled
+            hr
+            h3 With-Icon
+            button.btn.btn--accent.btn--text
+              i.fa.fa-info
+              | default
+    .row
+      .col-lg-12
+        .card
+          .card__title
+            h3 Icon
+          .card__content
+            p Buttons
+            .d-flex.justify-content-around.align-items-end.py-2
+              button.btn.btn--icon
+                i.fas.fa-home
+              button.btn.btn--primary.btn--icon
+                i.fas.fa-plus
+              button.btn.btn--success.btn--icon.btn--outlined
+                i.fas.fa-moon
+              button.btn.btn--info.btn--icon.btn--text
+                i.fas.fa-info
+            .d-flex.justify-content-around.align-items-end.py-2.align-items-end
+              button.btn.btn--icon.btn--xs
+                i.fas.fa-home
+              button.btn.btn--primary.btn--icon.btn--sm
+                i.fas.fa-plus
+              button.btn.btn--success.btn--icon.btn--outlined.btn--lg
+                i.fas.fa-moon
+              button.btn.btn--info.btn--icon.btn--text.btn--xl
+                i.fas.fa-info
+            p links
+            .d-flex.justify-content-around.align-items-end.py-2
+              a(href="javascript:void(0);" class="btn btn--icon")
+                i.fas.fa-home
+              a(href="javascript:void(0);" class="btn btn--primary btn--icon")
+                i.fas.fa-plus
+              a(href="javascript:void(0);" class="btn btn--success btn--icon btn--outlined")
+                i.fas.fa-moon
+              a(href="javascript:void(0);" class="btn btn--info btn--icon btn--text")
+                i.fas.fa-info
+            .d-flex.justify-content-around.align-items-end.py-2.align-items-end
+              a(href="javascript:void(0);" class="btn btn--icon btn--xs")
+                i.fas.fa-home
+              a(href="javascript:void(0);" class="btn btn--primary btn--icon btn--sm")
+                i.fas.fa-plus
+              a(href="javascript:void(0);" class="btn btn--success btn--icon btn--outlined btn--lg")
+                i.fas.fa-moon
+              a(href="javascript:void(0);" class="btn btn--info btn--icon btn--text btn--xl")
+                i.fas.fa-info
+
+    .row
+      .col-lg-12
+        .card
+          .card__title
+            h3 button-group
+          .card__content
+            .btn-group
+              button.btn.btn--info default
+              button.btn.btn--primary primary
+              button.btn.btn--secondary secondary
+          .card__content
+            .btn-group
+              button.btn.btn--info.btn--rounded default
+              button.btn.btn--primary.btn--rounded primary
+              button.btn.btn--secondary.btn--rounded secondary
+          .card__content
+            .btn-group.btn-group--outlined
+              button.btn.btn--info.btn--outlined default
+              button.btn.btn--primary.btn--outlined primary
+              button.btn.btn--secondary.btn--outlined secondary
+

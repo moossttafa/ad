@@ -1,0 +1,79 @@
+extends ../layouts/spa-layout
+
+block title
+  title Spa Page
+
+
+block left
+  .drawer.drawer--left.drawer--open.open
+    .list
+      .list-title.list-title--lg
+        p Table of Contents
+      .list-title
+        p.bold Table of Contents
+      .list-item.list-item--two-lines.list-item--with-border
+        .list-item__avatar.avatar__video-preview
+          img(class="image image--profile" src="../../assets/images/get_img.jpg")
+          div.video-preview__checkbox
+            input(class="field field--checked field--rounded field--accent" type="checkbox" id="checkbox-1" name="checkname")
+            label(for="checkbox-1")
+            span
+          .progress
+            .part-progress
+        .list-item__content
+          a(href="#" class="body-2 bold") Jose Portilla
+          p.subtitle-1.gray lorem lorem lorem
+      .list-item.list-item--two-lines.list-item--with-border
+        .list-item__avatar.avatar__video-preview
+          img(class="image image--profile" src="../../assets/images/get_img.jpg")
+          div.video-preview__checkbox
+            input(class="field field--checked  field--rounded field--accent" type="checkbox" id="checkbox-2" name="checkname")
+            label(for="checkbox-2")
+            span
+          .progress
+            .part-progress
+        .list-item__content
+          a(href="#" class="body-2 bold") Jose Portilla
+          p.subtitle-1.gray lorem lorem lorem
+      .list-item.list-item--two-lines.list-item--with-border
+        .list-item__avatar.avatar__video-preview
+          img(class="image image--profile" src="../../assets/images/get_img.jpg")
+          div.video-preview__checkbox
+            input(class="field field--checked  field--rounded field--accent" type="checkbox" id="checkbox-3" name="checkname")
+            label(for="checkbox-3")
+            span
+          .progress
+            .part-progress
+        .list-item__content
+          a(href="#" class="body-2 bold") Jose Portilla
+          p.subtitle-1.gray lorem lorem lorem
+      .list-item.list-item--two-lines.list-item--with-border
+        .list-item__avatar.avatar__video-preview
+          img(class="image image--profile" src="../../assets/images/get_img.jpg")
+          div.video-preview__checkbox
+            input(class="field field--checked  field--rounded field--accent" type="checkbox" id="checkbox-4" name="checkname")
+            label(for="checkbox-4")
+            span
+          .progress
+            .part-progress
+        .list-item__content
+          a(href="#" class="body-2 bold") Jose Portilla
+          p.subtitle-1.gray lorem lorem lorem
+      .list-item.list-item--two-lines.list-item--with-border
+        .list-item__avatar.avatar__video-preview
+          img(class="image image--profile" src="../../assets/images/get_img.jpg")
+          div.video-preview__checkbox
+            input(class="field field--checked  field--rounded field--accent" type="checkbox" id="checkbox-5" name="checkname")
+            label(for="checkbox-5")
+            span
+          .progress
+            .part-progress
+        .list-item__content
+          a(href="#" class="body-2 bold") Jose Portilla
+          p.subtitle-1.gray lorem lorem lorem
+
+block content
+  .video-player
+    iframe(src="https://www.youtube.com/embed/tgbNymZ7vqY")
+
+

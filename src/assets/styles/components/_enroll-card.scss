@@ -1,0 +1,68 @@
+.enroll-form {
+  padding: 20px 0 0;
+}
+.user-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: $white;
+  box-shadow: 0 0 5px rgba($color: $darkBlack2, $alpha: 0.05);
+  .user-card__label {
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+    .user-card__image {
+      width: 100%;
+      height: 200px;
+      border-bottom: 1px solid rgba($color: $darkBlack2, $alpha: 0.05);
+    }
+    .user-card__name {
+      margin: 0;
+      padding: 0 8px 8px 8px;
+    }
+    .check {
+      position: absolute;
+      max-width: 40px;
+      max-height: 40px;
+      min-width: 40px;
+      min-height: 40px;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      background-color: rgba($color: $primaryLight, $alpha: 0.8);
+      justify-content: center;
+      border-radius: 50%;
+      align-items: center;
+      font-size: 30px;
+      top: 10px;
+      right: 10px;
+      transition: 0.3s ease all;
+      opacity: 0;
+      z-index: 3;
+      color: $white;
+    }
+    &:hover {
+      .check {
+        opacity: 0.5;
+      }
+    }
+  }
+  input {
+    display: none;
+    &:checked{
+      & + .user-card__label {
+        .check {
+          opacity: 1;
+        }
+      }
+    }
+		&:disabled{
+			& + .user-card__label {
+				cursor: not-allowed;
+        .check {
+          opacity: 1;
+        }
+      }
+		}
+  }
+}

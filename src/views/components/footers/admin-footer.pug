@@ -1,0 +1,26 @@
+//- src/views/components/footer.pug
+
+footer.footer
+	img.footer__background(src="../../../assets/images/Pattern_4.svg", alt="", srcset="")
+	.container
+		.row
+			.col-lg-12
+				div(class="footer-line" style="border-top: none")
+					.row.align-items-center
+						.col-md-6.col-sm-12.col-xs-12
+							ul.copy-right
+								li.copy-right__list
+									a.list__link(href='index.html')
+										.footer__logo
+											img(src='../../assets/images/Etqadem_Icon_Yellow.svg' alt='')
+								li.copy-right__list
+									p.list__paragraph
+										| &copy; 2020
+										strong Itqadem
+										| . All Rights Reserved.
+
+						.col-md-6
+							.fritill
+								p.list__paragraph.white.my-0.text-3 Developed and designed by
+								a.my-0(style="height: 40px" href="https://fritill.com/")
+									img(class="fritill-logo" src="../../assets/images/fritill-logo.svg", alt="")

@@ -1,0 +1,51 @@
+section.comments
+  .row
+    .col-lg-12
+      .comments__header
+        .header__title
+          h3.title__name Discussions
+      section.comments__add-comment
+        .add-comment__group
+          .group__img-wrapper
+            img.group__img(src="../../assets/images/hd_dp.jpg" alt="")
+          textarea.group__textarea(placeholder="Add a public comment")
+        button.btn.btn--primary.btn--rounded(type="submit")  Comment
+      section.comment__review-comment
+        .review-comment__item
+          .item__wrapper.d-flex
+            include ../components/general-component/user-account.pug
+            +account-review("../../assets/images/hd_dp.jpg","John Doe", "2 hour ago")
+            block dropdown
+              include ../components/list-dropdown.pug
+          p.review-comment__comment
+            | Nam gravida elit a velit rutrum, eget dapibus ex elementum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce lacinia, nunc sit amet tincidunt venenatis.
+          .item__actions
+            a.action__report
+              i.report__icon.uil.uil-thumbs-up
+              | 10
+            a.action__report
+              i.report__icon.uil.uil-thumbs-down
+              | 1
+            a.action__report
+              i.report__icon.uil.uil-heart
+            a.action__report.ml-3
+              | Reply
+        .review_reply
+          .review_item
+            .item__wrapper.d-flex
+              +account-review("../../assets/images/hd_dp.jpg","John Doe", "2 hour ago")
+              block dropdown
+                include ../components/list-dropdown.pug
+            p.review-comment__comment
+              | Nam gravida elit a velit rutrum, eget dapibus ex elementum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce lacinia, nunc sit amet tincidunt venenatis.
+            .item__actions
+              a.action__report
+                i.report__icon.uil.uil-thumbs-up
+                | 10
+              a.action__report
+                i.report__icon.uil.uil-thumbs-down
+                | 1
+              a.action__report
+                i.report__icon.uil.uil-heart
+              a.action__report.ml-3
+                | Reply

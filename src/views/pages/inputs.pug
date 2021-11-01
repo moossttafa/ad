@@ -1,0 +1,606 @@
+extends ../layouts/site.pug
+
+block title
+	title My Page - Home
+//- block menu-header
+//- 	include ../components/menu-list.pug
+
+block content
+	form
+		.container
+			.row
+				.col-12
+					.card.my-4
+						.card__title
+							h4 inputs field
+						.card__content
+							// input Default
+							p.body-2 1- inputs Default class=(field-wrapper)
+							.field-wrapper
+								label.field-wrapper__label Course Title*
+								.field-wrapper__content
+									input(class="field" type='text' placeholder='Insert your course title.' name='title' data-purpose='edit-course-title' maxlength='' id='main[title1]' value='')
+								ul.field-wrapper__messages
+									li
+										| Please provide a valid city.
+							// input Default
+							p.body-2 1- inputs Default class=(field-wrapper)
+							.field-wrapper.field-wrapper--arrow
+								label.field-wrapper__label Course Title*
+								.field-wrapper__content
+									input(class="field" type='text' placeholder='Insert your course title.' name='title' data-purpose='edit-course-title' maxlength='' id='main[title1]' value='')
+								ul.field-wrapper__messages
+									li
+										| Please provide a valid city.
+							// input smaller
+							p.body-2 2- inputs field sm class=(field-wrapper--sm)
+							.field-wrapper.field-wrapper--sm
+								label.field-wrapper__label Course Title*
+								.field-wrapper__content
+									input(class="field" type='text' placeholder='Insert your course title.' name='title' data-purpose='edit-course-title' maxlength='' id='main[title1]' value='')
+								ul.field-wrapper__messages
+									li
+										| Please provide a valid city.
+							// input large
+							p.body-2 3- inputs field lg class=(field-wrapper--lg)
+							.field-wrapper.field-wrapper--lg
+								label.field-wrapper__label Course Title*
+								.field-wrapper__content
+									input(class="field" type='text' placeholder='Insert your course title.' name='title' data-purpose='edit-course-title' maxlength='' id='main[title1]' value='')
+								ul.field-wrapper__messages
+									li
+										| Please provide a valid city.
+							// input underline
+							p.body-2 4- inputs field underline class=(field--underline) in input
+							.field-wrapper
+								label.field-wrapper__label Course Title*
+								.field-wrapper__content
+									input(class="field field--underline" type='text' placeholder='Insert your course title.' name='title' data-purpose='edit-course-title' maxlength='' id='main[title1]' value='')
+								ul.field-wrapper__messages
+									li
+										| Please provide a valid city.
+							// input field-wrapper--error
+							p.body-2 5- inputs field error class=(field-wrapper--error)
+							.field-wrapper.field-wrapper--error
+								label.field-wrapper__label Course Title*
+								.field-wrapper__content
+									input(class="field" type='text' placeholder='Insert your course title.' name='title' data-purpose='edit-course-title' maxlength='60' id='main[title]' value='' required)
+								ul.field-wrapper__messages
+									li
+										| Please provide a valid city.
+							// input field-wrapper--error
+							p.body-2 5- inputs field error class=(field--arrow)
+							.field-wrapper
+								label.field-wrapper__label Course Title*
+								.field-wrapper__content
+									input(class="field" type='text' placeholder='Insert your course title.' name='title' data-purpose='edit-course-title' maxlength='60' id='main[title]' value='' required)
+								ul.field-wrapper__messages
+									li
+										| Please provide a valid city.
+							// input Default
+							p.body-2 1- inputs Default class=(field-wrapper)
+							.field-wrapper
+								label.field-wrapper__label Course Title*
+								.field-wrapper__content
+									input(class="field" type='text' disabled="disabled"  placeholder='Insert your course title.' name='title' data-purpose='edit-course-title' maxlength='' id='main[title1]' value='')
+								ul.field-wrapper__messages
+									li
+										| Please provide a valid city.
+							// input Default
+					.card.my-4
+						.card__title
+							h3 input field file
+						.card__content
+							.row
+								.col-lg-6.col-md-12.col-sm-12
+									// input field type file
+									p.body-2 1- inputs field type=(file)
+									.field-wrapper
+										label.field-wrapper__label File*
+										.input-group.field-field-group
+											.file-input
+												input(id="inputGroupFile06" class="field" type='file')
+												label(class="file-input__label" for='inputGroupFile06') No Choose file - (Pdf, Video)
+										ul.field-wrapper__messages
+											li
+												| Please provide a valid city.
+									// input field  file icon
+									p.body-2 1- inputs field file icon
+									.upload-input
+										input(type="file", name="" id="file-input")
+										label.file-input(for="file-input") 
+											i.far.fa-image.exam__icon
+								.col-lg-6.col-md-12.col-sm-12
+									// input field type file sm
+									p.body-2 1- inputs field type=(file) sm
+									.field-wrapper.field-wrapper--sm
+										label.field-wrapper__label File*
+										.input-group.field-field-group
+											.file-input
+												input(id="inputGroupFile06" class="field" type='file')
+												label(class="file-input__label" for='inputGroupFile06') No Choose file - (Pdf, Video)
+										ul.field-wrapper__messages
+											li
+												| Please provide a valid city.
+								.col-lg-6.col-md-12.col-sm-12
+									// input field-wrapper--error in input file
+									p.body-2 1- inputs field error class=(field-wrapper--error)
+									.field-wrapper.field-wrapper--error
+										label.field-wrapper__label File*
+										.input-group.field-field-group
+											.file-input
+												input(id="inputGroupFile06" class="field" type='file')
+												label(class="file-input__label" for='inputGroupFile06') No Choose file - (Pdf, Video)
+										ul.field-wrapper__messages
+											li
+												| Please provide a valid city.
+								.col-lg-6.col-md-12.col-sm-12
+									// input field type file Lg
+									p.body-2 1- inputs field type=(file) LG
+									.field-wrapper.field-wrapper--lg
+										label.field-wrapper__label File*
+										.input-group.field-field-group
+											.file-input
+												input(id="inputGroupFile06" class="field" type='file')
+												label(class="file-input__label" for='inputGroupFile06') No Choose file - (Pdf, Video)
+										ul.field-wrapper__messages
+											li
+												| Please provide a valid city.
+								//- .col-lg-6.col-md-12.col-sm-12
+								//-   // input field type file disabled
+								//-   p.body-2 1- inputs field type=(file) disabled
+								//-   .field-wrapper
+								//-     label.field-wrapper__label File*
+								//-     .input-group.field-field-group
+								//-       .file-input
+								//-         input(id="inputGroupFile06" disabled="disabled" class="field" type='file')
+								//-         label(class="file-input__label" for='inputGroupFile06') No Choose file - (Pdf, Video)
+								//-     ul.field-wrapper__messages
+								//-       li
+								//-         | Please provide a valid city.
+
+				// input checkbox
+			.row
+				.col-12
+					.card.my-4
+						.card__title
+							h3 input checkbox
+						.card__content
+							.row
+								.col-lg-12.col-md-12.col-sm-12
+									// input checkbox type checkbox
+									p.body-2 1- add class(check-field-group--horizontal) in check-field-group
+									.field-wrapper
+										label.field-wrapper__label checkbox *
+										.check-field-group.check-field-group--horizontal
+											div
+												input(class="field" type="checkbox" id="checkbox-1" name="checkname")
+												label(for="checkbox-1")
+													span 
+													| Lorem ipsum dolor.
+											div
+												input(class="field" type="checkbox" id="checkbox-2" name="checkname")
+												label(for="checkbox-2")
+													span 
+													| Lorem ipsum dolor.
+											div
+												input(class="field" type="checkbox" id="checkbox-3" name="checkname")
+												label(for="checkbox-3")
+													span 
+													| Lorem ipsum dolor.
+											div
+												input(class="field" type="checkbox" id="checkbox-4" name="checkname")
+												label(for="checkbox-4")
+													span 
+													| Lorem ipsum dolor.
+										ul.field-wrapper__messages
+											li Please provide a valid city.
+								.col-lg-12.col-md-12.col-sm-12
+									// input checkbox type checkbox
+									p.body-2 1- add class(check-field-group--horizontal) in check-field-group LG
+									.field-wrapper.field-wrapper--lg
+										label.field-wrapper__label checkbox *
+										.check-field-group.check-field-group--horizontal
+											div
+												input(class="field" type="checkbox" id="checkbox-5" name="checkname")
+												label(for="checkbox-5")
+													span 
+													| Lorem ipsum dolor.
+											div
+												input(class="field" type="checkbox" id="checkbox-6" name="checkname")
+												label(for="checkbox-6")
+													span 
+													| Lorem ipsum dolor.
+											div
+												input(class="field" type="checkbox" id="checkbox-7" name="checkname")
+												label(for="checkbox-7")
+													span 
+													| Lorem ipsum dolor.
+											div
+												input(class="field" type="checkbox" id="checkbox-8" name="checkname")
+												label(for="checkbox-8")
+													span 
+													| Lorem ipsum dolor.
+										ul.field-wrapper__messages
+											li Please provide a valid city.
+								.col-lg-12.col-md-12.col-sm-12
+									// input checkbox type checkbox
+									p.body-2 2-add class=(field-wrapper--error) and add class(check-field-group--horizontal) in check-field-group
+									.field-wrapper.field-wrapper--error
+										label.field-wrapper__label checkbox *
+										.check-field-group.check-field-group--horizontal
+											div
+												input(class="field" type="checkbox" id="checkbox-9" name="checkname")
+												label(for="checkbox-9")
+													span 
+													| Lorem ipsum dolor.
+											div
+												input(class="field" type="checkbox" id="checkbox-10" name="checkname")
+												label(for="checkbox-10")
+													span 
+													| Lorem ipsum dolor.
+											div
+												input(class="field" type="checkbox" id="checkbox-11" name="checkname")
+												label(for="checkbox-11")
+													span 
+													| Lorem ipsum dolor.
+											div
+												input(class="field" type="checkbox" id="checkbox-12" name="checkname")
+												label(for="checkbox-12")
+													span 
+													| Lorem ipsum dolor.
+										ul.field-wrapper__messages
+											li Please provide a valid city.
+								.col-lg-12.col-md-12.col-sm-12
+									// input checkbox type checkbox
+									p.body-2 3- input checkbox default with group
+									.field-wrapper
+										label.field-wrapper__label checkbox *
+										.check-field-group
+											div
+												input(class="field" type="checkbox" id="checkbox-13" name="checkname")
+												label(for="checkbox-13")
+													span 
+													| Lorem ipsum dolor.
+											div
+												input(class="field" type="checkbox" id="checkbox-14" name="checkname")
+												label(for="checkbox-14")
+													span 
+													| Lorem ipsum dolor.
+											div
+												input(class="field" type="checkbox" id="checkbox-15" name="checkname")
+												label(for="checkbox-15")
+													span 
+													| Lorem ipsum dolor.
+										ul.field-wrapper__messages
+											li Please provide a valid city.
+									// input checkbox type checkbox
+									p.body-2 4- input checkbox default
+									.field-wrapper
+										div
+											input(class="field" type="checkbox" id="checkbox-16" name="checkname")
+											label(for="checkbox-16")
+												span 
+									// input checkbox type checkbox
+									p.body-2 6- input checkbox rounded add class=(field--rounded) in input
+									.field-wrapper
+										div
+											input(class="field field--rounded" type="checkbox" id="checkbox-17" name="checkname")
+											label(for="checkbox-17")
+												span 
+									// input checkbox type checkbox
+									p.body-2 7- input checkbox change color to accent add class=(field--accent) in input
+									.field-wrapper
+										div
+											input(class="field field--accent" type="checkbox" id="checkbox-18" name="checkname")
+											label(for="checkbox-18")
+												span 
+									// input checkbox type checkbox
+									p.body-2 8- input checkbox class=(field--accent field--rounded)
+									.field-wrapper
+										div
+											input(class="field field--accent field--rounded" type="checkbox" id="checkbox-19" name="checkname")
+											label(for="checkbox-19")
+												span 
+									// input checkbox type checkbox
+									p.body-2 9- input checkbox opacity class=(field--checked)
+									.field-wrapper
+										div
+											input(class="field field--checked" type="checkbox" id="checkbox-20" name="checkname")
+											label(for="checkbox-20")
+												span 
+									// input checkbox type checkbox
+									p.body-2 9- input checkbox disabled
+									.field-wrapper
+										div
+											input(class="field" type="checkbox" id="checkbox-21" disabled="disabled" name="checkname")
+											label(for="checkbox-21")
+												span 
+									// input checkbox type checkbox
+									//- p.body-2 9- input checkbox vuetify
+									//- .field-wrapper
+									//-   div
+									//-     .field-wrapper__control
+									//-       span.field-wrapper__checked
+									//-       input(class="field" type="checkbox" id="checked--210" name="checkname")
+									//-     label(for="checked--210") input checkbox vuetify
+
+			.row
+				.col-12
+					.card.my-4
+						.card__title
+							h3 input radio
+						.card__content
+							.row
+								// input radio
+								.col-lg-12.col-md-12.col-sm-12
+									// input checkbox type checkbox
+									p.body-2 1- input radio type=(radio) add check-field-group--horizontal in check-field-group
+									.field-wrapper
+										label.field-wrapper__label Course checkbox*
+										.check-field-group.check-field-group--horizontal
+											div
+												input(class="field" type="radio" id="radio-1" name="radioName")
+												label(for="radio-1")
+													span 
+													| Lorem ipsum dolor.
+											div
+												input(class="field" type="radio" id="radio-2" name="radioName")
+												label(for="radio-2")
+													span 
+													| Lorem ipsum dolor.
+											div
+												input(class="field" type="radio" id="radio-3" name="radioName")
+												label(for="radio-3")
+													span 
+													| Lorem ipsum dolor.
+											div
+												input(class="field" type="radio" id="radio-4" name="radioName")
+												label(for="radio-4")
+													span 
+													| Lorem ipsum dolor. 
+										ul.field-wrapper__messages
+											li Please provide a valid city.
+								.col-lg-12.col-md-12.col-sm-12
+									// input checkbox type checkbox
+									p.body-2 1- input radio type=(radio) add check-field-group--horizontal in check-field-group ann LG
+									.field-wrapper.field-wrapper--lg
+										label.field-wrapper__label Course checkbox*
+										.check-field-group.check-field-group--horizontal
+											div
+												input(class="field" type="radio" id="radio-5" name="radioName")
+												label(for="radio-5")
+													span 
+													| Lorem ipsum dolor.
+											div
+												input(class="field" type="radio" id="radio-6" name="radioName")
+												label(for="radio-6")
+													span 
+													| Lorem ipsum dolor.
+											div
+												input(class="field" type="radio" id="radio-7" name="radioName")
+												label(for="radio-7")
+													span 
+													| Lorem ipsum dolor.
+											div
+												input(class="field" type="radio" id="radio-8" name="radioName")
+												label(for="radio-8")
+													span 
+													| Lorem ipsum dolor. 
+										ul.field-wrapper__messages
+											li Please provide a valid city.
+								.col-lg-12.col-md-12.col-sm-12
+									p.body-2 1- input radio type=(radio) Error
+									.field-wrapper.field-wrapper--error
+										label.field-wrapper__label Course checkbox*
+										.check-field-group.check-field-group--horizontal
+											div
+												input(class="field" type="radio" id="radio-9" name="radioName")
+												label(for="radio-9")
+													span 
+													| Lorem ipsum dolor.
+											div
+												input(class="field" type="radio" id="radio-10" name="radioName")
+												label(for="radio-10")
+													span 
+													| Lorem ipsum dolor.
+											div
+												input(class="field" type="radio" id="radio-11" name="radioName")
+												label(for="radio-11")
+													span 
+													| Lorem ipsum dolor.
+											div
+												input(class="field" type="radio" id="radio-12" name="radioName")
+												label(for="radio-12")
+													span 
+													| Lorem ipsum dolor. 
+										ul.field-wrapper__messages
+											li Please provide a valid city.
+								.col-lg-12.col-md-12.col-sm-12
+									// input checkbox type checkbox
+									p.body-2 2- input default type=(radio)
+									.field-wrapper
+										label.field-wrapper__label Course checkbox*
+										.check-field-group
+											div
+												input(class="field" type="radio" id="radio-13" name="radioName")
+												label(for="radio-13")
+													span 
+													| Lorem ipsum dolor.
+											div
+												input(class="field" type="radio" id="radio-14" name="radioName")
+												label(for="radio-14")
+													span 
+													| Lorem ipsum dolor.
+											div
+												input(class="field" type="radio" id="radio-15" name="radioName")
+												label(for="radio-15")
+													span 
+													| Lorem ipsum dolor.
+											div
+												input(class="field" type="radio" id="radio-16" name="radioName")
+												label(for="radio-16")
+													span 
+													| Lorem ipsum dolor. 
+										ul.field-wrapper__messages
+											li Please provide a valid city.
+									.field-wrapper
+										div
+											input(class="field" type="radio" id="radio-19" name="radioName")
+											label(for="radio-19")
+												span
+									// input checkbox disabled
+									p.body-2 2- input radio disabled
+									.field-wrapper
+										div
+											input(class="field" type="radio" disabled="disabled"  id="radio-17" name="radioName")
+											label(for="radio-17")
+												span  
+											//check-field out wrapper
+									// input checkbox type checkbox
+									p.body-2 9- input switch
+									.field-wrapper
+										label.field-wrapper__label switch*
+										.switch
+											input#switch(type="checkbox", name="")
+											label(for="switch")
+
+			.row
+				.col-12
+					.card.my-4
+						.card__title
+							h3 input select
+						.card__content
+							.row
+								// input__select
+								.col-md-12.col-sm-12
+									// input select Default
+									p.body-2 1- select input default
+									.field-wrapper
+										label.field-wrapper__label Start Select :
+										.field-wrapper__content
+											select.field
+												option(value='') Select option
+												option(value='1') option 1
+												option(value='2') option 2
+												option(value='3') option 3
+												option(value='4') option 4
+												option(value='5') option 5
+										ul.field-wrapper__messages
+											li
+												| Please provide a valid city.
+								.col-md-12.col-sm-12
+									// input select underline
+									p.body-2 2- select underline
+									.field-wrapper
+										label.field-wrapper__label Start Select :
+										.field-wrapper__content
+											select.field.field--underline
+												option(value='') Select option
+												option(value='1') option 1
+												option(value='2') option 2
+												option(value='3') option 3
+												option(value='4') option 4
+												option(value='5') option 5
+										ul.field-wrapper__messages
+											li
+												| Please provide a valid city.
+								.col-md-12.col-sm-12
+									// input select underline
+									p.body-2 2- select  SM
+									.field-wrapper.field-wrapper--sm
+										label.field-wrapper__label Start Select :
+										.field-wrapper__content
+											select.field
+												option(value='') Select option
+												option(value='1') option 1
+												option(value='2') option 2
+												option(value='3') option 3
+												option(value='4') option 4
+												option(value='5') option 5
+										ul.field-wrapper__messages
+											li
+												| Please provide a valid city.
+								.col-md-12.col-sm-12
+									// input select underline
+									p.body-2 2- select LG
+									.field-wrapper.field-wrapper--lg
+										label.field-wrapper__label Start Select :
+										.field-wrapper__content
+											select.field
+												option(value='') Select option
+												option(value='1') option 1
+												option(value='2') option 2
+												option(value='3') option 3
+												option(value='4') option 4
+												option(value='5') option 5
+										ul.field-wrapper__messages
+											li
+												| Please provide a valid city.
+								.col-md-12.col-sm-12
+									// input select type field-wrapper--error
+									p.body-2 3- select field-wrapper--error
+									.field-wrapper.field-wrapper--error
+										label.field-wrapper__label Start Select :
+										.field-wrapper__content
+											select.field
+												option(value='') Select option
+												option(value='1') option 1
+												option(value='2') option 2
+												option(value='3') option 3
+												option(value='4') option 4
+												option(value='5') option 5
+										ul.field-wrapper__messages
+											li
+												| Please provide a valid city.
+								.col-md-12.col-sm-12
+									// input checkbox type disabled
+									p.body-2 3- select disabled
+									.field-wrapper
+										label.field-wrapper__label Start Select :
+										.field-wrapper__content
+											select(disabled="disabled" class="field")
+												option(value='') Select option
+												option(value='1') option 1
+												option(value='2') option 2
+												option(value='3') option 3
+												option(value='4') option 4
+												option(value='5') option 5
+										ul.field-wrapper__messages
+											li
+												| Please provide a valid city.
+			.row
+				.col-12
+					.card.my-4
+						.card__title
+							h3 Default
+						.card__content
+							.row
+								.col-lg-12.col-md-12.col-sm-12
+									// input checkbox type checkbox
+									p.body-2 1- input textarea
+									.field-wrapper
+										label.field-wrapper__label Course Radio Button*
+										.field-wrapper__content
+											textarea( id="id_course_description" rows='5' name='description' placeholder='Insert your course description')
+										ul.field-wrapper__messages
+											li
+												| Please provide a valid city.
+									// input checkbox type checkbox
+									p.body-2 1- input textarea
+									.field-wrapper.field-wrapper--error
+										label.field-wrapper__label Course Radio Button*
+										.field-wrapper__content
+											textarea( id="id_course_description" rows='5' name='description' placeholder='Insert your course description')
+										ul.field-wrapper__messages
+											li
+												| Please provide a valid city.
+									// input checkbox type checkbox
+									p.body-2 1- input textarea Disabled
+									.field-wrapper
+										label.field-wrapper__label Course Radio Button*
+										.field-wrapper__content
+											textarea( id="id_course_description" rows='5' disabled="disabled" name='description' placeholder='Insert your course description')
+										ul.field-wrapper__messages
+											li
+												| Please provide a valid city.

@@ -1,0 +1,8 @@
+mixin btn(className , btnName )
+  button(class=className  type="submit")= btnName
+  //- btn Link
+mixin btn-link(className , btnName , href)
+  a(class=className href=href)= btnName
+
+mixin btn-input(className , type , btnName)
+  input(class=className type=type value=btnName)

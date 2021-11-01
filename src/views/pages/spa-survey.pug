@@ -1,0 +1,38 @@
+extends ../layouts/spa-layout
+
+block title
+  title Spa Page
+
+block left
+  .drawer.drawer--left.drawer--open.open
+    .list
+      .list__title Survey Content
+      .list-item.list-item--two-lines.list-item--with-border
+        .list-item__avatar
+          i.fas.fa-book
+        .list-item__content
+          a(href="#" class="body-2 bold") Jose Portilla
+          p.subtitle-2.gray Jose_Portilla@test.com
+      .list-item.list-item--two-lines.list-item--with-border
+        .list-item__avatar
+          i.fas.fa-book
+        .list-item__content
+          a(href="#" class="body-2 bold") Jose Portilla
+          p.subtitle-2.gray Jose_Portilla@test.com
+      .list-item.list-item--two-lines.list-item--with-border
+        .list-item__avatar
+          i.fas.fa-user
+        .list-item__content
+          a(href="#" class="body-2 bold") Jose Portilla
+          p.subtitle-2.gray Jose_Portilla@test.com
+      .list-item.list-item--two-lines.list-item--with-border
+        .list-item__avatar
+          i.fas.fa-book
+        .list-item__content
+          a(href="#" class="body-2 bold") Jose Portilla
+          p.subtitle-2.gray Jose_Portilla@test.com
+
+block content
+  include ../components/survey-content.pug
+
+

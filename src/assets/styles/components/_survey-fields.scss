@@ -1,0 +1,197 @@
+.survey{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	@media(max-width: 560px){
+		justify-content: flex-start;
+	}
+}
+.survey__header{
+	text-align: center;
+	margin-bottom: 20px;
+	@media(max-width: 375px){
+		.title-h2{
+			font-size: 24px;
+		}
+		.body-1{
+			font-size: 16px;
+		}
+	}
+}
+.survey__footer{
+	width: 70%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	@media(max-width: 768px){
+		width: 80%;
+	}
+	@media(max-width: 560px){
+		width: 90%;
+		padding-bottom: 20px;
+	}
+	.btn{
+		display: flex;
+		align-items: center;
+		i{
+			margin-top: 2px;
+		}
+		&:last-of-type{
+			flex-direction: row-reverse;
+			i{
+				margin: 2px 0 0 5px;
+			}
+		}	
+	}
+}
+.survey__check-field-group {
+  display: flex;
+  justify-content: center;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+  // align-items: center;
+}
+
+.survey__check-field {
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  width: fit-content;
+  cursor: pointer;
+  color: $darkGray;
+  position: relative;
+  text-align: center;
+	display: inline-block;
+	margin: 10px 20px;
+  &.survey__check-field--primary {
+    color: $primary;
+  }
+	&.survey__check-field--secondary {
+    color: $secondary;
+  }
+  &.survey__check-field--accent{
+    color: $accent;
+  }
+  &.survey__check-field--danger{
+    color: $danger;
+  }
+  &.survey__check-field--success{
+    color: $success;
+  }
+  input {
+    display: none;
+  }
+
+  input:checked + .survey__check-field-label {
+    border: 3px solid $accent;
+		& + *{
+			color: $accent;
+		}
+  }
+
+
+
+  // .survey-check-field__input{
+  //   display: none;
+
+  //   &:checked  + .survey-check-field__label{
+  //     // color: currentColor;
+  //     border-color: currentColor;
+  //     // & + * {
+  //     //   color: $accent;
+  //     // }
+
+  //   }
+  // }
+
+  .survey__check-field-label {
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    color: currentColor;
+    border: 1px solid currentColor;
+    cursor: pointer;
+    position: relative;
+		transition: .3s ease all;
+    &:before {
+      content: "";
+      display: block;
+      pointer-events: none;
+      border-radius: inherit;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 0;
+      color: inherit;
+      background-color: $accent;
+      transition: opacity 0.2s cubic-bezier(0.4, 0, 0.6, 1);
+    }
+
+    &:hover:before {
+      opacity: 0.15;
+    }
+		&:hover{
+			border-color: $accent;
+			& + *{
+				color: $accent;
+			}
+		}
+    &:focus:before {
+      opacity: 0.24;
+    }
+
+    & + * {
+      color: currentColor;
+      font-size: 24px;
+      font-weight: 400;
+      display: inline-block;
+      transition: 0.2s ease all;
+    }
+
+
+    & + label {
+      position: absolute;
+      top: 60px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: -1;
+			white-space: nowrap;
+    }
+    &.survey__check-field-label--with-image {
+      background-image: url("../images/get_img.jpg");
+			// margin-top: 40px;
+      & + label {
+        position: relative;
+				left: unset;
+				transform: unset;
+				top: unset;
+				
+      }
+    }
+		@media (max-width: 768.98px) {
+			width: 130px;
+			height: 130px;
+			& + label{
+				top: 50px;
+			}
+		}
+		@media (max-width: 560px){
+			width: 120px;
+			height: 120px;
+			& + label{
+				top: 45px;
+			}
+		}
+  }
+}
+
+.night-mode{
+	.survey__check-field{
+		color: $white;
+	}
+}

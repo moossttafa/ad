@@ -1,0 +1,39 @@
+extends ../layouts/spa-layout
+
+block title
+	title survey
+
+block left
+	.drawer.drawer--left.drawer--open
+		div(class="list__sidebar list" data-link='[{"title":"Home","has_children":false,"icon":"fa fa-home","url":"/","is_active":false},{"title":"Category","has_children":false,"icon":"fa fa-home","url":"/category.html","is_active":false},{"title":"Chapter","has_children":false,"icon":"fa fa-home","url":"/chapter.html","is_active":false},{"title":"Collection","has_children":false,"icon":"fa fa-home","url":"/collection.html","is_active":false},{"title":"Course","icon":"fas fa-layer-group","has_children":true,"is_active":false,"children":[{"title":"Course","has_children":false,"url":"/course.html","is_active":false},{"title":"Enroll","has_children":false,"url":"/enroll.html","is_active":false}]},{"title":"Delete","has_children":false,"icon":"fa fa-home","url":"/delete.html","is_active":false},{"title":"Exams","has_children":false,"icon":"fa fa-home","url":"/exams.html","is_active":false},{"title":"Authentication","has_children":true,"icon":"fas fa-layer-group","is_active":true,"children":[{"title":"Login","has_children":false,"url":"/login.html","is_active":true},{"title":"SignUp","has_children":false,"url":"/signup.html","is_active":true},{"title":"Reset Password","has_children":false,"url":"/reset.html","is_active":true},{"title":"Forget Password","has_children":false,"url":"/forget.html","is_active":true}]},{"title":"Admin","icon":"fas fa-layer-group","has_children":true,"is_active":false,"children":[{"title":"Admin Chapter","has_children":false,"url":"/admin-course-chapter.html","is_active":false},{"title":"Admin Details","has_children":false,"url":"/admin-course-details.html","is_active":false},{"title":"Admin Dashboard","has_children":false,"url":"/admin-dashboard.html","is_active":false}]},{"title":"Player Course","has_children":true,"icon":"fas fa-layer-group","is_active":false,"children":[{"title":"Player","has_children":false,"url":"/spa-player.html","is_active":false},{"title":"Survey Landing","has_children":false,"url":"/spa-survey-landing.html","is_active":false},{"title":"Surveys","has_children":false,"url":"/surveys.html","is_active":false},{"title":"Survey","has_children":false,"url":"/spa-survey.html","is_active":false}]},{"title":"Media","has_children":true,"icon":"fas fa-layer-group","is_active":false,"children":[{"title":"Media Library","has_children":false,"url":"/media-library.html","is_active":false},{"title":"Edit Media","has_children":false,"url":"/edit-media.html","is_active":false}]},{"title":"Elements Tool","has_children":true,"icon":"fas fa-layer-group","is_active":false,"children":[{"title":"Buttons","has_children":false,"url":"/ad-elements/buttons.html","is_active":false},{"title":"Cards","has_children":false,"url":"/ad-elements/cards.html","is_active":false},{"title":"Lists","has_children":false,"url":"/ad-elements/lists.html","is_active":false},{"title":"play List","has_children":false,"url":"/ad-elements/play-list.html","is_active":false},{"title":"Survey Inputs","has_children":false,"url":"/ad-elements/survey-inputs.html","is_active":false},{"title":"Inputs","has_children":false,"url":"/inputs.html","is_active":false},{"title":"Typo","has_children":false,"url":"/typo.html","is_active":false},{"title":"Drawers","has_children":false,"url":"/drawers.html","is_active":false}]}]')
+block content
+	.survey
+		.survey__header
+			h2.title-h2 Lorem ipsum dolor
+			p.body-1 amet consectetur adipisicing elit.
+		.survey__check-field-group
+			.survey__check-field
+				input(class="survey__check-field-input" id="survey-1" value="radio-1" type="checkbox" name="survey")
+				label(class="survey__check-field-label survey__check-field-label--with-image" for="survey-1")
+				label(class="" for="survey-2")  lorem
+			.survey__check-field
+				input(class="survey__check-field-input" id="survey-4" value="radio-1" type="checkbox" name="survey")
+				label(class="survey__check-field-label" for="survey-4")
+				label lorem
+			.survey__check-field
+				input(class="survey__check-field-input" id="survey-2" value="radio-2" type="checkbox" name="survey")
+				label(class="survey__check-field-label" for="survey-2")
+				label(for="survey-2") lorem
+			.survey__check-field
+				input(class="survey__check-field-input" id="survey-3" value="radio-3" type="checkbox" name="survey")
+				label(class="survey__check-field-label" for="survey-3")
+				label(for="survey-3") lorem
+		.survey__footer
+			button.btn.btn--primary.btn--with-icon
+				i.fas.fa-arrow-left
+				| primary
+			button.btn.btn--primary.btn--with-icon
+				i.fas.fa-arrow-right
+				| primary
+		//- .video-player
+		//- 	include ../components/survey-content.pug

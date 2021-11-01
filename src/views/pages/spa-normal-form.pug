@@ -1,0 +1,305 @@
+extends ../layouts/spa-layout
+
+
+block title
+  title exam Answer page
+
+block left
+  .drawer.drawer--left.drawer--open.open
+    .list
+      .list__title Chapter 1
+      .list-item.list-item--two-lines.list-item--with-border
+        .list-item__avatar
+          i.fas.fa-user
+          //- img(class="image image--small-profile image--rounded" src="../../assets/images/hd_dp.jpg", alt="avatar")
+        .list-item__content
+          a(href="#" class="body-2 bold") Jose Portilla
+          p.subtitle-2.gray Jose_Portilla@test.com
+        .list-item__action
+      .list-item.list-item--two-lines.list-item--with-border
+        .list-item__avatar
+          i.fas.fa-user
+          //- img(class="image image--small-profile image--rounded" src="../../assets/images/hd_dp.jpg", alt="avatar")
+        .list-item__content
+          a(href="#" class="body-2 bold") Jose Portilla
+          p.subtitle-2.gray Jose_Portilla@test.com
+        .list-item__action
+      .list-item.list-item--two-lines.list-item--with-border
+        .list-item__avatar
+          i.fas.fa-user
+          //- img(class="image image--small-profile image--rounded" src="../../assets/images/hd_dp.jpg", alt="avatar")
+        .list-item__content
+          a(href="#" class="body-2 bold") Jose Portilla
+          p.subtitle-2.gray Jose_Portilla@test.com
+        .list-item__action
+block content
+  .page-content.page-content--horizontal
+    //- include ../components/sidebar-dark.pug
+    //- +sidebar-dark
+    .exams-questions.video-player
+      section.questions-header
+        .container
+          .questions-header__title
+            h1.title-h1 Exams Development
+            .questions-header__info
+              p.body-1 The only course you need to learn web development
+              p.body-1 The only course you need
+      section.questions-name
+        .container
+          .row
+            .col-lg-12
+              .question-title
+                h3.title-h3 Exams Difficile
+                .question-title__info
+                  p.body-1 Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
+      .questions
+        .container
+          .row
+            .col-lg-12
+              .question
+                .question__title
+                  h3.title-h3  The flowchart has one output variable
+                .question__content
+                  .field-wrapper
+                    .check-field-group.check-field-group--horizontal
+                      div
+                        input(class="field" type="checkbox" id="checkbox-1" name="checkname")
+                        label(for="checkbox-1") Lorem ipsum dolor.
+                          span
+                      div
+                        input(class="field" type="checkbox" id="checkbox-2" name="checkname")
+                        label(for="checkbox-2") Lorem ipsum dolor.
+                          span
+                      div
+                        input(class="field" type="checkbox" id="checkbox-3" name="checkname")
+                        label(for="checkbox-3") Lorem ipsum dolor.
+                          span
+                      div
+                        input(class="field" type="checkbox" id="checkbox-4" name="checkname")
+                        label(for="checkbox-4") Lorem ipsum dolor.
+                          span
+                    ul.field-wrapper__messages
+                      li Please provide a valid city.
+            .col-lg-12
+              .question
+                .question__title
+                  h3.title-h3  The flowchart has one output variable
+                .question__content
+                  .field-wrapper
+                    label.field-wrapper__label Course checkbox*
+                    .check-field-group.check-field-group--horizontal
+                      div
+                        input(class="field" type="radio" id="radio-1" name="radioName")
+                        label(for="radio-1") Lorem ipsum dolor.
+                          span
+                      div
+                        input(class="field" type="radio" id="radio-2" name="radioName")
+                        label(for="radio-2") Lorem ipsum dolor.
+                          span
+                      div
+                        input(class="field" type="radio" id="radio-3" name="radioName")
+                        label(for="radio-3") Lorem ipsum dolor.
+                          span
+                      div
+                        input(class="field" type="radio" id="radio-4" name="radioName")
+                        label(for="radio-4") Lorem ipsum dolor.
+                          span
+                    ul.field-wrapper__messages
+                      li Please provide a valid city.
+                // time
+            .col-lg-12
+              .question
+                .question__title
+                  h3.title-h3 The flowchart has one output variable
+                .question__content
+                  .field-wrapper
+                    label.field-wrapper__label Course Title*
+                    .field-wrapper__content
+                      input(class="field" type='time' placeholder='Insert your course title.' name='title' data-purpose='edit-course-title' maxlength='60' id='main[title]' value='' required)
+                    ul.field-wrapper__messages
+                      li
+                        | Please provide a valid city.
+              //data
+            .col-lg-12
+              .question
+                .question__title
+                  h3.title-h3  The flowchart has one output variable
+                .question__content
+                  .field-wrapper
+                    label.field-wrapper__label Course Title*
+                    .field-wrapper__content
+                      input(class="field" type='date' placeholder='Insert your course title.' name='title' data-purpose='edit-course-title' maxlength='60' id='main[title]' value='' required)
+                    ul.field-wrapper__messages
+                      li
+                        | Please provide a valid city.
+            .col-lg-12
+              .question
+                .question__title
+                  h3.title-h3  The flowchart has one output variable
+                .question__content
+                  .question__item.question__item--cover
+                    .image-wrapper
+                      img(src="../../assets/images/get_img.jpg", alt="")
+                    .field-wrapper
+                      .check-field-group.check-field-group--horizontal
+                        div
+                          input(class="field" type="checkbox" id="checkbox-11" name="checkname")
+                          label(for="checkbox-11") Lorem ipsum dolor.
+                            span
+                        div
+                          input(class="field" type="checkbox" id="checkbox-22" name="checkname")
+                          label(for="checkbox-22") Lorem ipsum dolor.
+                            span
+                        div
+                          input(class="field" type="checkbox" id="checkbox-33" name="checkname")
+                          label(for="checkbox-33") Lorem ipsum dolor.
+                            span
+                        div
+                          input(class="field" type="checkbox" id="checkbox-44" name="checkname")
+                          label(for="checkbox-44") Lorem ipsum dolor.
+                            span
+                      ul.field-wrapper__messages
+                        li Please provide a valid city.
+            .col-lg-12
+              .question
+                .question__title
+                  h3.title-h3  The flowchart has one output variable
+                .question__content
+                  .question__item.question__item--cover
+                    .image-wrapper
+                      img(src="../../assets/images/get_img.jpg", alt="")
+                    .field-wrapper
+                      label.field-wrapper__label Course Title*
+                      .field-wrapper__content
+                        input(class="field" type='text' placeholder='Insert your course title.' name='title' data-purpose='edit-course-title' maxlength='' id='main[title1]' value='')
+                      ul.field-wrapper__messages
+                        li
+                          | Please provide a valid city.
+            .col-lg-12
+              .question
+                .question__title
+                  h3.title-h3 The flowchart has one output variable
+                .question__content
+                  .question__item.question__item--cover
+                    .image-wrapper
+                      img(src="../../assets/images/get_img.jpg", alt="")
+                    .field-wrapper
+                      label.field-wrapper__label Course Radio Button*
+                      .field-wrapper__content
+                        textarea( id="id_course_description" rows='5' name='description' placeholder='Insert your course description')
+                      ul.field-wrapper__messages
+                        li
+                          | Please provide a valid city.
+            .col-lg-12
+              .question
+                .question__title
+                  h3.title-h3 The flowchart has one output variable
+                .question__content
+                  .question__item.question__item--cover
+                    .image-wrapper
+                      img(src="../../assets/images/get_img.jpg", alt="")
+                    .field-wrapper
+                      label.field-wrapper__label Course Title*
+                      .field-wrapper__content
+                        input(class="field" type='datetime-local' placeholder='Insert your course title.' name='title' data-purpose='edit-course-title' maxlength='' id='main[title1]' value='')
+                      ul.field-wrapper__messages
+                        li
+                          | Please provide a valid city.
+            .col-lg-12
+              .question
+                .question__title
+                  h3.title-h3  The flowchart has one output variable
+                .question__content
+                  .question__item.question__item--cover
+                    .image-wrapper
+                      img(src="../../assets/images/get_img.jpg", alt="")
+                    .field-wrapper
+                      label.field-wrapper__label Course Title*
+                      .field-wrapper__content
+                        input(class="field" type='number' placeholder='Insert your course title.' name='title' data-purpose='edit-course-title' maxlength='' id='main[title1]' value='')
+                      ul.field-wrapper__messages
+                        li
+                          | Please provide a valid city.
+            .col-lg-12
+              .question
+                .question__title
+                  h3.title-h3  The flowchart has one output variable
+                .question__content
+                  .question__item.question__item--cover
+                    .image-wrapper
+                      img(src="../../assets/images/get_img.jpg", alt="")
+                    .field-wrapper
+                      label.field-wrapper__label Start Select :
+                      .field-wrapper__content
+                        select.field
+                          option(value='') Select option
+                          option(value='1') option 1
+                          option(value='2') option 2
+                          option(value='3') option 3
+                          option(value='4') option 4
+                          option(value='5') option 5
+                      ul.field-wrapper__messages
+                        li
+                          | Please provide a valid city.
+            .col-lg-12
+              .question
+                .question__title
+                  h3.title-h3  The flowchart has one output variable
+                .question__content
+                  .question__item.question__item--horizontal
+                    .check-field-group.check-field-group--horizontal
+                      div
+                        input(class="field" type="checkbox" id="checkbox-21" name="checkname")
+                        label(for="checkbox-21") Lorem ipsum dolor.
+                          span
+                    .image-wrapper
+                      img(src="../../assets/images/get_img.jpg", alt="")
+                  .question__item.question__item--horizontal
+                    .check-field-group.check-field-group--horizontal
+                      div
+                        input(class="field" type="checkbox" id="checkbox-221" name="checkname")
+                        label(for="checkbox-221") Lorem ipsum dolor.
+                          span
+                    .image-wrapper
+                      img(src="../../assets/images/get_img.jpg", alt="")
+                  .question__item.question__item--horizontal
+                    .check-field-group.check-field-group--horizontal
+                      div
+                        input(class="field" type="checkbox" id="checkbox-212" name="checkname")
+                        label(for="checkbox-212") Lorem ipsum dolor.
+                          span
+                    .image-wrapper
+                      img(src="../../assets/images/get_img.jpg", alt="")
+                  .question__item.question__item--horizontal
+                    .check-field-group.check-field-group--horizontal
+                      div
+                        input(class="field" type="checkbox" id="checkbox-210" name="checkname")
+                        label(for="checkbox-210") Lorem ipsum dolor.
+                          span
+                    .image-wrapper
+                      img(src="../../assets/images/get_img.jpg", alt="")
+            .col-lg-12
+              .exam__footer
+                .card__footer-actions
+                  a(href="#" class="btn btn--default hover btn--ripple") Previous
+                .card__footer-actions
+                  a(href="#" class="btn btn--primary hover btn--ripple") Next
+
+            //- .col-lg-12
+            //- 	.card.answer
+            //- 		.card__header
+            //- 			h3.header__title.title-h3  the flowchart has one output variable
+            //- 		.card__info
+            //- 			span.info__description he flowchart has one output variable
+            //- 		.card__content
+            //- 			.field-wrapper
+            //- 				.check-field-group
+            //- 					.check-field
+            //- 						input.check-field__input(type="radio" id="radio-1" name="radioName")
+            //- 						label.check-field__label.radio-field__label(for="radio-1" name="radioName") Lorem ipsum dolor.
+            //- 					.check-field
+            //- 						input.check-field__input(type="radio" id="radio-2" name="radioName")
+            //- 						label.check-field__label.radio-field__label(for="radio-2" ) Lorem ipsum dolor.
+            //- 					.check-field
+            //- 						input.check-field__input(type="radio" id="radio-3" name="radioName")
+            //- 						label.check-field__label.radio-field__label(for="radio-3" ) Lorem ipsum dolor.

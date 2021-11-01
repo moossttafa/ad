@@ -1,0 +1,62 @@
+extends ../layouts/site.pug
+block title
+	title Explore Page
+//- block menu-header
+//- 	include ../components/menu-list.pug
+block content
+
+	// Menu
+	//- +menu('Explore')
+		//- Desktop page
+
+
+	.container
+		.row
+			.col-xl-12.col-lg-12
+				section.section3125
+			section.section3125.mb-15.mt-25
+				block content
+					include ../components/course-wrapper.pug
+						block category-header
+							.course-title
+								h4.item_title.my-0 Developer
+								a.see150.my-0(href="category-course.html")  see all
+						block content
+							.owl-carousel.category_courses.owl-theme
+								.item
+									include ../components/course-card.pug
+									+course-card
+								.item
+									+course-card
+								.item
+									+course-card
+								.item
+									+course-card
+								.item
+									+course-card
+								.item
+									+course-card
+								.item
+									+course-card
+					include ../components/course-wrapper.pug
+						block category-header
+							.course-title
+								h4.item_title.my-0 Business
+								a.see150.my-0(href="category-course.html")  see all
+						block content
+							.owl-carousel.category_courses.owl-theme
+								.item
+									+course-card
+								.item
+									+course-card
+								.item
+									+course-card
+								.item
+									+course-card
+								.item
+									+course-card
+								.item
+									+course-card
+								.item
+									+course-card
+

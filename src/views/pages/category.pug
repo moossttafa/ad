@@ -1,0 +1,51 @@
+extends ../layouts/admin.pug
+
+
+block title
+	title Category-course
+
+//- block menu-header
+//- 	include ../components/menu-list.pug
+block content
+	.container
+		.row
+			.col-xl-12.col-lg-12
+				section.section-header
+					h2.item_title Category Item
+
+			.col-lg-12
+				section.category-results.mt-3.mb-6
+					.filter__selector
+						.selector__text
+							p.item__result.primary results (
+								span.num-result 15)
+						//- .ui.inline.dropdown.selector--dropdown
+							.selector__text Sort
+							i.dropdown.icon.selector__icon
+							.menu.selector--menu
+								.item.selector__item Most Relevant
+								.item.selector__item Most Reviewed
+								.item.selector__item Highest Rated
+								.item.selector__item Newest
+								.item.selector__item Lowest Price
+								.item.selector__item Highest Price
+					.display
+						span#list <i class="fas fa-stream"></i>
+						span#grid.active <i class="fas fa-th"></i>
+		.row
+			.col-sm-12.col-md-6.col-lg-4
+				div(class="course-card-container" data-count="1" data-data='{"id":1,"cover":"../../assets/images/get_img.jpg","video_id":"S7YqVez2sUw","title":"Complete Python Bootcamp1","url":"/course.html","category":"Web Development | Python","subscribers":"1 subscriber","total_rate":4.5,"is_favorite":true,"duration":"4 minutes","description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam sed similique quos illo nam","actions":{"action":"enroll","url":"#"}}')
+			.col-sm-12.col-md-6.col-lg-4
+				div(class="course-card-container" data-count="1" data-data='{"id":1,"cover":"../../assets/images/get_img.jpg","video_id":"S7YqVez2sUw","title":"Complete Python Bootcamp1","url":"/course.html","category":"Web Development | Python","subscribers":"1 subscriber","total_rate":4.5,"is_favorite":true,"duration":"4 minutes","description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam sed similique quos illo nam","actions":{"action":"enroll","url":"#"}}')
+			.col-sm-12.col-md-6.col-lg-4
+				div(class="course-card-container" data-count="1" data-data='{"id":1,"cover":"../../assets/images/get_img.jpg","video_id":"S7YqVez2sUw","title":"Complete Python Bootcamp1","url":"/course.html","category":"Web Development | Python","subscribers":"1 subscriber","total_rate":4.5,"is_favorite":true,"duration":"4 minutes","description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam sed similique quos illo nam","actions":{"action":"enroll","url":"#"}}')
+			.col-sm-12.col-md-6.col-lg-4
+				div(class="course-card-container" data-count="1" data-data='{"id":1,"cover":"../../assets/images/get_img.jpg","video_id":"S7YqVez2sUw","title":"Complete Python Bootcamp1","url":"/course.html","category":"Web Development | Python","subscribers":"1 subscriber","total_rate":4.5,"is_favorite":true,"duration":"4 minutes","description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam sed similique quos illo nam","actions":{"action":"enroll","url":"#"}}')
+			.col-sm-12.col-md-6.col-lg-4
+				div(class="course-card-container" data-count="1" data-data='{"id":1,"cover":"../../assets/images/get_img.jpg","video_id":"S7YqVez2sUw","title":"Complete Python Bootcamp1","url":"/course.html","category":"Web Development | Python","subscribers":"1 subscriber","total_rate":4.5,"is_favorite":true,"duration":"4 minutes","description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam sed similique quos illo nam","actions":{"action":"enroll","url":"#"}}')
+			.col-sm-12.col-md-6.col-lg-4
+				div(class="course-card-container" data-count="1" data-data='{"id":1,"cover":"../../assets/images/get_img.jpg","video_id":"S7YqVez2sUw","title":"Complete Python Bootcamp1","url":"/course.html","category":"Web Development | Python","subscribers":"1 subscriber","total_rate":4.5,"is_favorite":true,"duration":"4 minutes","description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam sed similique quos illo nam","actions":{"action":"enroll","url":"#"}}')
+
+		.row
+			.col-lg-12
+				include ../components/general-component/pagination.pug

@@ -1,0 +1,48 @@
+extends ../layouts/site.pug
+
+block title
+  title My Page - Blog
+
+
+
+//- block manifestBrowserconfigFiles
+//-   link(rel='manifest', href='../manifest.json')
+//-   meta(name='msapplication-config' content='../browserconfig.xml')
+
+block content
+
+  // Menu
+  //- +menu('blog')
+
+  //- Desktop page
+  .wrapper
+    .sa4d25
+      .container
+        .row
+          .col-lg-3.col-md-4
+            .section3125.hstry142
+              .result_stitles
+                .rs6t_title Filters
+                .filter_selector
+                  .ui.inline.dropdown.flt145(tabindex="0")
+                    .text Sort
+                    i.dropdown.icon
+                    .menu.transition.invisible
+                      .item Most Relevant
+                      .item Most Reviewed
+                      .item Highest Rated
+                      .item Newest
+                      .item Lowest Price
+                      .item Highest Price
+            .filter-item
+              .filter-item__filter-group.accordion#accordionfilter
+                .filter-group__filter-list
+                  #headingOne.filter-list__filter-heading
+                    include ../components/filter-item.pug
+                  #headingTwo.filter-list__filter-heading
+                    include ../components/filter-item.pug
+                  
+                  
+
+
+

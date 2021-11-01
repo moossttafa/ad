@@ -1,0 +1,45 @@
+.menu--scrollbar {
+  &:hover {
+    overflow-y: auto !important;
+  }
+}
+.sub__menu {
+  padding: 10px 0px;
+  .menu__list {
+    display: flex !important;
+    justify-content: space-between;
+    padding: 4px 6px 4px 2px;
+    align-items: center;
+    transition: all 0.2s ease-in;
+    .list__wrapper {
+      display: flex !important;
+      align-items: center;
+      .list--link {
+        display: block;
+        // padding-left: 50px;
+        padding-right: 16px;
+        font-size: 14px;
+            font-weight: 400;
+        color: $black;
+        text-decoration: none;
+        padding-left: 0 !important;
+      }
+      .link__icon {
+        font-size: 20px !important;
+        margin: 0;
+      }
+    }
+    .menu-time {
+      line-height: 30px;
+      font-size: 14px;
+    }
+    &:hover {
+      .list--link {
+        color: $primary;
+        transition: none;
+      }
+      background-color: $light-white;
+      color: $primary;
+    }
+  }
+}

@@ -1,0 +1,66 @@
+extends ../layouts/auth.pug
+
+
+block title
+	title sign-up
+
+block content
+	h2.title-h4.semi-bold  Welcome Back
+	//- p Log In to Your Edututs+ Account!
+	form.form
+		.field-wrapper
+			label.field-wrapper__label
+				|	Course Title
+				abbr(title="required") *
+			.field-wrapper__content
+				input(
+          class="field"
+					type='text'
+					placeholder='fullName'
+					name='fullName'
+					maxlength=''
+					required
+					)
+			ul.field-wrapper__messages
+				li Please provide a valid city.
+		.field-wrapper
+			label.field-wrapper__label
+				|	Course Title
+				abbr(title="required") *
+			.field-wrapper__content
+				input(
+          class="field"
+					type='email'
+					placeholder='Email Address'
+					name='emailAddress'
+					maxlength=''
+					required
+					)
+			ul.field-wrapper__messages
+				li Please provide a valid city.
+		.field-wrapper
+			label.field-wrapper__label
+				|	Course Title
+				abbr(title="required") *
+			.field-wrapper__content
+				input(
+          class="field"
+					type='Password'
+					placeholder='Password'
+					name='Password'
+					maxlength=''
+					required
+					)
+			ul.field-wrapper__messages
+				li Please provide a valid city.
+		.field-wrapper
+			div
+				input(class="field" type="checkbox" id="checkbox-11" name="checkname")
+				label(for="checkbox-11") I’m in for emails with exciting discounts and personalized recommendations 
+		.d-flex.justify-content-around
+			button(type="submit" class="btn btn--primary btn--ripple btn--sm btn--rounded")  Sign Up
+	p.title-2.terms-link  By signing up, you agree to our
+		a(href="terms_of_use.html" class="text-3")    Terms of Use  and
+		a(href="terms_of_use.html" class="text-3")   Privacy Policy .
+	p  Already have an account?
+		a(href="login.html" class="text-3")  Log In

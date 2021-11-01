@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Profile",
+    "has_children": false,
+    "icon": "fa fa-user",
+    "url": "/user-profile.html",
+    "is_active": false
+  },
+  {
+    "title": "Account Settings",
+    "has_children": false,
+    "icon": "fa fa-user-cog",
+    "url": "/user-settings.html",
+    "is_active": false
+  },
+  {
+    "title": "Account Security",
+    "has_children": false,
+    "icon": "fa fa-user-shield",
+    "url": "/user-security.html",
+    "is_active": false
+  },
+  {
+    "title": "Children",
+    "has_children": false,
+    "icon": "fa fa-user",
+    "url": "/user-children.html",
+    "is_active": false
+  },
+  {
+    "title": "Courses",
+    "has_children": false,
+    "icon": "fa fa-book",
+    "url": "/user-courses.html",
+    "is_active": false
+  },
+  {
+    "title": "Surveys",
+    "has_children": false,
+    "icon": "fa fa-book",
+    "url": "/user-surveys.html",
+    "is_active": false
+  }
+]

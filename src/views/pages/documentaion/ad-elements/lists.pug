@@ -1,0 +1,678 @@
+extends ../../../layouts/admin.pug
+block title
+  title lists
+
+block content
+  .container
+    h3 list with titles
+    .row
+      .col-4
+        .list
+          .list-title.list-title--lg
+            p List title large
+            span.subtitle-2 .list-title.list-title--lg
+          .list-title
+            p List title
+            span.subtitle-2 .list-title
+          .list-item
+            .list-item__content
+              span.body-2 this is a normal list item
+          a.list-item
+            .list-item__content
+              span.body-2 this is a link list item
+          label.list-item
+            .list-item__content
+              span.body-2 this is a label list item
+
+        ////- .row
+        //  .col-lg-3
+        //    .card.card--with-title.card--top-category.mt-3
+        //      .card__title.mb-2
+        //        h5.title-h6 Top Categories
+        //      .card__content
+        //        .card__body
+        //          .card__content--details
+        //            ul.card__list
+        //              li.card__list-item
+        //                a.card__item-link(href="#")
+        //                  | Development
+        //              li.card__list-item
+        //                a.card__item-link(href="#")
+        //                  | Business
+        //              li.card__list-item
+        //                a.card__item-link(href="#")
+        //                  | IT and Software
+        //              li.card__list-item
+        //                a.card__item-link(href="#")
+        //                  | Design
+        //
+        ////- .row
+        //  .col-lg-4
+        //    .card-list.condensed
+        //      .card__content
+        //        .list
+        //          .list-item
+        //            .list-item__avatar
+        //              img(class="image image--small-profile image--rounded" src="../../assets/images/hd_dp.jpg", alt="avatar")
+        //            .list-item__content
+        //              a(href="#" class="body-2 bold") Jose Portilla
+        //            .list-item__action
+        //              div
+        //                input(class="field" type="checkbox" id="checkbox-5" name="checkname")
+        //                label(for="checkbox-5")
+        //          .list-item
+        //            .list-item__avatar
+        //              img(class="image image--small-profile image--rounded" src="../../assets/images/hd_dp.jpg", alt="avatar")
+        //            .list-item__content
+        //              a(href="#" class="body-2 bold") Jose Portilla
+        //            .list-item__action
+        //              div
+        //                input(class="field" type="checkbox" id="checkbox-6" name="checkname")
+        //                label(for="checkbox-6")
+        //          .list-item
+        //            .list-item__avatar
+        //              img(class="image image--small-profile image--rounded" src="../../assets/images/hd_dp.jpg", alt="avatar")
+        //            .list-item__content
+        //              a(href="#" class="body-2 bold") Jose Portilla
+        //            .list-item__action
+        //              div
+        //                input(class="field" type="checkbox" id="checkbox-7" name="checkname")
+        //                label(for="checkbox-7")
+        //          .list-item
+        //            .list-item__avatar
+        //              img(class="image image--small-profile image--rounded" src="../../assets/images/hd_dp.jpg", alt="avatar")
+        //            .list-item__content
+        //              a(href="#" class="body-2 bold") Jose Portilla
+        //            .list-item__action
+        //              div
+        //                input(class="field" type="checkbox" id="checkbox-8" name="checkname")
+        //                label(for="checkbox-8")
+        //.row
+        //  .col-lg-12
+        //    p.body-2 list with title
+        //  .col-lg-4
+        //    .card-list
+        //      .card__content
+        //        .list
+        //          h5.title-h5 List Title
+        //          .divider
+        //          .list-item.list-item--multiple.list-item--with-border
+        //            .list-item__avatar
+        //              img(class="image image--small-profile image--rounded" src="../../assets/images/hd_dp.jpg", alt="avatar")
+        //            .list-item__content
+        //              span.overline
+        //                | lorem lorem
+        //              a(href="#" class="body-2 bold") Jose Portilla
+        //              p.subtitle-1.gray Jose_Portilla@test.com
+        //              span.subtitle-2.gray.bold 12/3/1688
+        //            .list-item__action
+        //              div
+        //                input(class="field" type="checkbox" id="checkbox-13" name="checkname")
+        //                label(for="checkbox-13")
+        //                  span
+        //          //- .divider
+        //          .list-item.list-item--three-lines.list-item--with-border
+        //            .list-item__avatar
+        //              img(class="image image--small-profile image--rounded" src="../../assets/images/hd_dp.jpg", alt="avatar")
+        //            .list-item__content
+        //              span.overline
+        //                | lorem lorem
+        //              a(href="#" class="body-2 bold") Jose Portilla
+        //              p.subtitle-1.gray Jose_Portilla@test.com
+        //            .list-item__action
+        //              div
+        //                input(class="field" type="checkbox" id="checkbox-12" name="checkname")
+        //                label(for="checkbox-12")
+        //                  span
+        //          //- .divider
+        //          .list-item.list-item--two-lines.list-item--with-border
+        //            .list-item__avatar
+        //              i.fas.fa-user
+        //              //- img(class="image image--small-profile image--rounded" src="../../assets/images/hd_dp.jpg", alt="avatar")
+        //            .list-item__content
+        //              a(href="#" class="body-2 bold") Jose Portilla
+        //              p.subtitle-2.gray Jose_Portilla@test.com
+        //            .list-item__action
+        //              div
+        //                input(class="field" type="checkbox" id="checkbox-11" name="checkname")
+        //                label(for="checkbox-11")
+        //                  span
+        //          //- .divider
+        //          .list-item.list-item--one-line.list-item--with-border
+        //            .list-item__avatar
+        //              img(class="image image--small-profile image--rounded" src="../../assets/images/hd_dp.jpg", alt="avatar")
+        //            .list-item__content
+        //              a(href="#" class="body-2 bold") Jose Portilla
+        //            .list-item__action
+        //              div
+        //                input(class="field" type="checkbox" id="checkbox-10" name="checkname")
+        //                label(for="checkbox-10")
+        //                  span
+        //.row
+        //  .col-lg-12
+        //    p.body-2 list contains single line
+        //    p.body-2 add class ( .list-item--with-border ) to show border bottom
+        //  .col-lg-4
+        //    .card-list.condensed
+        //      .card__content
+        //        .list
+        //          .list-item.list-item--one-line.list-item--with-border
+        //            .list-item__avatar
+        //              img(class="image image--small-profile image--rounded" src="../../assets/images/hd_dp.jpg", alt="avatar")
+        //            .list-item__content
+        //              a(href="#" class="body-2 bold") Jose Portilla
+        //            .list-item__action
+        //              div
+        //                input(class="field" type="checkbox" id="checkbox-9" name="checkname")
+        //                label(for="checkbox-9")
+        //                  span
+        //          .list-item.list-item--one-line.list-item--with-border
+        //            .list-item__avatar
+        //              img(class="image image--small-profile image--rounded" src="../../assets/images/hd_dp.jpg", alt="avatar")
+        //            .list-item__content
+        //              a(href="#" class="body-2 bold") Jose Portilla
+        //            .list-item__action
+        //              div
+        //                input(class="field" type="checkbox" id="checkbox-8" name="checkname")
+        //                label(for="checkbox-8")
+        //                  span
+        //          .list-item.list-item--one-line
+        //            .list-item__avatar
+        //              img(class="image image--small-profile image--rounded" src="../../assets/images/hd_dp.jpg", alt="avatar")
+        //            .list-item__content
+        //              a(href="#" class="body-2 bold") Jose Portilla
+        //            .list-item__action
+        //              div
+        //                input(class="field" type="checkbox" id="checkbox-7" name="checkname")
+        //                label(for="checkbox-7")
+        //                  span
+        //          .list-item.list-item--one-line.list-item--with-border
+        //            .list-item__avatar
+        //              img(class="image image--small-profile image--rounded" src="../../assets/images/hd_dp.jpg", alt="avatar")
+        //            .list-item__content
+        //              a(href="#" class="body-2 bold") Jose Portilla
+        //            .list-item__action
+        //              div
+        //                input(class="field" type="checkbox" id="checkbox-6" name="checkname")
+        //                label(for="checkbox-6")
+        //                  span
+        //.divider
+        //.row
+        //  .col-lg-12
+        //    p.body-2 list item with icon use ( .list-item--one-line )
+        //  .col-lg-4
+        //    .card-list
+        //      .card__content
+        //        .list
+        //          .list-item.list-item--one-line
+        //            .list-item__avatar
+        //              i.fas.fa-user
+        //              //- img(class="image image--small-profile image--rounded" src="../../assets/images/hd_dp.jpg", alt="avatar")
+        //            .list-item__content
+        //              a(href="#" class="body-2 bold") Jose Portilla
+        //              //- p.subtitle-2.gray Jose_Portilla@test.com
+        //            .list-item__action
+        //              div
+        //                input(class="field" type="checkbox" id="checkbox-5" name="checkname")
+        //                label(for="checkbox-5")
+        //                  span
+        //          .list-item.list-item--one-line.list-item--with-border
+        //            .list-item__avatar
+        //              i.fas.fa-user
+        //              //- img(class="image image--small-profile image--rounded" src="../../assets/images/hd_dp.jpg", alt="avatar")
+        //            .list-item__content
+        //              a(href="#" class="body-2 bold") Jose Portilla
+        //              //- p.subtitle-2.gray Jose_Portilla@test.com
+        //            .list-item__action
+        //              div
+        //                input(class="field" type="checkbox" id="checkbox-4" name="checkname")
+        //                label(for="checkbox-4")
+        //                  span
+        //          .list-item.list-item--one-line
+        //            .list-item__avatar
+        //              i.fas.fa-user
+        //              //- img(class="image image--small-profile image--rounded" src="../../assets/images/hd_dp.jpg", alt="avatar")
+        //            .list-item__content
+        //              a(href="#" class="body-2 bold") Jose Portilla
+        //              //- p.subtitle-2.gray Jose_Portilla@test.com
+        //            .list-item__action
+        //              div
+        //                input(class="field" type="checkbox" id="checkbox-3" name="checkname")
+        //                label(for="checkbox-3")
+        //                  span
+        //          .list-item.list-item--one-line
+        //            .list-item__avatar
+        //              i.fas.fa-user
+        //              //- img(class="image image--small-profile image--rounded" src="../../assets/images/hd_dp.jpg", alt="avatar")
+        //            .list-item__content
+        //              a(href="#" class="body-2 bold") Jose Portilla
+        //              //- p.subtitle-2.gray Jose_Portilla@test.com
+        //            .list-item__action
+        //              div
+        //                input(class="field" type="checkbox" id="checkbox-2" name="checkname")
+        //                label(for="checkbox-2")
+        //                  span
+        //.row
+        //  .col-lg-12
+        //    p.body-2 use class ( .list-item--multiple )
+        //  .col-lg-4
+        //    .card-list
+        //      .card__content
+        //        .list
+        //          .list-item.list-item--multiple
+        //            .list-item__avatar
+        //              img(class="image image--small-profile image--rounded" src="../../assets/images/hd_dp.jpg", alt="avatar")
+        //            .list-item__content
+        //              span.overline
+        //                | lorem lorem
+        //              a(href="#" class="body-2 bold") Jose Portilla
+        //              p.subtitle-1.gray Jose_Portilla@test.com
+        //              span.subtitle-2.gray.bold 12/3/1688
+        //            .list-item__action
+        //              div
+        //                input(class="field" type="checkbox" id="checkbox-99" name="checkname")
+        //                label(for="checkbox-99")
+        //                  span
+        //          .list-item.list-item--multiple
+        //            .list-item__avatar
+        //              img(class="image image--small-profile image--rounded" src="../../assets/images/hd_dp.jpg", alt="avatar")
+        //            .list-item__content
+        //              span.overline
+        //                | lorem lorem
+        //              a(href="#" class="body-2 bold") Jose Portilla
+        //              p.subtitle-1.gray Jose_Portilla@test.com
+        //              span.subtitle-2.gray.bold 12/3/1688
+        //            .list-item__action
+        //              div
+        //                input(class="field" type="checkbox" id="checkbox-91" name="checkname")
+        //                label(for="checkbox-91")
+        //                  span
+        //          .list-item.list-item--multiple
+        //            .list-item__avatar
+        //              img(class="image image--small-profile image--rounded" src="../../assets/images/hd_dp.jpg", alt="avatar")
+        //            .list-item__content
+        //              span.overline
+        //                | lorem lorem
+        //              a(href="#" class="body-2 bold") Jose Portilla
+        //              p.subtitle-1.gray Jose_Portilla@test.com
+        //              span.subtitle-2.gray.bold 12/3/1688
+        //            .list-item__action
+        //              div
+        //                input(class="field" type="checkbox" id="checkbox-93" name="checkname")
+        //                label(for="checkbox-93")
+        //                  span
+        //.row
+        //  .col-lg-12
+        //    p.body-2 use class ( .list-item--three-lines )
+        //  .col-lg-4
+        //    .card-list.condensed
+        //      .card__content
+        //        .list
+        //          .list-item.list-item--three-lines.list-item--with-border
+        //            .list-item__avatar
+        //              img(class="image image--small-profile image--rounded" src="../../assets/images/hd_dp.jpg", alt="avatar")
+        //            .list-item__content
+        //              span.overline
+        //                | lorem lorem
+        //              a(href="#" class="body-2 bold") Jose Portilla
+        //              p.subtitle-1.gray Jose_Portilla@test.com
+        //            .list-item__action
+        //              div
+        //                input(class="field" type="checkbox" id="checkbox-19" name="checkname")
+        //                label(for="checkbox-19")
+        //                  span
+        //          .list-item.list-item--three-lines
+        //            .list-item__avatar
+        //              img(class="image image--small-profile image--rounded" src="../../assets/images/hd_dp.jpg", alt="avatar")
+        //            .list-item__content
+        //              span.overline
+        //                | lorem lorem
+        //              a(href="#" class="body-2 bold") Jose Portilla
+        //              p.subtitle-1.gray Jose_Portilla@test.com
+        //            .list-item__action
+        //              div
+        //                input(class="field" type="checkbox" id="checkbox-17" name="checkname")
+        //                label(for="checkbox-17")
+        //                  span
+        //          .list-item.list-item--three-lines.list-item--with-border
+        //            .list-item__avatar
+        //              img(class="image image--small-profile image--rounded" src="../../assets/images/hd_dp.jpg", alt="avatar")
+        //            .list-item__content
+        //              span.overline
+        //                | lorem lorem
+        //              a(href="#" class="body-2 bold") Jose Portilla
+        //              p.subtitle-1.gray Jose_Portilla@test.com
+        //            .list-item__action
+        //              div
+        //                input(class="field" type="checkbox" id="checkbox-78" name="checkname")
+        //                label(for="checkbox-78")
+        //                  span
+        //.divider
+        //.row
+        //  .col-lg-12
+        //    p.body-2 use class ( .list-item--two-lines )
+        //  .col-lg-4
+        //    .card-list.condensed
+        //      .card__content
+        //        .list
+        //          .list-item.list-item--two-lines
+        //            .list-item__avatar
+        //              i.fas.fa-user
+        //              //- img(class="image image--small-profile image--rounded" src="../../assets/images/hd_dp.jpg", alt="avatar")
+        //            .list-item__content
+        //              a(href="#" class="body-2 bold") Jose Portilla
+        //              p.subtitle-2.gray Jose_Portilla@test.com
+        //            .list-item__action
+        //              div
+        //                input(class="field" type="checkbox" id="checkbox-41" name="checkname")
+        //                label(for="checkbox-41")
+        //                  span
+        //          .list-item.list-item--two-lines.list-item--with-border
+        //            .list-item__avatar
+        //              //- i.fas.fa-user
+        //              img(class="image image--small-profile image--rounded" src="../../assets/images/hd_dp.jpg", alt="avatar")
+        //            .list-item__content
+        //              a(href="#" class="body-2 bold") Jose Portilla
+        //              p.subtitle-2.gray Jose_Portilla@test.com
+        //            .list-item__action
+        //              div
+        //                input(class="field" type="checkbox" id="checkbox-51" name="checkname")
+        //                label(for="checkbox-51")
+        //                  span
+        //          .list-item.list-item--two-lines
+        //            .list-item__avatar
+        //              //- i.fas.fa-user
+        //              img(class="image image--small-profile image--rounded" src="../../assets/images/hd_dp.jpg", alt="avatar")
+        //            .list-item__content
+        //              a(href="#" class="body-2 bold") Jose Portilla
+        //              p.subtitle-2.gray Jose_Portilla@test.com
+        //            .list-item__action
+        //              div
+        //                input(class="field" type="checkbox" id="checkbox-81" name="checkname")
+        //                label(for="checkbox-81")
+        //                  span
+        ////- .row
+        //  .col-lg-12
+        //    p.body-2 condensed list
+        //  .col-lg-3
+        //    .card-list
+        //      .card__content
+        //        .list.list--menu.list--condensed
+        //          .list-item.list-item--hover.list-item--condensed
+        //            .list-item__icon
+        //              i.far.fa-copy
+        //            .list-item__content
+        //              a.content__link(href="#" class="text-2 btn--default btn--ripple") Lorem ipsum
+        //          .list-item.list-item--hover.list-item--condensed
+        //            .list-item__icon
+        //              i.fas.fa-trash-alt
+        //            .list-item__content
+        //              a.content__link(href="#" class="text-2") Lorem ipsum
+        //          .list-item.list-item--hover.list-item--condensed
+        //            .list-item__icon
+        //              i.fas.fa-link
+        //            .list-item__content
+        //              a.content__link(href="#" class="text-2") Lorem ipsum
+        //          .list-item.list-item--space.list-item--hover.list-item--condensed
+        //            .list-item__icon
+        //              i.fas.fa-print
+        //            .list-item__content
+        //              a.content__link(href="#" class="text-2") Lorem ipsum
+        //          .list-item.list-item--hover.list-item--condensed
+        //            .list-item__icon
+        //              i.fas.fa-user-plus
+        //            .list-item__content
+        //              a.content__link(href="#" class="text-2") Lorem ipsum
+        //          .list-item.list-item--space.list-item--hover.list-item--condensed
+        //            .list-item__icon
+        //              i.fas.fa-code
+        //            .list-item__content
+        //              a.content__link(href="#" class="text-2") Lorem ipsum
+        //          .list-item.list-item--hover.list-item--condensed
+        //            .list-item__icon
+        //              i.fas.fa-puzzle-piece
+        //            .list-item__content
+        //              a.content__link(href="#" class="text-2") Lorem ipsum
+        //.divider
+        //.row
+        //  .col-lg-4
+        //    .card-list
+        //      .card__content
+        //        .list
+        //          h5.title-h5 List title
+        //          .divider
+        //          .list-item.list-item--two-lines
+        //            .list-item__avatar.list-item--video-preview
+        //              .avatar__video-preview
+        //                img(class="image image--profile" src="../../assets/images/get_img.jpg")
+        //                div.video-preview__checkbox
+        //                  .field-wrapper
+        //                    div
+        //                      input(class="field field--checked" type="checkbox" id="checkbox-20" name="checkname")
+        //                      label(for="checkbox-20")
+        //                        span
+        //                .progress
+        //                  .part-progress
+        //            .list-item__content
+        //              a(href="#" class="body-2 bold") Jose Portilla
+        //              p.subtitle-1.gray lorem lorem lorem
+        //          .list-item.list-item--two-lines
+        //            .list-item__avatar.list-item--video-preview
+        //              .avatar__video-preview
+        //                img(class="image image--profile" src="../../assets/images/get_img.jpg")
+        //                div.video-preview__checkbox
+        //                  .field-wrapper
+        //                    div
+        //                      input(class="field field--checked" type="checkbox" id="checkbox-30" name="checkname")
+        //                      label(for="checkbox-30")
+        //                        span
+        //                .progress
+        //                  .part-progress
+        //            .list-item__content
+        //              a(href="#" class="body-2 bold") Jose Portilla
+        //              p.subtitle-1.gray lorem lorem lorem
+        //          .list-item.list-item--two-lines
+        //            .list-item__avatar.list-item--video-preview
+        //              .avatar__video-preview
+        //                img(class="image image--profile" src="../../assets/images/get_img.jpg")
+        //                div.video-preview__checkbox
+        //                  .field-wrapper
+        //                    div
+        //                      input(class="field field--checked field--rounded" type="checkbox" id="checkbox-1" name="checkname")
+        //                      label(for="checkbox-1")
+        //                        span
+        //                .progress
+        //                  .part-progress
+        //            .list-item__content
+        //              a(href="#" class="body-2 bold") Jose Portilla
+        //              p.subtitle-1.gray lorem lorem lorem
+        ////- .row
+        //  .col-lg-3
+        //    .card-list
+        //      .card__content
+        //        .list.list--menu
+        //          .list-item.list-item--hover
+        //            .list-item__icon
+        //              i.far.fa-copy
+        //            .list-item__content
+        //              a.content__link(href="#" class="text-2 btn--default btn--ripple") Lorem ipsum
+        //          .list-item.list-item--hover
+        //            .list-item__icon
+        //              i.fas.fa-trash-alt
+        //            .list-item__content
+        //              a.content__link(href="#" class="text-2") Lorem ipsum
+        //          .list-item.list-item--hover
+        //            .list-item__icon
+        //              i.fas.fa-link
+        //            .list-item__content
+        //              a.content__link(href="#" class="text-2") Lorem ipsum
+        //          .list-item.list-item--space.list-item--hover
+        //            .list-item__icon
+        //              i.fas.fa-print
+        //            .list-item__content
+        //              a.content__link(href="#" class="text-2") Lorem ipsum
+        //          .list-item.list-item--hover.list-item--border-bottom
+        //            .list-item__icon
+        //              i.fas.fa-user-plus
+        //            .list-item__content
+        //              a.content__link(href="#" class="text-2") Lorem ipsum
+        //          .list-item.list-item--space.list-item--hover
+        //            .list-item__icon
+        //              i.fas.fa-code
+        //            .list-item__content
+        //              a.content__link(href="#" class="text-2") Lorem ipsum
+        //          .list-item.list-item--hover
+        //            .list-item__icon
+        //              i.fas.fa-puzzle-piece
+        //            .list-item__content
+        //              a.content__link(href="#" class="text-2") Lorem ipsum
+        //    // list sidebar
+        //.divider
+        //.row
+        //  .col-lg-4
+        //    .card-list
+        //      .card__content
+        //        .list.condensed
+        //          a(href="#" class="list-item list-item--one-line")
+        //            .list-item__avatar
+        //              i.far.fa-copy
+        //            .list-item__content
+        //              span(class="body-2 btn--default btn--ripple") Lorem ipsum
+        //          a(href="#" class="list-item list-item--one-line")
+        //            .list-item__avatar
+        //              i.fas.fa-trash-alt
+        //            .list-item__content
+        //              span.body-2 Lorem ipsum
+        //          a(class="list-item list-item--one-line")
+        //            .list-item__avatar
+        //              i.fas.fa-link
+        //            .list-item__content
+        //              span.body-2 Lorem ipsum
+        //            .list-item__action
+        //              i.fas.fa-chevron-down
+        //          .list-item-group
+        //            a(href="#" class="list-item list-item--one-line")
+        //              .list-item__avatar
+        //              .list-item__content
+        //                span.body-2 Lorem ipsum
+        //            a(href="#" class="list-item list-item--one-line")
+        //              .list-item__avatar
+        //              .list-item__content
+        //                span.body-2 Lorem ipsum
+        ////- .row
+        //  .col-lg-4
+        //    .card-list.condensed
+        //      .card__content
+        //        .list
+        //          .list-item
+        //            .list-item__avatar
+        //              img(class="image image--small-profile image--rounded" src="../../assets/images/hd_dp.jpg", alt="avatar")
+        //            .list-item__content.pt-2
+        //              a(href="#" class="text-2 bold") Jose Portilla
+        //              p.text-3.gray Jose_Portilla@test.com
+        //            .list-item__action
+        //              div
+        //                input(class="field" type="checkbox" id="checkbox-110" name="checkname")
+        //                label(for="checkbox-110")
+        //          .list-item
+        //            .list-item__icon.mb-1
+        //              i.fas.fa-user
+        //            .list-item__content.pt-2
+        //              a(href="#" class="text-2 bold") Jose Portilla
+        //              p.text-3.gray Jose_Portilla@test.com
+        //            .list-item__action
+        //              span.switch
+        //                span.switch-btn
+        //          .divider
+        //          .list__title
+        //            span.title-name List Title
+        //          .divider
+        //          .list.list--menu.list--condensed
+        //            .list-item.list-item--hover
+        //              .list-item__icon
+        //                i.far.fa-copy
+        //              .list-item__content
+        //                a.content__link(href="#" class="text-2 btn--default btn--ripple") Lorem ipsum
+        //            .list-item.list-item--hover
+        //              .list-item__icon
+        //                i.fas.fa-trash-alt
+        //              .list-item__content
+        //                a.content__link(href="#" class="text-2") Lorem ipsum
+        //            .list-item.list-item--hover
+        //              .list-item__icon
+        //                i.fas.fa-print
+        //              .list-item__content
+        //                a.content__link(href="#" class="text-2") Lorem ipsum
+        //.divider
+        //.row
+        //  .col-lg-4
+        //    .card-list
+        //      .card__content
+        //        .list
+        //          .list-item.list-item--one-line
+        //            .list-item__avatar
+        //              img(class="image image--small-profile image--rounded" src="../../assets/images/hd_dp.jpg", alt="avatar")
+        //            .list-item__content
+        //              a(href="#" class="body-2 bold") Jose Portilla
+        //              p.subtitle-1.gray Jose_Portilla@test.com
+        //          //- a(href="#" class="link") Lorem ipsum dolor
+        //          .divider
+        //          .list-item.list-item--one-line
+        //            .list-item__avatar
+        //              i.fas.fa-link
+        //            .list-item__content
+        //              a(href="#" class="body-2 bold") Lorem ipsum
+        //            .list-item__action
+        //              .field-wrapper
+        //                .switch
+        //                  input#switch(type="checkbox", name="")
+        //                  label(for="switch")
+        //          .divider
+        //          a(href="#" class="list-item list-item--one-line")
+        //            .list-item__avatar
+        //              i.fas.fa-link
+        //            .list-item__content
+        //              span(class="body-2 bold") Lorem ipsum
+        //          a(href="#" class="list-item list-item--one-line")
+        //            .list-item__avatar
+        //              i.fas.fa-copy
+        //            .list-item__content
+        //              span(class="body-2 bold") Lorem ipsum
+        //          a(href="#" class="list-item list-item--one-line")
+        //            .list-item__avatar
+        //              i.fas.fa-trash-alt
+        //            .list-item__content
+        //              span(class="body-2 bold") Lorem ipsum
+        //          a(href="#" class="list-item list-item--one-line")
+        //            .list-item__avatar
+        //              i.fas.fa-print
+        //            .list-item__content
+        //              span(class="body-2 bold") Lorem ipsum
+        //.row
+        //  .col-lg-12
+        //    include ../../../components/general-component/table-dashboard.pug
+        //.row
+        //  .col-lg-12
+        //    .card.card--centered
+        //      .card__content
+        //        //- include ../../../components/general-component/table-inputs.pug
+        //          //- a(href="#" class="list-item")
+        //          //- 	.list-item__icon
+        //          //- 		i.far.fa-copy
+        //          //- 	.list-item__content
+        //          //- 		span.text-2(class="text-2 btn--default btn--ripple") Lorem ipsum
+        //          //- a(href="#" class="list-item")
+        //          //- 	.list-item__icon
+        //          //- 		i.fas.fa-trash-alt
+        //          //- 	.list-item__content
+        //          //- 		span.text-2 Lorem ipsum
+        //          //- a(class="list-item")
+        //          //- 	.list-item__icon
+        //          //- 		i.fas.fa-link
+        //          //- 	.list-item__content
+        //          //- 		span.text-2 Lorem ipsum
+        //          //- a(class="list-item")
+        //          //- 	.list-item__icon
+        //          //- 		i.fas.fa-print
+        //          //- 	.list-item__content
+        //          //- 		span.text-2 Lorem ipsum

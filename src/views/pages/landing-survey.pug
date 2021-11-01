@@ -1,0 +1,32 @@
+extends ../layouts/drawer.pug
+
+
+block title
+	title drawers page
+block left 
+	.drawer.drawer--left
+		.drawer__header
+			h5.title-h5 title
+			button.btn.btn--default.btn--icon.btn--ripple
+				i.fas.fa-times
+
+block content 
+	div(class="survey-content" dir='rtl')
+		.landing-survay-preview
+			//- img(src="../assets/images/sign.svg", alt="")
+			iframe(src="https://www.youtube.com/embed/tgbNymZ7vqY")
+		.container-fluid
+			div(class="row" dir="ltr")
+				.col-sm-12
+					.rich-textarea
+						p Lorem ipsum dolor sit amet consectetur
+						h1  Lorem ipsum dolor sit amet consectetur
+						h2  Lorem ipsum dolor sit amet consectetur
+						h3  Lorem ipsum dolor sit amet consectetur
+						h4  Lorem ipsum dolor sit amet consectetur
+						h5  Lorem ipsum dolor sit amet consectetur
+						h6  Lorem ipsum dolor sit amet consectetur
+						ul
+							li  Lorem ipsum dolor sit amet consectetur
+							li  Lorem ipsum dolor sit amet consectetur
+					

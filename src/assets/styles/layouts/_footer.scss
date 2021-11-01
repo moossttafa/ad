@@ -1,0 +1,144 @@
+/* src/assets/styles/components/_footer.scss  */
+.footer {
+  position: relative;
+  margin-top: 60px;
+  // background: darken($secondary, 5%); //
+  background-color: lighten($primary, 3%);
+  width: 100%;
+  .footer__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.3;
+  }
+  .footer__content {
+    padding: 40px 0;
+    .footer-content__title {
+      font-size: 18px;
+      color: #fff;
+      font-weight: 600;
+    }
+    a {
+      display: block;
+      color: #fff;
+    }
+  }
+  .footer-line {
+    padding: 10px 0;
+    margin-top: 0;
+  }
+  .social-links {
+    display: flex;
+    justify-content: flex-end;
+    height: auto;
+    a {
+			color: $white;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+  .footer__logo {
+    width: 38px;
+    height: 38px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    margin: 0 20px 0 0;
+  }
+  .footer-line {
+    padding: 10px 0;
+    border-top: 1px solid $accent;
+  }
+
+  .fritill {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    .fritill-logo {
+      width: 100px;
+      height: 40px;
+      margin-left: 10px;
+    }
+  }
+
+  // // .fotb_left
+  .copy-right {
+    margin-top: 0px;
+    .copy-right__list {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    a.list__link {
+      .footer-logo {
+        img {
+          width: 30px;
+          margin-right: 20px;
+          line-height: 24px;
+          padding-top: 10px;
+        }
+      }
+    }
+
+    p.list__paragraph {
+      font-size: 14px;
+      font-weight: 400;
+      color: #f7f7f7;
+      text-align: left;
+      line-height: 24px;
+      margin: 0;
+      strong {
+        font-weight: bold;
+      }
+    }
+  }
+  // media responsive 992px
+  @media (max-width: 992px) {
+    .social-links {
+      justify-content: flex-start;
+    }
+  }
+  // media responsive 768px
+  @media (max-width: 768px) {
+    .footer__content {
+      padding: 20px 0 0;
+    }
+    .fritill {
+      justify-content: center;
+    }
+    .copy-right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  // media responsive 370px
+  @media (max-width: 370px) {
+    .list__paragraph {
+      font-size: 13px;
+    }
+  }
+}
+html[dir="rtl"] {
+  .footer {
+    .footer__logo {
+      margin: 0 0 0 20px;
+    }
+  }
+  .fritill {
+    .fritill-logo {
+      margin: 0 16px 0 0;
+    }
+  }
+}
+.night-mode {
+  .footer {
+    background-color: $black;
+  }
+}

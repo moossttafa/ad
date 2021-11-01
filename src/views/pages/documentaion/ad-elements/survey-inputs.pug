@@ -1,0 +1,342 @@
+extends ../../../layouts/admin.pug
+block title
+	title survey-inputs
+
+block content
+	.container
+		.row
+			.col-lg-12
+				.card.card--centered
+					.card__title
+						h3 checkbox
+					.card__content
+						.content
+							form.form-question
+								.form-question__question-form
+									h2 Lorem ipsum dolor
+									p.text-3 amet consectetur adipisicing elit.
+								.form-question__wrap
+									.wrap__form-group
+										input.form-group__input(id="survey-1" value="radio-1" type="checkbox" name="survey")
+										label.form-group__label(for="survey-1") lorem
+									.wrap__form-group
+										input.form-group__input(id="survey-2" value="radio-2" type="checkbox" name="survey")
+										label.form-group__label(for="survey-2") lorem
+									.wrap__form-group
+										input.form-group__input(id="survey-3" value="radio-3" type="checkbox" name="survey")
+										label.form-group__label(for="survey-3") lorem
+		.row
+			.col-lg-12
+				.card.card--centered
+					.card__title
+						h3 radio button
+					.card__content
+						.content
+							form.form-question
+								.form-question__question-form
+									h2 Lorem ipsum dolor
+									p.text-3 amet consectetur adipisicing elit.
+								.form-question__wrap
+									.wrap__form-group
+										input.form-group__input(id="survey-radio-1" value="radio-1" type="radio" name="survey")
+										label.form-group__label(for="survey-radio-1") lorem
+									.wrap__form-group
+										input.form-group__input(id="survey-radio-2" value="radio-2" type="radio" name="survey")
+										label.form-group__label(for="survey-radio-2") lorem
+									.wrap__form-group
+										input.form-group__input(id="survey-radio-3" value="radio-3" type="radio" name="survey")
+										label.form-group__label(for="survey-radio-3") lorem
+		.row
+			.col-lg-12
+				.card.card--centered
+					.card__title
+						h3 checkbox image
+					.card__content
+						.content
+							form.form-question
+								.form-question__question-form
+									h2 Lorem ipsum dolor
+									p.text-3 amet consectetur adipisicing elit.
+								.form-question__wrap
+									.wrap__form-group
+										input.form-group__input(id="toggle-1" value="radio-1" type="checkbox" name="survey")
+										label.form-group__label(for="toggle-1") lorem
+											img(src="../../assets/images/hd_dp.jpg")
+									.wrap__form-group
+										input.form-group__input(id="toggle-2" value="radio-2" type="checkbox" name="survey")
+										label.form-group__label(for="toggle-2") lorem
+											img(src="../../assets/images/hd_dp.jpg")
+									.wrap__form-group
+										input.form-group__input(id="toggle-3" value="radio-3" type="checkbox" name="survey")
+										label.form-group__label(for="toggle-3") lorem
+											img(src="../../assets/images/hd_dp.jpg")
+		.row
+			.col-lg-12
+				.card.card--centered
+					.card__title
+						h3 radio button
+					.card__content
+						.content
+							form.form-question
+								.form-question__question-form
+									h2 Lorem ipsum dolor
+									p.text-3 amet consectetur adipisicing elit.
+								.form-question__wrap
+									.wrap__form-group
+										input.form-group__input(id="radio-21" value="radio-1" type="radio" name="survey")
+										label.form-group__label(for="radio-21")
+											img(src="../../assets/images/get_img.jpg")
+											|lorem
+									.wrap__form-group
+										input.form-group__input(id="radio-22" value="radio-2" type="radio" name="survey")
+										label.form-group__label(for="radio-22") lorem
+											img(src="../../assets/images/get_img.jpg")
+									.wrap__form-group
+										input.form-group__input(id="radio-23" value="radio-3" type="radio" name="survey")
+										label.form-group__label(for="radio-23") lorem
+											img(src="../../assets/images/get_img.jpg")
+								.form-question__wrap
+									.wrap__form-group
+										input.form-group__input(id="radio-24" value="radio-3" type="radio" name="survey")
+										label.form-group__label(for="radio-24")
+											img(src="../../assets/images/get_img.jpg")
+										label.label-style lorem
+									.wrap__form-group
+										input.form-group__input(id="radio-25" value="radio-3" type="radio" name="survey")
+										label.form-group__label(for="radio-25")
+											img(src="../../assets/images/get_img.jpg")
+										label.label-style lorem
+									.wrap__form-group
+										input.form-group__input(id="radio-26" value="radio-3" type="radio" name="survey")
+										label.form-group__label(for="radio-26")
+											img(src="../../assets/images/get_img.jpg")
+										label.label-style lorem
+		.row
+			.col-lg-12
+				.card
+					.card__title
+						h3 radio button
+					.card__content
+						.question.question--no-line
+							.question__item.question__item--cover
+								.image-wrapper
+									img(src="../../assets/images/get_img.jpg", alt="")
+								.field-wrapper
+									.check-field-group
+										div
+											input(class="field" type="checkbox" id="checkbox-1" name="checkname")
+											label(for="checkbox-1")
+												span
+												| Lorem ipsum dolor.
+										div
+											input(class="field" type="checkbox" id="checkbox-2" name="checkname")
+											label(for="checkbox-2")
+												span
+												| Lorem ipsum dolor.
+										div
+											input(class="field" type="checkbox" id="checkbox-3" name="checkname")
+											label(for="checkbox-3")
+												span
+												| Lorem ipsum dolor.
+		.row
+			.col-lg-12
+				.card
+					.card__title
+						h3 radio button
+					.card__content
+						.question.question--no-line
+							.question__item.question__item--cover
+								.image-wrapper
+									img(src="../../assets/images/get_img.jpg", alt="")
+								.field-wrapper
+									.check-field-group.check-field-group--horizontal
+										div
+											input(class="field" type="radio" id="radio-1" name="radioName")
+											label(for="radio-1")
+												span
+												| Lorem ipsum dolor.
+										div
+											input(class="field" type="radio" id="radio-2" name="radioName")
+											label(for="radio-2")
+												span
+												| Lorem ipsum dolor.
+										div
+											input(class="field" type="radio" id="radio-3" name="radioName")
+											label(for="radio-3")
+												span
+												| Lorem ipsum dolor.
+										div
+											input(class="field" type="radio" id="radio-4" name="radioName")
+											label(for="radio-4")
+												span
+												| Lorem ipsum dolor.
+		.row
+			.col-lg-12
+				.card.card--centered
+					.card__content
+						include ../../../components/general-component/table-inputs.pug
+		.row
+			.col-lg-12
+				.card
+					.card__content
+						.table-responsive.table-responsive-exams
+							table.table.table--exams
+								thead
+									tr
+										th
+										th lorem loremlorem
+										th lorem
+										th lorem
+										th lorem
+								tbody
+									tr
+										td lorem
+										td
+											div
+												input(class="field" type="radio" id="radio-5" name="radioName")
+												label(for="radio-5")
+													span
+										td
+											div
+												input(class="field" type="radio" id="radio-6" name="radioName")
+												label(for="radio-6")
+													span
+										td
+											div
+												input(class="field" type="radio" id="radio-7" name="radioName")
+												label(for="radio-7")
+													span
+										td
+											div
+												input(class="field" type="radio" id="radio-8" name="radioName")
+												label(for="radio-8")
+													span
+
+									tr
+										td lorem
+										td
+											div
+												input(class="field" type="radio" id="radio-9" name="radioName")
+												label(for="radio-9")
+													span
+										td
+											div
+												input(class="field" type="radio" id="radio-10" name="radioName")
+												label(for="radio-10")
+													span
+										td
+											div
+												input(class="field" type="radio" id="radio-11" name="radioName")
+												label(for="radio-11")
+													span
+										td
+											div
+												input(class="field" type="radio" id="radio-12" name="radioName")
+												label(for="radio-12")
+													span
+
+									tr
+										td lorem
+										td
+											div
+												input(class="field" type="radio" id="radio-13" name="radioName")
+												label(for="radio-13")
+													span
+										td
+											div
+												input(class="field" type="radio" id="radio-14" name="radioName")
+												label(for="radio-14")
+													span
+										td
+											div
+												input(class="field" type="radio" id="radio-15" name="radioName")
+												label(for="radio-15")
+													span
+										td
+											div
+												input(class="field" type="radio" id="radio-16" name="radioName")
+												label(for="radio-16")
+													span
+
+									tr
+										td lorem
+										td
+											div
+												input(class="field" type="radio" id="radio-17" name="radioName")
+												label(for="radio-17")
+													span
+										td
+											div
+												input(class="field" type="radio" id="radio-18" name="radioName")
+												label(for="radio-18")
+													span
+										td
+											div
+												input(class="field" type="radio" id="radio-19" name="radioName")
+												label(for="radio-19")
+													span
+										td
+											div
+												input(class="field" type="radio" id="radio-20" name="radioName")
+												label(for="radio-20")
+													span
+		.row
+			.col-12
+				.card.my-4
+					.card__title
+						h3 textarea
+					.card__content
+						.row
+							.col-lg-12.col-md-12.col-sm-12
+								.field-wrapper
+									label.field-wrapper__label Course Title*
+									.field-wrapper__content
+										input(class="field" type='text' placeholder='Insert your course title.' name='title' data-purpose='edit-course-title' maxlength='' id='main[title1]' value='')
+									ul.field-wrapper__messages
+										li
+											| Please provide a valid city.
+		.row
+			.col-lg-12
+				.card
+					.card__title
+						h3 dropdown menu
+					.card__content
+						.page-header__actions
+					.dropdown.dropdown__activator
+						button.btn.btn--primary.dropdown--btn.mb-0 Dropdown
+						.dropdown__content
+							a.content__link(href="#") lorem 1
+							a.content__link(href="#") lorem 2
+							a.content__link(href="#") lorem 3
+		.row
+			.col-lg-12
+				.card
+					.card__title
+						h3 Short Answer
+					.card__content
+						.col-md-6.col-sm-6
+							.field-wrapper
+								label.field-wrapper__label Course Title*
+								.field-wrapper__content
+									input(class="field field--underline" type='text' placeholder='Insert your course title.' name='title' data-purpose='edit-course-title' maxlength='' id='main[title1]' value='')
+								ul.field-wrapper__messages
+									li
+										| Please provide a valid city.
+		.row
+			.col-lg-12
+				.card
+					.card__title
+						h3 long Answer
+					.card__content
+						.col-md-12.col-sm-12
+							.field-wrapper
+								label.field-wrapper__label Course Radio Button*
+								.field-wrapper__content
+									textarea( id="id_course_description" rows='5' name='description' placeholder='Insert your course description')
+								ul.field-wrapper__messages
+									li
+										| Please provide a valid city.
+		.row
+			.col-lg-12
+				.card
+					.card__content

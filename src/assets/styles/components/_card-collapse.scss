@@ -1,0 +1,13 @@
+.card-collapse{
+  display: flex;
+  flex-direction: column;
+  .card-collapse__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .card-collapse__content{
+    display: flex;
+    flex-direction: column;
+  }
+}

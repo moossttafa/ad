@@ -1,0 +1,39 @@
+.tags {
+  display: flex;
+  .tags__item {
+    padding: 8px 0px 8px 0px;
+    margin: 8px 6px 2px 0;
+    line-height: 1;
+    white-space: nowrap;
+    text-decoration: none;
+    text-align: center;
+    color: $darkBlack;
+    background: transparent;
+    display: inline-block;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 1px;
+      left: 0;
+      bottom: 3px;
+      background-color: $darkBlack;
+      transition: 0.3s ease all;
+    }
+    &:hover {
+      color: $darkBlack;
+      &::before {
+        width: 100%;
+      }
+    }
+  }
+  &.tags--no-my {
+    .tags__item {
+      margin: 0 5px 5px 0;
+    }
+  }
+}

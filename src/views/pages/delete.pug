@@ -1,0 +1,19 @@
+extends ../layouts/confirm-layout.pug
+
+block title
+  title Delete
+block content
+  .action-wrapper
+    i.fas.fa-puzzle-piece.emoji
+    .container
+      form.actions-form
+        div
+          h3.title-h3 Are you sure ?
+          p.body-1 test test test test test
+          h3.title-h3 Summary
+          p.body-1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi deserunt quam accusamus culpa, dolore aut, quisquam ipsam id quidem voluptates, tempore molestiae quas aperiam consequuntur nam at earum sit voluptatem?
+        div
+          include ../components/general-component/btn.pug
+          button(class="btn btn--secondary" type='submit') Submit
+          +btn-link('btn btn--primary btn--text btn--hover-line', 'cancel' , '#create_new_course.html')
+

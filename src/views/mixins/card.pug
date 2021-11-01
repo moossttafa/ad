@@ -1,0 +1,28 @@
+- var withLabel = ' card--with-label'
+- var dragging = ' card--dragging'
+- var active = 'card--active'
+mixin card(modifier)
+	div.card(class=modifier)
+		if modifier == withLabel || dragging + withLabel || active + withLabel
+			.card__label
+				div.card__label-inner
+					p section 1 of 3
+				div.body-2.card__label-outer
+					p after section 1
+					.dropdown.dropdown__activator
+						button.btn.btn--text.dropdown--btn
+							| next
+							i.fas.fa-chevron-down
+						.dropdown__content
+							a.content__link(href="#") lorem 1
+							a.content__link(href="#") lorem 2
+							a.content__link(href="#") lorem 3
+			.card--drag-vertical
+				i.fas.fa-grip-vertical
+		block
+		.card__header
+			block header
+		.card__content
+			block content
+		.card__footer
+			block footer

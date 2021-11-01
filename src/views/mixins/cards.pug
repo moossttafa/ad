@@ -1,0 +1,16 @@
+mixin cards(className)
+	.ad-card(class=className)
+		.ad-card__title
+			h4.title-h4 card title
+		.ad-card__content
+			.ad-card__content--header
+				.d-flex
+					.user-image
+						img(src="../../assets/images/hd_dp.jpg" alt="")
+						i.uil.uil-check-circle
+					.user-data
+						a.text-2(href="#") Jose Portilla
+							block info
+				include ../components/list-dropdown.pug
+			.ad-card__content--details
+				block content

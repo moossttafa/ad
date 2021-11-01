@@ -1,0 +1,34 @@
+mixin pageTitle(className)
+  .page-header(class=className)
+    .container
+      .bread-crumbs
+        a(href="#" class="btn btn--primary btn--icon btn--outlined btn--ripple")
+          i.fas.fa-arrow-left
+        a(href="#" class="bread-crumbs__link text-3") Home
+        a(href="#" class="bread-crumbs__link text-3") Course Chapter
+        a(href="#" class="bread-crumbs__link text-3") Course Chapter
+      .page-header__content
+        h1 Course name is here
+        .page-header__actions
+          .dropdown.dropdown__activator
+            button.btn.btn--primary.dropdown--btn.mb-0 Dropdown
+            .dropdown__content
+              .list.condensed
+                a(href="#" class="list-item list-item--one-line list-item--open")
+                  .list-item__avatar
+                    i.far.fa-copy
+                  .list-item__content
+                    span.body-2.bold Edit
+                  .list-item__action
+                a(href="#" class="list-item list-item--one-line list-item--open")
+                  .list-item__avatar
+                    i.far.fa-copy
+                  .list-item__content
+                    span.body-2.bold Delete
+                  .list-item__action
+      .page-header__info
+        span
+          | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad at beatae, commodi iste
+          | magnam numquam placeat reiciendis! Animi architecto cumque dolorum ea eos eveniet,
+          | nesciunt perspiciatis, placeat quaerat quia quibusdam!
+      block

@@ -1,0 +1,155 @@
+extends ../layouts/site.pug
+
+
+block title
+	title Course
+//- block menu-header
+//- 	include ../components/menu-list.pug
+block content
+	section(class="course-video ")
+		.video__wrapper
+			.video--youtube
+				iframe(width='560' height='315' src='https://www.youtube.com/embed/f54g9F05ld8' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+			.course-video__bg
+				img(src="../../assets/images/get_img.jpg", alt="", srcset="")
+		.container
+			.row
+				.col-md-6
+					//start video content
+					.video-content
+						h2.mt-0.white.mb-2 The Web Developer Bootcamp
+						.video-content__details
+							span.white.text-2
+								| The only course you need to learn web development - HTML, CSS, JS, Node, and More!
+							.video-content__review
+								.video-content__wrapper-icon
+									i.far.fa-star.wrapper-icon__icon
+									| 4.5
+								| (81,665 ratings)
+							p.text-3.white.mt-0
+								| 114,521 students enrolled
+							.video-content__language
+								.language__lang
+									span.white.mt-0
+										i.far.fa-closed-captioning.icons__fa.d-inline-block.mx-1
+										| English
+								.language__more-lang
+									span.white.mt-0
+										i.far.fa-closed-captioning.icons__fa.d-inline-block.mx-1
+									span.more-lang__tooltip
+										| English, Dutch
+										span.tooltip__caption-tooltip
+											| 12 more
+											span.tooltip__caption-content
+												span.caption-content__lang-item French
+												span.caption-content__lang-item Hindi
+												span.caption-content__lang-item German [Auto-generated]
+												span.caption-content__lang-item Indonesian [Auto-generated]
+												span.caption-content__lang-item Italian [Auto-generated]
+												span.caption-content__lang-item Japanese [Auto-generated]
+												span.caption-content__lang-item Korean
+												span.caption-content__lang-item Polish
+												span.caption-content__lang-item Portuguese [Auto-generated]
+												span.caption-content__lang-item Spanish [Auto-generated]
+												span.caption-content__lang-item Traditional Chinese
+												span.caption-content__lang-item Turkish [Auto-generated]
+							.video-content__last-update
+								| Last updated 1/2020
+							//- li.btn-list__list-item
+							//-   button.list-item--btn-Enrole-childe Enrol Chiled
+							p.text-3.white
+								| 30-Day Money-Back Guarantee
+						ul.video-content__btn-list
+							li
+								include ../components/general-component/btn.pug
+								+btn-link('btn btn--info btn--rounded btn--lg', 'Enroll' , "#")
+								+btn-link('btn btn--lg btn--white btn--outlined btn--rounded', 'Buy Now' ,"#")
+
+				.col-md-6.d-flex.align-items-end.justify-content-end
+					button(type="button" class="btn btn--player btn--lg btn--double-line")
+						img(src="../../assets/images/replay.svg" alt="player toggle")
+
+						//- i.fas.fa-play
+	section
+		.container
+			.row
+				.col-lg-8
+					.tabs
+						a(href="#tab1" class="tab tab--active ") About
+						a(href="#tab2" class="tab") content
+						a(href="#tab3" class="tab") review
+
+					.tabs-panels
+						#tab1.tab-panel.tab-panel--active
+							.rich-textarea
+								p Lorem ipsum dolor sit amet consectetur
+								h1  Lorem ipsum dolor sit amet consectetur
+								h2  Lorem ipsum dolor sit amet consectetur
+								h3  Lorem ipsum dolor sit amet consectetur
+								h4  Lorem ipsum dolor sit amet consectetur
+								h5  Lorem ipsum dolor sit amet consectetur
+								h6  Lorem ipsum dolor sit amet consectetur
+								ul
+									li  Lorem ipsum dolor sit amet consectetur
+									li  Lorem ipsum dolor sit amet consectetur
+
+						#tab2.tab-panel
+							include ../components/course.pug
+						#tab3.tab-panel
+							.card.card--side-col
+								.card__side-col
+									img(src="../../assets/images/hd_dp.jpg" alt="" class="image image--profile image--rounded")
+								.card__content
+									.card__header
+										a(href="#" class="bold primary") Lorem ipsum
+									form
+										.field-wrapper.field-wrapper--no-label
+											//- label.field-wrapper__label Course Title*
+											.field-wrapper__content
+												input.field-wrapper__input(type='text' placeholder='Insert your course title.' name='title')
+											ul.messages
+												li Please provide a valid city.
+
+										.field-wrapper.field-wrapper--no-label
+											//- label.field-wrapper__label Course Title*
+											.field-wrapper__content
+												.rate-input
+											//- ul.messages
+												li Please provide a valid city.
+
+										button.btn.btn--primary.btn--rounded Add Review
+
+							.panel
+								#update-review-form.d-none
+									.card__header
+										a(href="#" class="bold") Lorem ipsum
+									form
+										.field-wrapper.field-wrapper--no-label
+											label.field-wrapper__label Course Title*
+											.field-wrapper__content
+												input.field-wrapper__input(type='text' placeholder='Insert your course title.' name='title')
+												.field-wrapper__limit 60
+											ul.messages
+												li Please provide a valid city.
+
+										.field-wrapper.field-wrapper--no-label
+											label.field-wrapper__label Course Title*
+											.field-wrapper__content
+												.rate-input
+											ul.messages
+												li Please provide a valid city.
+
+										button(type="reset" class="btn btn--primary btn--text replacer" data-target="#update-review-form") Cancel
+										button(type="submit" class=" btn btn--primary btn--rounded") Add Review
+
+								include ../components/review-item.pug
+								.panel__loader
+									a(href='javascript:void(0);' class="gray bold") See More Reviews
+
+				.col-lg-4
+					include ../components/review.pug
+
+
+
+
+

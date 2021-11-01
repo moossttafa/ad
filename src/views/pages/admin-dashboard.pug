@@ -1,0 +1,151 @@
+extends ../layouts/admin.pug
+block title
+	title Admin Dashboard
+
+block content
+	section.course-video
+		img(src="/assets/images/sign.svg", alt="")
+		.container-fluid
+			.row
+				.col-lg-12
+					.course-video__wrapper
+						.row.justify-content-center
+							.col-xl-4.col-lg-5.col-md-6
+								include ../components/general-component/course-video.pug
+								//- include ../components/general-component/course-img.pug
+								include ../components/general-component/video-action.pug
+							.col-xl-8.col-lg-7.col-md-6
+								article.wrapper__header
+									h2.header__title The Web Developer Bootcamp
+									span.header__description
+										| The only course you need to learn web development - HTML, CSS, JS, Node, and More!
+								.wrapper__review-video
+									.review-video__review.mr-2
+										i.uil.uil-star.review__icon
+										| 4.5
+									| &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;(81,665 ratings)
+								.wrapper__enrolled-text
+									| 114,521 students enrolled
+								.wrapper__language
+									.language__lang
+										span.lang__icons
+											i.uil.uil-comment.icons__fa
+										| &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;English
+									.language__more-lang
+										span.more-lang__icons
+											i.uil.uil-closed-captioning.icons__fa
+										span.more-lang__tooltip
+											| English, Dutch
+											span.tooltip--caption_tooltip
+												| 12 more
+												span.tooltip__caption-content
+													span.caption-content__lang-item French
+													span.caption-content__lang-item Hindi
+													span.caption-content__lang-item German [Auto-generated]
+													span.caption-content__lang-item Indonesian [Auto-generated]
+													span.caption-content__lang-item Italian [Auto-generated]
+													span.caption-content__lang-item Japanese [Auto-generated]
+													span.caption-content__lang-item Korean
+													span.caption-content__lang-item Polish
+													span.caption-content__lang-item Portuguese [Auto-generated]
+													span.caption-content__lang-item Spanish [Auto-generated]
+													span.caption-content__lang-item Traditional Chinese
+													span.caption-content__lang-item Turkish [Auto-generated]
+								.wrapper__last-update
+									| Last updated 1/2020
+								ul.wrapper__btn-list
+									li.btn-list__list-item
+										include ../components/general-component/btn.pug
+										+btn('list-item--btn-Enrole', 'Enroll')
+									//- li.btn-list__list-item
+									//-   button.list-item--btn-Enrole-childe Enrol Chiled
+								.wrapper__title-buy
+									| 30-Day Money-Back Guarantee
+
+	.course_tabs
+		#nav-tab.nav.nav-tabs.tab_crse.justify-content-center(role='tablist')
+			a#nav-about-tab.nav-item.nav-link.active(data-toggle='tab' href='#nav-comment' role='tab' aria-selected='true') Comment
+			a#nav-courses-tab.nav-item.nav-link(data-toggle='tab' href='#nav-materials' role='tab' aria-selected='false') Materials
+			a#nav-reviews-tab.nav-item.nav-link(data-toggle='tab' href='#nav-reviews' role='tab' aria-selected='false') Reviews
+			a#nav-reviews-tab.nav-item.nav-link(data-toggle='tab' href='#nav-thread' role='tab' aria-selected='false') Thread
+	section.wrapper-tabs
+		.container-fluid
+			.row
+				.col-lg-12
+					.course_tab_content
+						#nav-tabContent.tab-content
+							#nav-comment.tab-pane.fade.show.active(role='tabpanel')
+								include ../components/comments.pug
+							#nav-materials.tab-pane.fade(role='tabpanel')
+									//- start course list component
+									include ../components/course.pug
+									a.btn1458(href='#') 20 More Sections
+							#nav-reviews.tab-pane.fade(role='tabpanel')
+								.reviews
+									.row
+										.col-lg-5
+											include ../components/review.pug
+										.col-lg-7
+											.review__header
+												.header__header-content
+													h3.header-content__title Reviews
+													.header-content__search
+														input.search__input(type='text' placeholder='Search reviews...')
+														button.search__btn
+															i.uil.uil-search
+											.review__all-reviews
+												include ../components/review-item.pug
+												.all-reviews__review-item
+													a.review-item__more-reviews(href='#') See More Reviews
+							#nav-thread.tab-pane.fade(role='tabpanel')
+								.d-flex.justify-content-between.align-items-center.w-100
+									h3.course-content__title.mb-0 Thread Chapter content
+									button.btn.btn--primary.btn--rounded create thread
+								.row
+									.col-lg-12
+										.ad-card.ad-card--with-actions.mb-3
+											.ad-card__title
+												h4.title-h4 card title
+											.ad-card__content
+												.user-image
+													img(src="../../assets/images/hd_dp.jpg" alt="")
+													i.uil.uil-check-circle
+												.ad-card__body
+													.ad-card__content-header
+														.user-data
+															a.btn.btn--secondary.btn--link-text(href="#") Jose Portilla
+															time.text-3.gray Jan 15 '18 at 13:56
+														include ../components/list-dropdown.pug
+													.ad-card__content--details
+														p.text-1 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae soluta blanditiis quam eos alias. Illo dicta expedita culpa unde repellendus iste dolores quae, eos, cumque facilis maxime, voluptatem natus esse!
+														.tags
+															.tags__item #Development
+															.tags__item #Development
+										.ad-card.ad-card--with-actions.mb-3
+											.ad-card__title
+												h4.title-h4 card title
+											.ad-card__content
+												.user-image
+													img(src="../../assets/images/hd_dp.jpg" alt="")
+													i.uil.uil-check-circle
+												.ad-card__body
+													.ad-card__content-header
+														.user-data
+															a.btn.btn--secondary.btn--link-text(href="#") Jose Portilla
+															time.text-3.gray Jan 15 '18 at 13:56
+														include ../components/list-dropdown.pug
+													.ad-card__content--details
+														p.text-1 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae soluta blanditiis quam eos alias. Illo dicta expedita culpa unde repellendus iste dolores quae, eos, cumque facilis maxime, voluptatem natus esse!
+														.tags
+															.tags__item #Development
+															.tags__item #Development
+								.row
+									.col-lg-12
+										//- start table-dashboard
+										include ../components/general-component/table-dashboard.pug
+
+
+
+
+
+

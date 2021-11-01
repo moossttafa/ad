@@ -1,0 +1,88 @@
+extends ../../../layouts/admin.pug
+block title
+	title play-list
+
+
+block content
+	.container
+		.row
+			//- play-list
+			.col-lg-12
+				h2.title-2.my-3 Default play-List
+				p.text-2.mb-1
+					| we use
+					code .play-list
+			.col-lg-12
+				//ad-play-list  (Default)
+				.play-list.play-list__with-icon-hover
+					.play-list__item
+						.play-list__video-img
+							img.play-list__img(src="./images/sign.svg")
+						.play-list__header
+							h2.text-2.text-2__list-video University of Hertfordshire
+							.play-list__info
+								span.text-4.gray 354 views
+								.play-list__time
+									span.text-4.gray 2:22:17
+			.col-lg-12
+				h2.title-2.my-3  play-List with progressbar
+				p.text-2.mb-1
+					| we use
+					code .play-list
+			.col-lg-12
+				//ad-play-list  (with progress)
+				.play-list.play-list__with-icon-hover
+					.play-list__item
+						.play-list__video-img
+							img.play-list__img(src="./images/sign.svg")
+							.rating__progress.progress--video
+								.progress--progress-bar.w-70( role='progressbar' aria-valuenow=70 aria-valuemin=0 aria-valuemax=100)
+						.play-list__header
+							h2.text-2.text-2__list-video University of Hertfordshire
+							.play-list__info
+								span.text-4.gray 354 views
+								.play-list__time
+									span.text-4.gray 2:22:17
+			.col-lg-12
+				h2.title-2.my-3  play-List with icon checked
+				p.text-2.mb-1
+					| we use
+					code .play-list
+			.col-lg-12
+				// play-list  add class finch video ==>  play-list__with-icon
+				.play-list.play-list__with-icon
+					.play-list__item
+						.play-list__video-img
+							img.play-list__img(src="./images/sign.svg")
+							.rating__progress.progress--video
+								.progress--progress-bar.w-70( role='progressbar' aria-valuenow=70 aria-valuemin=0 aria-valuemax=100)
+							.play-list__check
+								i.fas.fa-check
+						.play-list__header
+							h2.text-2.text-2__list-video University of Hertfordshire
+							.play-list__info
+								span.text-4.gray 354 views
+								.play-list__time
+									span.text-4.gray 2:22:17
+			.col-lg-12
+				h2.title-2.my-3  play-List with icon checked (hover) and click checked
+				p.text-2.mb-1
+					| we use
+					code .play-list
+			.col-lg-12
+				// play-list  add class finch video ==>  play-list__with-icon (hover)
+				.play-list.play-list__with-icon.play-list__with-icon-hover
+					.play-list__item
+						.play-list__video-img
+							img.play-list__img(src="./images/sign.svg")
+							.rating__progress.progress--video
+								.progress--progress-bar.w-70( role='progressbar' aria-valuenow=70 aria-valuemin=0 aria-valuemax=100)
+							.play-list__check.play-list--hide
+								i.fas.fa-check
+								//- input#check01(type="checkbox" name="checkbox" value="1" checked).checkbox
+						.play-list__header
+							h2.text-2.text-2__list-video University of Hertfordshire
+							.play-list__info
+								span.text-4.gray 354 views
+								.play-list__time
+									span.text-4.gray 2:22:17

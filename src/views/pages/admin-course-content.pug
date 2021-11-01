@@ -1,0 +1,607 @@
+extends ../layouts/admin.pug
+block title
+	title Admin course content
+block content
+	include ../components/bread-crumbs.pug
+	+pageTitle
+	//- .container-fluid
+		.row
+			.col-lg-12
+				.tabs
+					a(class="tab tab--active" href='#nav-details') Details
+					a(class="tab" href='#nav-transcript') Content
+					a(class="tab" href='#nav-thread') Thread
+					a(class="tab" href='#nav-media') Media
+					a(class="tab" href='#nav-translates') Translations
+				.tab-panels
+					//- include ../components/review-item.pug
+					#nav-details.tab-panel.tab-panel--active
+						include ../components/general-wrapper.pug
+							block details
+								section.course-video.course-video--small-padding
+									img(src="../../assets/images/sign.svg", alt="")
+									.container-fluid
+										.row
+											.col-lg-12
+												.course-video__wrapper
+													.row.justify-content-center
+														.col-xl-4.col-lg-5.col-md-6
+															section.wrapper__preview-video
+																a.preview-video__modiel-img(href='#' data-toggle='modal' data-target='#videoModal')
+																	img.modiel-img--img(src='../../assets/images/courses/img-2.jpg' alt='')
+																	.modiel-img__course-overlay
+																		.course-overlay--seller Bestseller
+																		span.course-overlay--play
+																			i.uil.uil-play.play__fa
+																		span._215b02.course-overlay__title Preview this course
+														.col-xl-8.col-lg-7.col-md-6
+															article.wrapper__header
+																h2.header__title The Web Developer Bootcamp
+																span.header__description
+																	| The only course you need to learn web development - HTML, CSS, JS, Node, and More!
+																.general-details__item.general-details__item--white
+																	div
+																		h4.description__name Id :
+																		p.description__details.my-0 Lorem ipsum, dolor sit amet consectetur
+																.general-details__item.general-details__item--white
+																	div
+																		h4.description__name Author :
+																		p.description__details.my-0 Lorem ipsum, dolor sit amet consectetur
+																.general-details__item.general-details__item--white
+																	div
+																		h4.description__name duration :
+																		p.description__details.my-0 Lorem ipsum, dolor sit amet consectetur
+																.general-details__item.general-details__item--white
+																	div
+																		h4.description__name Total rate :
+																		p.description__details.my-0 Lorem ipsum, dolor sit amet consectetur
+																.general-details__item.general-details__item--white
+																	div
+																		h4.description__name category :
+																		p.description__details.my-0 Lorem ipsum, dolor sit amet consectetur
+						include ../components/general-wrapper.pug
+							block details
+								section.course-video.course-video--small-padding
+									img(src="/assets/images/sign.svg", alt="")
+									.container-fluid
+										.row
+											.col-lg-12
+												.course-video__wrapper
+													.row.justify-content-center
+														.col-xl-4.col-lg-5.col-md-6
+															section.wrapper__preview-video
+																a.preview-video__modiel-img(href='#' data-toggle='modal' data-target='#videoModal')
+																	img.modiel-img--img(src='../../assets/images/courses/img-2.jpg' alt='')
+																	.modiel-img__course-overlay
+																		.course-overlay--seller Bestseller
+																		span.course-overlay--play
+																			i.uil.uil-play.play__fa
+																		span._215b02.course-overlay__title Preview this course
+														.col-xl-8.col-lg-7.col-md-6
+															article.wrapper__header
+																h2.header__title The Web Developer Bootcamp
+																span.header__description
+																	| The only course you need to learn web development - HTML, CSS, JS, Node, and More!
+																.general-details__item.general-details__item--white
+																	div
+																		h4.description__name Id :
+																		p.description__details.my-0 Lorem ipsum, dolor sit amet consectetur
+																.general-details__item.general-details__item--white
+																	div
+																		h4.description__name Author :
+																		p.description__details.my-0 Lorem ipsum, dolor sit amet consectetur
+																.general-details__item.general-details__item--white
+																	div
+																		h4.description__name duration :
+																		p.description__details.my-0 Lorem ipsum, dolor sit amet consectetur
+																.general-details__item.general-details__item--white
+																	div
+																		h4.description__name Total rate :
+																		p.description__details.my-0 Lorem ipsum, dolor sit amet consectetur
+																.general-details__item.general-details__item--white
+																	div
+																		h4.description__name category :
+																		p.description__details.my-0 Lorem ipsum, dolor sit amet consectetur
+						include ../components/general-wrapper.pug
+							block details
+								section.course-video.course-video--small-padding
+									img(src="/assets/images/sign.svg", alt="")
+									.container-fluid
+										.row
+											.col-lg-12
+												.course-video__wrapper
+													.row.justify-content-center
+														.col-xl-4.col-lg-5.col-md-6
+															section.wrapper__preview-video
+																a.preview-video__modiel-img(href='#' data-toggle='modal' data-target='#videoModal')
+																	img.modiel-img--img(src='../../assets/images/courses/img-2.jpg' alt='')
+																	.modiel-img__course-overlay
+																		.course-overlay--seller Bestseller
+																		span.course-overlay--play
+																			i.uil.uil-play.play__fa
+																		span._215b02.course-overlay__title Preview this course
+														.col-xl-8.col-lg-7.col-md-6
+															article.wrapper__header
+																h2.header__title The Web Developer Bootcamp
+																span.header__description
+																	| The only course you need to learn web development - HTML, CSS, JS, Node, and More!
+																.general-details__item.general-details__item--white
+																	div
+																		h4.description__name Id :
+																		p.description__details.my-0 Lorem ipsum, dolor sit amet consectetur
+																.general-details__item.general-details__item--white
+																	div
+																		h4.description__name Author :
+																		p.description__details.my-0 Lorem ipsum, dolor sit amet consectetur
+																.general-details__item.general-details__item--white
+																	div
+																		h4.description__name duration :
+																		p.description__details.my-0 Lorem ipsum, dolor sit amet consectetur
+																.general-details__item.general-details__item--white
+																	div
+																		h4.description__name Total rate :
+																		p.description__details.my-0 Lorem ipsum, dolor sit amet consectetur
+																.general-details__item.general-details__item--white
+																	div
+																		h4.description__name category :
+																		p.description__details.my-0 Lorem ipsum, dolor sit amet consectetur
+
+
+
+
+					//- start course list component
+					//- include ../components/course.pug
+					#nav-transcript.tab-panel
+						//- h2 Transcript
+						.course-content
+							h3.course-content__title Chapter content
+							.course-content__details
+								ul.details__list
+									li.list__list-item
+										span.list--expand-all Expand all
+									li.list__list-item
+										span.list--list-content-number  402 lectures
+									li.list__list-item
+										span.list--time-course 47:06:29
+							#accordion.course-content__course-list
+								#test
+									//- start list 1
+									div.course-list__item
+										a.course-list__header(href='javascript:void(0)')
+											.header__header-title
+												span.header-title__title
+													i.uil.uil-presentation-play.title__icon
+													span.title__title-text Introduction fgdfg to this Course
+											.header__header-details
+												span.header-details__num-item 8 lectures
+												span.header-details__length-item 22:08
+										.course-list__list-content#content
+											.list-content__content-item
+												.content-item__content-name
+													i.uil.uil-file.content-name__icon
+													.content-name__top-title
+														.top-title__title A Note On Asking For Help
+												.content-item__details
+													span.details__content-summary 00:12
+												.general-actions
+													a(href="/"): i.far.fa-edit(aria-hidden="true")
+													a(href="/"): i.far.fa-trash-alt(aria-hidden="true")
+											.list-content__content-item
+												.content-item__content-name
+													i.uil.uil-play-circle.content-name__icon
+													.content-name__top-title
+														.top-title__title Why This Course?
+												.content-item__details
+													a.details--preview-text(href='#') Preview
+													span.details__content-summary 07:48
+													.general-actions
+														a(href="/"): i.far.fa-edit(aria-hidden="true")
+														a(href="/"): i.far.fa-trash-alt(aria-hidden="true")
+											.list-content__content-item
+												.content-item__content-name
+													i.uil.uil-play-circle.content-name__icon
+													.content-name__top-title
+														.top-title__title Why This Course?
+												.content-item__details
+													a.details--preview-text(href='#') Preview
+													span.details__content-summary 07:48
+											.list-content__content-item
+												.content-item__content-name
+													i.uil.uil-play-circle.content-name__icon
+													.content-name__top-title
+														.top-title__title Unit Objectives
+												.content-item__details
+													a.details--preview-text(href='#') Preview
+													span.details__content-summary 01.40
+											.list-content__content-item
+												.content-item__content-name
+													i.uil.uil-file.content-name__icon
+													.content-name__top-title
+														.top-title__title A Note On Asking For Help
+												.content-item__details
+													span.details__content-summary 00:12
+											.list-content__content-item
+												.content-item__content-name
+													i.uil.uil-play-circle.content-name__icon
+													.content-name__top-title
+														.top-title__title Why This Course?
+												.content-item__details
+													a.details--preview-text(href='#') Preview
+													span.details__content-summary 07:48
+											.list-content__content-item
+												.content-item__content-name
+													i.uil.uil-file.content-name__icon
+													.content-name__top-title
+														.top-title__title A Note On Asking For Help
+												.content-item__details
+													span.details__content-summary 00:12
+											.list-content__content-item
+												.content-item__content-name
+													i.uil.uil-play-circle.content-name__icon
+													.content-name__top-title
+														.top-title__title Why This Course?
+												.content-item__details
+													a.details--preview-text(href='#') Preview
+													span.details__content-summary 07:48
+									//- start list 2
+									div.course-list__item
+										a.course-list__header(href='javascript:void(0)')
+											.header__header-title
+												span.header-title__title
+													i.uil.uil-presentation-play.title__icon
+													span.title__title-text Introduction  to Front End Development
+											.header__header-details
+												span.header-details__num-item 6 lectures
+												span.header-details__length-item 27:261
+										.course-list__list-content
+											.list-content__content-item
+												.content-item__content-name
+													i.uil.uil-file.content-name__icon
+													.content-name__top-title
+														.top-title__title A Note On Asking For Help
+												.content-item__details
+													span.details__content-summary 00:12
+											.list-content__content-item
+												.content-item__content-name
+													i.uil.uil-play-circle.content-name__icon
+													.content-name__top-title
+														.top-title__title Why This Course?
+												.content-item__details
+													a.details--preview-text(href='#') Preview
+													span.details__content-summary 07:48
+											.list-content__content-item
+												.content-item__content-name
+													i.uil.uil-play-circle.content-name__icon
+													.content-name__top-title
+														.top-title__title Unit Objectives
+												.content-item__details
+													a.details--preview-text(href='#') Preview
+													span.details__content-summary 01.40
+									//- start list 3
+									div.course-list__item
+										a.course-list__header(href='javascript:void(0)')
+											.header__header-title
+												span.header-title__title
+													i.uil.uil-presentation-play.title__icon
+													span.title__title-text Introduction  to Front End Development
+											.header__header-details
+												span.header-details__num-item 6 lectures
+												span.header-details__length-item 27:262
+										.course-list__list-content
+											.list-content__content-item
+												.content-item__content-name
+													i.uil.uil-file.content-name__icon
+													.content-name__top-title
+														.top-title__title A Note On Asking For Help
+												.content-item__details
+													span.details__content-summary 00:12
+											.list-content__content-item
+												.content-item__content-name
+													i.uil.uil-play-circle.content-name__icon
+													.content-name__top-title
+														.top-title__title Why This Course?
+												.content-item__details
+													a.details--preview-text(href='#') Preview
+													span.details__content-summary 07:48
+											.list-content__content-item
+												.content-item__content-name
+													i.uil.uil-play-circle.content-name__icon
+													.content-name__top-title
+														.top-title__title Unit Objectives
+												.content-item__details
+													a.details--preview-text(href='#') Preview
+													span.details__content-summary 01.40
+									//- list 4
+									div.course-list__item
+										a.course-list__header(href='javascript:void(0)')
+											.header__header-title
+												span.header-title__title
+													i.uil.uil-presentation-play.title__icon
+													span.title__title-text Introduction  to Front End Development
+											.header__header-details
+												span.header-details__num-item 6 lectures
+												span.header-details__length-item 27:263
+										.course-list__list-content
+											.list-content__content-item
+												.content-item__content-name
+													i.uil.uil-file.content-name__icon
+													.content-name__top-title
+														.top-title__title A Note On Asking For Help
+												.content-item__details
+													span.details__content-summary 00:12
+											.list-content__content-item
+												.content-item__content-name
+													i.uil.uil-play-circle.content-name__icon
+													.content-name__top-title
+														.top-title__title Why This Course?
+												.content-item__details
+													a.details--preview-text(href='#') Preview
+													span.details__content-summary 07:48
+											.list-content__content-item
+												.content-item__content-name
+													i.uil.uil-play-circle.content-name__icon
+													.content-name__top-title
+														.top-title__title Unit Objectives
+												.content-item__details
+													a.details--preview-text(href='#') Preview
+													span.details__content-summary 01.40
+											.list-content__content-item
+												.content-item__content-name
+													i.uil.uil-file.content-name__icon
+													.content-name__top-title
+														.top-title__title A Note On Asking For Help
+												.content-item__details
+													span.details__content-summary 00:12
+											.list-content__content-item
+												.content-item__content-name
+													i.uil.uil-play-circle.content-name__icon
+													.content-name__top-title
+														.top-title__title Why This Course?
+												.content-item__details
+													a.details--preview-text(href='#') Preview
+													span.details__content-summary 07:48
+									//- list 5
+									div.course-list__item
+										a.course-list__header(href='javascript:void(0)')
+											.header__header-title
+												span.header-title__title
+													i.uil.uil-presentation-play.title__icon
+													span.title__title-text Introduction  to Front End Development
+											.header__header-details
+												span.header-details__num-item 6 lectures
+												span.header-details__length-item 27:264
+										.course-list__list-content
+											.list-content__content-item
+												.content-item__content-name
+													i.uil.uil-file.content-name__icon
+													.content-name__top-title
+														.top-title__title A Note On Asking For Help
+												.content-item__details
+													span.details__content-summary 00:12
+											.list-content__content-item
+												.content-item__content-name
+													i.uil.uil-play-circle.content-name__icon
+													.content-name__top-title
+														.top-title__title Why This Course?
+												.content-item__details
+													a.details--preview-text(href='#') Preview
+													span.details__content-summary 07:48
+											.list-content__content-item
+												.content-item__content-name
+													i.uil.uil-play-circle.content-name__icon
+													.content-name__top-title
+														.top-title__title Unit Objectives
+												.content-item__details
+													a.details--preview-text(href='#') Preview
+													span.details__content-summary 01.40
+											.list-content__content-item
+												.content-item__content-name
+													i.uil.uil-file.content-name__icon
+													.content-name__top-title
+														.top-title__title A Note On Asking For Help
+												.content-item__details
+													span.details__content-summary 00:12
+											.list-content__content-item
+												.content-item__content-name
+													i.uil.uil-play-circle.content-name__icon
+													.content-name__top-title
+														.top-title__title Why This Course?
+												.content-item__details
+													a.details--preview-text(href='#') Preview
+													span.details__content-summary 07:48
+											.list-content__content-item
+												.content-item__content-name
+													i.uil.uil-file.content-name__icon
+													.content-name__top-title
+														.top-title__title A Note On Asking For Help
+												.content-item__details
+													span.details__content-summary 00:12
+											.list-content__content-item
+												.content-item__content-name
+													i.uil.uil-play-circle.content-name__icon
+													.content-name__top-title
+														.top-title__title Why This Course?
+												.content-item__details
+													a.details--preview-text(href='#') Preview
+													span.details__content-summary 07:48
+									//- list 6
+									div.course-list__item
+										a.course-list__header(href='javascript:void(0)')
+											.header__header-title
+												span.header-title__title
+													i.uil.uil-presentation-play.title__icon
+													span.title__title-text Introduction  to Front End Development
+											.header__header-details
+												span.header-details__num-item 6 lectures
+												span.header-details__length-item 27:265
+										.course-list__list-content
+											.list-content__content-item
+												.content-item__content-name
+													i.uil.uil-file.content-name__icon
+													.content-name__top-title
+														.top-title__title A Note On Asking For Help
+												.content-item__details
+													span.details__content-summary 00:12
+											.list-content__content-item
+												.content-item__content-name
+													i.uil.uil-play-circle.content-name__icon
+													.content-name__top-title
+														.top-title__title Why This Course?
+												.content-item__details
+													a.details--preview-text(href='#') Preview
+													span.details__content-summary 07:48
+											.list-content__content-item
+												.content-item__content-name
+													i.uil.uil-play-circle.content-name__icon
+													.content-name__top-title
+														.top-title__title Unit Objectives
+												.content-item__details
+													a.details--preview-text(href='#') Preview
+													span.details__content-summary 01.40
+											.list-content__content-item
+												.content-item__content-name
+													i.uil.uil-file.content-name__icon
+													.content-name__top-title
+														.top-title__title A Note On Asking For Help
+												.content-item__details
+													span.details__content-summary 00:12
+											.list-content__content-item
+												.content-item__content-name
+													i.uil.uil-play-circle.content-name__icon
+													.content-name__top-title
+														.top-title__title Why This Course?
+												.content-item__details
+													a.details--preview-text(href='#') Preview
+													span.details__content-summary 07:48
+											.list-content__content-item
+												.content-item__content-name
+													i.uil.uil-file.content-name__icon
+													.content-name__top-title
+														.top-title__title A Note On Asking For Help
+												.content-item__details
+													span.details__content-summary 00:12
+											.list-content__content-item
+												.content-item__content-name
+													i.uil.uil-play-circle.content-name__icon
+													.content-name__top-title
+														.top-title__title Why This Course?
+												.content-item__details
+													a.details--preview-text(href='#') Preview
+													span.details__content-summary 07:48
+									//-End-List
+
+					#nav-thread.tab-panel
+						.d-flex.justify-content-between.align-items-center.w-100
+							h3.course-content__title.mb-0 Thread Chapter content
+							button.btn.btn--primary.btn--rounded create thread
+						.row
+							.col-lg-12
+								.card.card--with-actions.mb-3
+									.card__title
+										h4.title-h4 card title
+									.card__content
+										.user-image
+											img(src="../../assets/images/hd_dp.jpg" alt="")
+											i.uil.uil-check-circle
+										.card__body
+											.card__content-header
+												.user-data
+													a.btn.btn--secondary.btn--link-text(href="#") Jose Portilla
+													time.text-3.gray Jan 15 '18 at 13:56
+												include ../components/list-dropdown.pug
+											.card__content--details
+												p.text-1 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae soluta blanditiis quam eos alias. Illo dicta expedita culpa unde repellendus iste dolores quae, eos, cumque facilis maxime, voluptatem natus esse!
+												.tags
+													.tags__item #Development
+													.tags__item #Development
+								.card.card--with-actions.mb-3
+									.card__title
+										h4.title-h4 card title
+									.card__content
+										.user-image
+											img(src="../../assets/images/hd_dp.jpg" alt="")
+											i.uil.uil-check-circle
+										.card__body
+											.card__content-header
+												.user-data
+													a.btn.btn--secondary.btn--link-text(href="#") Jose Portilla
+													time.text-3.gray Jan 15 '18 at 13:56
+												include ../components/list-dropdown.pug
+											.card__content--details
+												p.text-1 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae soluta blanditiis quam eos alias. Illo dicta expedita culpa unde repellendus iste dolores quae, eos, cumque facilis maxime, voluptatem natus esse!
+												.tags
+													.tags__item #Development
+													.tags__item #Development
+
+					#nav-media.tab-panel
+						.row
+							.col-lg-12
+								include ../components/general-wrapper.pug
+									block details
+										.row
+											.col-lg-12
+												h3.secondary-title media title
+												.general-details__item
+													h4.description__name arabic :
+													p.description__details.my-0 Lorem ipsum, dolor sit amet consectetur
+											.col-lg-3
+												a.example-image-link(href='http://lokeshdhakar.com/projects/lightbox2/images/image-3.jpg' data-lightbox='example-set' data-title='Click the right half of the image to move forward.')
+													include ../components/media-card.pug
+											.col-lg-3
+												a.example-image-link(href='http://lokeshdhakar.com/projects/lightbox2/images/image-4.jpg' data-lightbox='example-set' data-title='Or press the right arrow on your keyboard.')
+													include ../components/media-card.pug
+											.col-lg-3
+												a.example-image-link(href='http://lokeshdhakar.com/projects/lightbox2/images/image-5.jpg' data-lightbox='example-set' data-title="The next image in the set is preloaded as you're viewing.")
+													include ../components/media-card.pug
+											.col-lg-3
+												a.example-image-link(href='http://lokeshdhakar.com/projects/lightbox2/images/image-6.jpg' data-lightbox='example-set' data-title='Click anywhere outside the image or the X to the right to close.')
+													include ../components/media-card.pug
+											.col-lg-3
+												a.example-image-link(href='http://lokeshdhakar.com/projects/lightbox2/images/image-3.jpg' data-lightbox='example-set' data-title='Click the right half of the image to move forward.')
+													include ../components/media-card.pug
+											.col-lg-3
+												a.example-image-link(href='http://lokeshdhakar.com/projects/lightbox2/images/image-4.jpg' data-lightbox='example-set' data-title='Or press the right arrow on your keyboard.')
+													include ../components/media-card.pug
+											.col-lg-3
+												a.example-image-link(href='http://lokeshdhakar.com/projects/lightbox2/images/image-5.jpg' data-lightbox='example-set' data-title="The next image in the set is preloaded as you're viewing.")
+													include ../components/media-card.pug
+											.col-lg-3
+												a.example-image-link(href='http://lokeshdhakar.com/projects/lightbox2/images/image-6.jpg' data-lightbox='example-set' data-title='Click anywhere outside the image or the X to the right to close.')
+													include ../components/media-card.pug
+
+					#nav-translates.tab-panel
+						include ../components/general-wrapper.pug
+							block details
+								h3.secondary-title Titles
+								.general-details__item
+									div
+										h4.description__name arabic :
+										p.description__details.my-0 Lorem ipsum, dolor sit amet consectetur
+									.general-actions
+										a(href="/"): i.far.fa-edit(aria-hidden="true")
+										a(href="/"): i.far.fa-trash-alt(aria-hidden="true")
+								.general-details__item
+									div
+										h4.description__name english :
+										p.description__details.my-0 Lorem ipsum, dolor sit amet consectetur
+									.general-actions
+										a(href="/"): i.far.fa-edit(aria-hidden="true")
+										a(href="/"): i.far.fa-trash-alt(aria-hidden="true")
+						//- descriptions
+						include ../components/general-wrapper.pug
+							block details
+								h3.secondary-title descriptions
+								.general-details__item
+									div
+										h4.description__name arabic :
+										p.description__details.my-0 Lorem ipsum, dolor sit amet consectetur
+									.general-actions
+										a(href="/"): i.far.fa-edit(aria-hidden="true")
+										a(href="/"): i.far.fa-trash-alt(aria-hidden="true")
+								.general-details__item
+									div
+										h4.description__name english :
+										p.description__details.my-0 Lorem ipsum, dolor sit amet consectetur
+									.general-actions
+										a(href="/"): i.far.fa-edit(aria-hidden="true")
+										a(href="/"): i.far.fa-trash-alt(aria-hidden="true")

@@ -1,0 +1,154 @@
+extends ../layouts/master-no-footer.pug
+
+block title
+	title Enrollment
+
+block content
+	section.course-video.course-video--fill
+		img.course-video__bg(src="/assets/images/sign.svg", alt="")
+		.container
+			.description-enroll
+				.row.justify-content-center
+					//- .col-xl-4.col-lg-5.col-md-6
+						//- include ../components/general-component/course-img.pug
+						//start video content
+
+					.col-lg-7
+						.video-content
+							h2.mt-0.white.mb-2.bold The Web Developer Bootcamp
+							span.white.text-2
+								| The only course you need to learn web development - HTML, CSS, JS, Node, and More!
+							.video-content__review
+								.video-content__wrapper-icon
+									i.far.fa-star.wrapper-icon__icon
+									| 4.5
+								| (81,665 ratings)
+							p.text-3.white.mt-0
+								| 114,521 students enrolled
+							.video-content__language
+								.language__lang
+									span.white.mt-0
+										i.far.fa-closed-captioning.icons__fa.d-inline-block.mx-1
+										| English
+								.language__more-lang
+									span.white.mt-0
+										i.far.fa-closed-captioning.icons__fa.d-inline-block.mx-1
+									span.more-lang__tooltip
+										| English, Dutch
+										span.tooltip__caption-tooltip
+											| 12 more
+											span.tooltip__caption-content
+												span.caption-content__lang-item French
+												span.caption-content__lang-item Hindi
+												span.caption-content__lang-item German [Auto-generated]
+												span.caption-content__lang-item Indonesian [Auto-generated]
+												span.caption-content__lang-item Italian [Auto-generated]
+												span.caption-content__lang-item Japanese [Auto-generated]
+												span.caption-content__lang-item Korean
+												span.caption-content__lang-item Polish
+												span.caption-content__lang-item Portuguese [Auto-generated]
+												span.caption-content__lang-item Spanish [Auto-generated]
+												span.caption-content__lang-item Traditional Chinese
+												span.caption-content__lang-item Turkish [Auto-generated]
+							.video-content__last-update
+								| Last updated 1/2020
+							ul.video-content__btn-list
+								li
+									include ../components/general-component/btn.pug
+									+btn-link('btn btn--primary btn--rounded white', 'Enroll' , "#")
+									+btn-link('btn btn--white btn--outlined btn--rounded', 'Buy Now' ,"#")
+								//- li.btn-list__list-item
+								//-   button.list-item--btn-Enrole-childe Enrol Chiled
+							p.text-3.white
+								| 30-Day Money-Back Guarantee
+						//End video content
+					.col-lg-5
+						form(action="")
+							.card-list
+								.card__content
+									.list
+										h4.title-h4.list__title-name List Title
+										.divider
+										.list-item.list-item--two-lines.list-item--with-border
+											.list-item__avatar
+												img(class="image image--small-profile image--rounded" src="../../assets/images/hd_dp.jpg", alt="avatar")
+											.list-item__content
+												a(href="#" class="body-2 bold") Jose Portilla
+												p.subtitle-2.gray Jose_Portilla@test.com
+											.list-item__action
+												div
+													input(class="field" type="checkbox" id="checkbox-13" name="checkname")
+													label(for="checkbox-13")
+														span
+										//- .divider
+										.list-item.list-item--two-lines.list-item--with-border
+											.list-item__avatar
+												img(class="image image--small-profile image--rounded" src="../../assets/images/hd_dp.jpg", alt="avatar")
+											.list-item__content
+												a(href="#" class="body-2 bold") Jose Portilla
+												p.subtitle-2.gray Jose_Portilla@test.com
+											.list-item__action
+												div
+													input(class="field" type="checkbox" id="checkbox-12" name="checkname")
+													label(for="checkbox-12")
+														span
+										//- .divider
+										.list-item.list-item--two-lines.list-item--with-border
+											.list-item__avatar
+												img(class="image image--small-profile image--rounded" src="../../assets/images/hd_dp.jpg", alt="avatar")
+											.list-item__content
+												a(href="#" class="body-2 bold") Jose Portilla
+												p.subtitle-2.gray Jose_Portilla@test.com
+											.list-item__action
+												div
+													input(class="field" type="checkbox" id="checkbox-11" name="checkname")
+													label(for="checkbox-11")
+														span
+										//- .divider
+										.list-item.list-item--two-lines.list-item--with-border
+											.list-item__avatar
+												img(class="image image--small-profile image--rounded" src="../../assets/images/hd_dp.jpg", alt="avatar")
+											.list-item__content
+												a(href="#" class="body-2 bold") Jose Portilla
+												p.subtitle-2.gray Jose_Portilla@test.com
+											.list-item__action
+												div
+													input(class="field" type="checkbox" id="checkbox-11" name="checkname")
+													label(for="checkbox-11")
+														span
+										.list-item.list-item--two-lines
+											.list-item__avatar
+											.list-item__content
+												.d-flex
+													button.btn.btn--primary.btn--ripple.text-2.bold Submit
+													a(class="btn btn--secondary btn--text convert text-2 bold" href="#") Cancel
+											.list-item__action
+									//- .d-flex.justify-content-center.align-items-end.mt-3
+									//- 	button.btn.btn--primary.btn--ripple.text-2.bold Submit
+									//- 	a(class="btn btn--secondary btn--text convert text-2 bold" href="#") Cancel
+	//- form.enroll-form
+		.container
+			.row
+				.col-lg-12
+					h4.item_title.mb-3 Enroll as :
+				.col-xl-3.col-lg-3.col-col-sm-2
+					.user-card
+						input#user(type="checkbox", name="user" disabled)
+						label.user-card__label(for="user")
+							img.user-card__image(src="../../assets/images/hd_dp.jpg", alt="", srcset="")
+							p.user-card__name
+								| Parent
+							.check
+								<i class="far fa-check-circle"></i>
+				.col-xl-3.col-lg-3.col-col-sm-2
+					.user-card
+						input#chiled(type="checkbox", name="chiled")
+						label.user-card__label(for="chiled")
+							img.user-card__image(src="../../assets/images/hd_dp.jpg", alt="", srcset="")
+							p.user-card__name
+								| Chiled
+							.check
+								<i class="far fa-check-circle"></i>
+				.col-lg-12
+					include ../components/general-component/btn.pug
+					+btn-input('btn btn--primary btn--rounded mt-4 ml-auto', 'submit', 'submit')

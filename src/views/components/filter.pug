@@ -1,0 +1,488 @@
+.filter__button-wrapper
+	//- button#toggleMenu.toggle-menu.toggle-filter(type='button')
+	//- 	i.uil.uil-bars
+.filter
+	.filter__result
+		.result__title Filters
+		.filter__selector
+			.ui.inline.dropdown.selector--dropdown
+				.selector__text Sort
+				i.dropdown.icon.selector__icon
+				.menu.selector--menu
+					.item.selector__item Most Relevant
+					.item.selector__item Most Reviewed
+					.item.selector__item Highest Rated
+					.item.selector__item Newest
+					.item.selector__item Lowest Price
+					.item.selector__item Highest Price
+	.filter-category
+		#accordionfilter.filter__wrapper.accordion
+			include /general-component/collapse-filter.pug
+			+collapse-filter('#collapseTwo','collapseTwo')
+			+collapse-filter('#collapseThree','collapseThree')
+			+collapse-filter('#collapse-four','collapse-four')
+			+collapse-filter('#collapse-five','collapse-five')
+			+collapse-filter-rating('#collapse-six','collapse-six')
+				//- #collapseTen.panel-collapse.collapse(aria-labelledby='headingOne' data-parent='#accordionfilter')
+				//- 	.panel-body
+				//- 		.ui.form
+				//- 			.grouped.fields
+				//- 				.ui.form.checkbox_sign
+				//- 					.inline.field
+				//- 						.ui.checkbox.mncheck
+				//- 							input.hidden(type='checkbox' tabindex='0')
+				//- 							label
+				//- 								| SEO
+				//- 								span.filter__counter (428)
+				//- 				.ui.form.checkbox_sign
+				//- 					.inline.field
+				//- 						.ui.checkbox.mncheck
+				//- 							input.hidden(type='checkbox' tabindex='0')
+				//- 							label
+				//- 								| Php
+				//- 								span.filter__counter (1526)
+				//- 				.ui.form.checkbox_sign
+				//- 					.inline.field
+				//- 						.ui.checkbox.mncheck
+				//- 							input.hidden(type='checkbox' tabindex='0')
+				//- 							label
+				//- 								| Wordpress Pro
+				//- 								span.filter__counter (428)
+				//- 				.ui.form.checkbox_sign
+				//- 					.inline.field
+				//- 						.ui.checkbox.mncheck
+				//- 							input.hidden(type='checkbox' tabindex='0')
+				//- 							label
+				//- 								| WooCommerce
+				//- 								span.filter__counter (958)
+				//- 				.ui.form.checkbox_sign
+				//- 					.inline.field
+				//- 						.ui.checkbox.mncheck
+				//- 							input.hidden(type='checkbox' tabindex='0')
+				//- 							label
+				//- 								| Bootstrap
+				//- 								span.filter__counter (748)
+				//- 				.ui.form.checkbox_sign
+				//- 					.inline.field
+				//- 						.ui.checkbox.mncheck
+				//- 							input.hidden(type='checkbox' tabindex='0')
+				//- 							label
+				//- 								| Web Development
+				//- 								span.filter__counter (2256)
+				//- 				.ui.form.checkbox_sign
+				//- 					.inline.field
+				//- 						.ui.checkbox.mncheck
+				//- 							input.hidden(type='checkbox' tabindex='0')
+				//- 							label
+				//- 								| Web Design
+				//- 								span.filter__counter (4859)
+				//- 				.ui.form.checkbox_sign
+				//- 					.inline.field
+				//- 						.ui.checkbox.mncheck
+				//- 							input.hidden(type='checkbox' tabindex='0')
+				//- 							label
+				//- 								| Digital Marketing
+				//- 								span.filter__counter (2458)
+				//- 				.ui.form.checkbox_sign
+				//- 					.inline.field
+				//- 						.ui.checkbox.mncheck
+				//- 							input.hidden(type='checkbox' tabindex='0')
+				//- 							label
+				//- 								| E-commerce
+				//- 								span.filter__counter (1245)
+				//- 				.ui.form.checkbox_sign
+				//- 					.inline.field
+				//- 						.ui.checkbox.mncheck
+				//- 							input.hidden(type='checkbox' tabindex='0')
+				//- 							label
+				//- 								| Wordpress Themes
+				//- 								span.filter__counter (5879)
+				//- 				.ui.form.checkbox_sign
+				//- 					.inline.field
+				//- 						.ui.checkbox.mncheck
+				//- 							input.hidden(type='checkbox' tabindex='0')
+				//- 							label
+				//- 								| Wordpress Plugins
+				//- 								span.filter__counter (2654)
+				//- 				.ui.form.checkbox_sign
+				//- 					.inline.field
+				//- 						.ui.checkbox.mncheck
+				//- 							input.hidden(type='checkbox' tabindex='0')
+				//- 							label
+				//- 								| Wordpress Hosting
+				//- 								span.filter__counter (1485)
+				//- 				.ui.form.checkbox_sign
+				//- 					.inline.field
+				//- 						.ui.checkbox.mncheck
+				//- 							input.hidden(type='checkbox' tabindex='0')
+				//- 							label
+				//- 								| Elementor
+				//- 								span.filter__counter (3658)
+				//- 				.ui.form.checkbox_sign
+				//- 					.inline.field
+				//- 						.ui.checkbox.mncheck
+				//- 							input.hidden(type='checkbox' tabindex='0')
+				//- 							label
+				//- 								| Wordpress for Ecommerce
+				//- 								span.filter__counter (5894)
+			//- .panel.panel-default
+			//- 	#headingTwo.panel-heading
+			//- 		.panel-title10
+			//- 			a.collapsed(data-toggle='collapse' data-target='#collapseTwo' href='#' aria-expanded='false' aria-controls='collapseTwo')
+			//- 				| Level
+			//- 	#collapseTwo.panel-collapse.collapse(aria-labelledby='headingTwo' data-parent='#accordionfilter')
+			//- 		.panel-body
+			//- 			.ui.form
+			//- 				.grouped.fields
+			//- 					.ui.form.checkbox_sign
+			//- 						.inline.field
+			//- 							.ui.checkbox.mncheck
+			//- 								input.hidden(type='checkbox' tabindex='0')
+			//- 								label
+			//- 									| All Levels
+			//- 									span.filter__counter (5000)
+			//- 					.ui.form.checkbox_sign
+			//- 						.inline.field
+			//- 							.ui.checkbox.mncheck
+			//- 								input.hidden(type='checkbox' tabindex='0')
+			//- 								label
+			//- 									| Beginner
+			//- 									span.filter__counter (3517)
+			//- 					.ui.form.checkbox_sign
+			//- 						.inline.field
+			//- 							.ui.checkbox.mncheck
+			//- 								input.hidden(type='checkbox' tabindex='0')
+			//- 								label
+			//- 									| Intermediate
+			//- 									span.filter__counter (1560)
+			//- 					.ui.form.checkbox_sign
+			//- 						.inline.field
+			//- 							.ui.checkbox.mncheck
+			//- 								input.hidden(type='checkbox' tabindex='0')
+			//- 								label
+			//- 									| Expert
+			//- 									span.filter__counter (240)
+			//- .panel.panel-default
+			//- 	#headingThree.panel-heading
+			//- 		.panel-title10
+			//- 			a.collapsed(data-toggle='collapse' data-target='#collapseThree' href='#' aria-expanded='false' aria-controls='collapseThree')
+			//- 				| Language
+			//- 	#collapseThree.panel-collapse.collapse(aria-labelledby='headingThree' data-parent='#accordionfilter')
+			//- 		.panel-body
+			//- 			.ui.form
+			//- 				.grouped.fields
+			//- 					.ui.form.checkbox_sign
+			//- 						.inline.field
+			//- 							.ui.checkbox.mncheck
+			//- 								input.hidden(type='checkbox' tabindex='0')
+			//- 								label
+			//- 									| English
+			//- 									span.filter__counter (500)
+			//- 					.ui.form.checkbox_sign
+			//- 						.inline.field
+			//- 							.ui.checkbox.mncheck
+			//- 								input.hidden(type='checkbox' tabindex='0')
+			//- 								label
+			//- 									| Espa&ntilde;ol
+			//- 									span.filter__counter (250)
+			//- 					.ui.form.checkbox_sign
+			//- 						.inline.field
+			//- 							.ui.checkbox.mncheck
+			//- 								input.hidden(type='checkbox' tabindex='0')
+			//- 								label
+			//- 									| Portugu&ecirc;s
+			//- 									span.filter__counter (270)
+			//- 					.ui.form.checkbox_sign
+			//- 						.inline.field
+			//- 							.ui.checkbox.mncheck
+			//- 								input.hidden(type='checkbox' tabindex='0')
+			//- 								label
+			//- 									| &#x65E5;&#x672C;&#x8A9E;
+			//- 									span.filter__counter (190)
+			//- 					.ui.form.checkbox_sign
+			//- 						.inline.field
+			//- 							.ui.checkbox.mncheck
+			//- 								input.hidden(type='checkbox' tabindex='0')
+			//- 								label
+			//- 									| Deutsch
+			//- 									span.filter__counter (120)
+			//- 					.ui.form.checkbox_sign
+			//- 						.inline.field
+			//- 							.ui.checkbox.mncheck
+			//- 								input.hidden(type='checkbox' tabindex='0')
+			//- 								label
+			//- 									| Fran&ccedil;ais
+			//- 									span.filter__counter (105)
+			//- 					.ui.form.checkbox_sign
+			//- 						.inline.field
+			//- 							.ui.checkbox.mncheck
+			//- 								input.hidden(type='checkbox' tabindex='0')
+			//- 								label
+			//- 									| T&uuml;rk&ccedil;e
+			//- 									span.filter__counter (90)
+			//- 					.ui.form.checkbox_sign
+			//- 						.inline.field
+			//- 							.ui.checkbox.mncheck
+			//- 								input.hidden(type='checkbox' tabindex='0')
+			//- 								label
+			//- 									| &#x939;&#x93F;&#x928;&#x94D;&#x926;&#x940;
+			//- 									span.filter__counter (80)
+			//- 					.ui.form.checkbox_sign
+			//- 						.inline.field
+			//- 							.ui.checkbox.mncheck
+			//- 								input.hidden(type='checkbox' tabindex='0')
+			//- 								label
+			//- 									| Italiano
+			//- 									span.filter__counter (178)
+			//- 					.ui.form.checkbox_sign
+			//- 						.inline.field
+			//- 							.ui.checkbox.mncheck
+			//- 								input.hidden(type='checkbox' tabindex='0')
+			//- 								label
+			//- 									| Polski
+			//- 									span.filter__counter (50)
+			//- 					.ui.form.checkbox_sign
+			//- 						.inline.field
+			//- 							.ui.checkbox.mncheck
+			//- 								input.hidden(type='checkbox' tabindex='0')
+			//- 								label
+			//- 									| &#xE20;&#xE32;&#xE29;&#xE32;&#xE44;&#xE17;&#xE22;
+			//- 									span.filter__counter (27)
+			//- 					.ui.form.checkbox_sign
+			//- 						.inline.field
+			//- 							.ui.checkbox.mncheck
+			//- 								input.hidden(type='checkbox' tabindex='0')
+			//- 								label
+			//- 									| Rom&acirc;n&abreve;
+			//- 									span.filter__counter (157)
+			//- 					.ui.form.checkbox_sign
+			//- 						.inline.field
+			//- 							.ui.checkbox.mncheck
+			//- 								input.hidden(type='checkbox' tabindex='0')
+			//- 								label
+			//- 									| Telugu
+			//- 									span.filter__counter (110)
+			//- 					.ui.form.checkbox_sign
+			//- 						.inline.field
+			//- 							.ui.checkbox.mncheck
+			//- 								input.hidden(type='checkbox' tabindex='0')
+			//- 								label
+			//- 									| &#x92E;&#x930;&#x93E;&#x920;&#x940;
+			//- 									span.filter__counter (50)
+			//- .panel.panel-default
+			//- 	#headingfour.panel-heading
+			//- 		.panel-title10
+			//- 			a.collapsed(data-toggle='collapse' data-target='#collapsefour' href='#' aria-expanded='false' aria-controls='collapsefour')
+			//- 				| Price
+			//- 	#collapsefour.panel-collapse.collapse(aria-labelledby='headingfour' data-parent='#accordionfilter')
+			//- 		.panel-body
+			//- 			.ui.form
+			//- 				.grouped.fields
+			//- 					.ui.form.checkbox_sign
+			//- 						.inline.field
+			//- 							.ui.checkbox.mncheck
+			//- 								input.hidden(type='checkbox' tabindex='0')
+			//- 								label
+			//- 									| Paid
+			//- 									span.filter__counter (3000)
+			//- 					.ui.form.checkbox_sign
+			//- 						.inline.field
+			//- 							.ui.checkbox.mncheck
+			//- 								input.hidden(type='checkbox' tabindex='0')
+			//- 								label
+			//- 									| Free
+			//- 									span.filter__counter (50)
+			//- .panel.panel-default
+			//- 	#headingfive.panel-heading
+			//- 		.panel-title10
+			//- 			a.collapsed(data-toggle='collapse' data-target='#collapsefive' href='#' aria-expanded='false' aria-controls='collapsefive')
+			//- 				| Features
+			//- 	#collapsefive.panel-collapse.collapse(aria-labelledby='headingfive' data-parent='#accordionfilter')
+			//- 		.panel-body
+			//- 			.ui.form
+			//- 				.grouped.fields
+			//- 					.ui.form.checkbox_sign
+			//- 						.inline.field
+			//- 							.ui.checkbox.mncheck
+			//- 								input.hidden(type='checkbox' tabindex='0')
+			//- 								label
+			//- 									| Captions
+			//- 									span.filter__counter (4780)
+			//- 					.ui.form.checkbox_sign
+			//- 						.inline.field
+			//- 							.ui.checkbox.mncheck
+			//- 								input.hidden(type='checkbox' tabindex='0')
+			//- 								label
+			//- 									| Quizzes
+			//- 									span.filter__counter (890)
+			//- 					.ui.form.checkbox_sign
+			//- 						.inline.field
+			//- 							.ui.checkbox.mncheck
+			//- 								input.hidden(type='checkbox' tabindex='0')
+			//- 								label
+			//- 									| Coding Exercises
+			//- 									span.filter__counter (350)
+			//- 					.ui.form.checkbox_sign
+			//- 						.inline.field
+			//- 							.ui.checkbox.mncheck
+			//- 								input.hidden(type='checkbox' tabindex='0')
+			//- 								label
+			//- 									| Practice Tests
+			//- 									span.filter__counter (1050)
+			//- .panel.panel-default
+			//- 	#headingsix.panel-heading
+			//- 		.panel-title10
+			//- 			a.collapsed(data-toggle='collapse' data-target='#collapsesix' href='#' aria-expanded='false' aria-controls='collapsesix')
+			//- 				| Rating
+			//- 	#collapsesix.panel-collapse.collapse(aria-labelledby='headingsix' data-parent='#accordionfilter')
+			//- 		.panel-body
+			//- 			.ui.form
+			//- 				.grouped.fields
+			//- 					.ui.form.checkbox_sign
+			//- 						.inline.field
+			//- 							.ui.checkbox.mncheck
+			//- 								input.hidden(type='checkbox' tabindex='0')
+			//- 								label.rating_filter
+			//- 									i.uil.uil-star
+			//- 									i.uil.uil-star
+			//- 									i.uil.uil-star
+			//- 									i.uil.uil-star
+			//- 									i.uil.uil-star
+			//- 									| &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;5.0 &amp; up
+			//- 									span.filter__counter (5000)
+			//- 						.inline.field
+			//- 							.ui.checkbox.mncheck
+			//- 								input.hidden(type='checkbox' tabindex='0')
+			//- 								label.rating_filter
+			//- 									i.uil.uil-star
+			//- 									i.uil.uil-star
+			//- 									i.uil.uil-star
+			//- 									i.uil.uil-star
+			//- 									| &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;4.0 &amp; up
+			//- 									span.filter__counter (2500)
+			//- 						.inline.field
+			//- 							.ui.checkbox.mncheck
+			//- 								input.hidden(type='checkbox' tabindex='0')
+			//- 								label.rating_filter
+			//- 									i.uil.uil-star
+			//- 									i.uil.uil-star
+			//- 									i.uil.uil-star
+			//- 									| &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;3.0 &amp; up
+			//- 									span.filter__counter (1500)
+			//- 						.inline.field
+			//- 							.ui.checkbox.mncheck
+			//- 								input.hidden(type='checkbox' tabindex='0')
+			//- 								label.rating_filter
+			//- 									i.uil.uil-star
+			//- 									i.uil.uil-star
+			//- 									| &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;2.0 &amp; up
+			//- 									span.filter__counter (122)
+			//- .panel.panel-default
+			//- 	#headingseven.panel-heading
+			//- 		.panel-title10
+			//- 			a.collapsed(data-toggle='collapse' data-target='#collapseseven' href='#' aria-expanded='false' aria-controls='collapseseven')
+			//- 				| Video Duration
+			//- 	#collapseseven.panel-collapse.collapse(aria-labelledby='headingseven' data-parent='#accordionfilter')
+			//- 		.panel-body
+			//- 			.ui.form
+			//- 				.grouped.fields
+			//- 					.ui.form.checkbox_sign
+			//- 						.inline.field
+			//- 							.ui.checkbox.mncheck
+			//- 								input.hidden(type='checkbox' tabindex='0')
+			//- 								label
+			//- 									| 0-2 Hours
+			//- 									span.filter__counter (500)
+			//- 					.ui.form.checkbox_sign
+			//- 						.inline.field
+			//- 							.ui.checkbox.mncheck
+			//- 								input.hidden(type='checkbox' tabindex='0')
+			//- 								label
+			//- 									| 3-6 Hours
+			//- 									span.filter__counter (150)
+			//- 					.ui.form.checkbox_sign
+			//- 						.inline.field
+			//- 							.ui.checkbox.mncheck
+			//- 								input.hidden(type='checkbox' tabindex='0')
+			//- 								label
+			//- 									| 7-18 Hours
+			//- 									span.filter__counter (90)
+			//- 					.ui.form.checkbox_sign
+			//- 						.inline.field
+			//- 							.ui.checkbox.mncheck
+			//- 								input.hidden(type='checkbox' tabindex='0')
+			//- 								label
+			//- 									| 19+ Hours
+			//- 									span.filter__counter (25)
+			//- .panel.panel-default
+				#headingeight.panel-heading
+					.panel-title10
+						a.collapsed(data-toggle='collapse' data-target='#collapseeight' href='#' aria-expanded='false' aria-controls='collapseeight')
+							| Close Caption
+				#collapseeight.panel-collapse.collapse(aria-labelledby='headingeight' data-parent='#accordionfilter')
+					.panel-body
+						.ui.form
+							.grouped.fields
+								.ui.form.checkbox_sign
+									.inline.field
+										.ui.checkbox.mncheck
+											input.hidden(type='checkbox' tabindex='0')
+											label
+												| English
+												span.filter__counter (300)
+								.ui.form.checkbox_sign
+									.inline.field
+										.ui.checkbox.mncheck
+											input.hidden(type='checkbox' tabindex='0')
+											label
+												| Espa&ntilde;ol
+												span.filter__counter (210)
+								.ui.form.checkbox_sign
+									.inline.field
+										.ui.checkbox.mncheck
+											input.hidden(type='checkbox' tabindex='0')
+											label
+												| Portugu&ecirc;s
+												span.filter__counter (170)
+								.ui.form.checkbox_sign
+									.inline.field
+										.ui.checkbox.mncheck
+											input.hidden(type='checkbox' tabindex='0')
+											label
+												| Italiano
+												span.filter__counter (174)
+								.ui.form.checkbox_sign
+									.inline.field
+										.ui.checkbox.mncheck
+											input.hidden(type='checkbox' tabindex='0')
+											label
+												| Fran&ccedil;ais
+												span.filter__counter (120)
+								.ui.form.checkbox_sign
+									.inline.field
+										.ui.checkbox.mncheck
+											input.hidden(type='checkbox' tabindex='0')
+											label
+												| Polski
+												span.filter__counter (130)
+								.ui.form.checkbox_sign
+									.inline.field
+										.ui.checkbox.mncheck
+											input.hidden(type='checkbox' tabindex='0')
+											label
+												| Deutsch
+												span.filter__counter (30)
+								.ui.form.checkbox_sign
+									.inline.field
+										.ui.checkbox.mncheck
+											input.hidden(type='checkbox' tabindex='0')
+											label
+												| Bahasa Indonesia
+												span.filter__counter (20)
+								.ui.form.checkbox_sign
+									.inline.field
+										.ui.checkbox.mncheck
+											input.hidden(type='checkbox' tabindex='0')
+											label
+												| &#xE20;&#xE32;&#xE29;&#xE32;&#xE44;&#xE17;&#xE22;
+												span.filter__counter (10)

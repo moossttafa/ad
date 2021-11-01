@@ -1,0 +1,31 @@
+mixin course-card(className)
+	.course-card(class= className)
+		.course-card__card-media
+			.card-media__card-img.my-0(href='course_detail_view.html')
+				img(src='../assets/images/get_img.jpg' alt='')
+				//- .card-img__card-overlay
+					//- .card-overlay__badge-seller Bestseller 
+			//-  start card-content part2
+			.card-media__card-content
+				.course-card__details
+					.d-flex.justify-content-between.align-items-center
+						.card-content__card-details
+							span.card-details__card-view 109k views
+							span.card-details__card-view 15 days ago
+						.card-overlay__reviews
+							i.far.fa-star 
+							| 4.5
+					a(class="title-link text-2 semi-bold " href='course_detail_view.html')
+						| Complete Python Bootcamp: Go from zero to hero
+						| in Python 3
+					a(href='#' class="card-content__card-title") Web Development | Python
+					p.card-auth__name-auther
+						| By 
+						a(href='#' class="my-0 text-2 bold") John Doe
+				.card-auth__price
+					.course-card__actions
+						a(href="#" class="btn btn--primary btn--outlined mb-0" title='Enroll') 
+							|Enroll
+					a(href="#" class="btn-wishlist accent")
+						i.fas.fa-heart 
+

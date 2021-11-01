@@ -1,0 +1,42 @@
+.toolbar{
+  position: relative;
+  width: 70px;
+  height: 100%;
+  button{
+    i{
+      // font-size: 14px;
+    }
+  }
+  .toolbar__content{
+    background: #FFF;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 6px;
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .3s ease all;
+    margin: 0 auto;
+  }
+  &.toolbar--horizontal{
+    flex-direction: row;
+  }
+}
+.top{
+  top: 500px;
+}
+.night-mode{
+  .toolbar{
+    background: #576874;
+    button{
+      i{
+        color: #FFF;
+      }
+    }
+  }
+}

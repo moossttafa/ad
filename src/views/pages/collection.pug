@@ -1,0 +1,24 @@
+extends ../layouts/admin.pug
+block title
+	title collections
+
+
+block content
+	// page title bread-crumbs
+	include ../components/bread-crumbs.pug
+	+pageTitle("page-header--with-block")
+		.tabs.tabs--center.mb-0.mt-3
+			a(class="tab tab--active" href='#nav-recommendation') recommendation
+			a(class="tab" href='#nav-classification') classification
+	.container
+		.row
+			.col-lg-12
+				.tabs-panels
+					#nav-recommendation.tab-panel.tab-panel--active
+						div(id='recommendations-list' data-listing-url="http://localhost:3000/recommendations/" data-create-url="http://localhost:3000/recommendations/" )
+						//tab 1
+					#nav-classification.tab-panel
+						div(id='classifications-list' data-listing-url="http://localhost:3000/classifications/" data-create-url="http://localhost:3000/classifications/" )
+						//tab 2
+
+	//- .card.card--data.flex-column

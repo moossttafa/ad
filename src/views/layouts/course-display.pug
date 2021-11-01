@@ -1,0 +1,70 @@
+//- course-display layout
+
+doctype html
+html(lang='en' dir="ltr")
+	head
+		link(href='../assets/vendor/semantic/semantic.min.css' rel='stylesheet' type='text/css' )
+		link(href='../assets/vendor/unicons-2.0.1/css/unicons.css' rel='stylesheet')
+		link(href='../assets/vendor/fontawesome-free/css/all.min.css' rel='stylesheet')
+		link(rel="icon" href="../../assets/images/Etqadem_Icon.png")
+		link(href='../assets/vendor/bootstrap/css/bootstrap-grid.min.css' rel='stylesheet')
+		link(href='../assets/vendor/OwlCarousel/assets/owl.carousel.css' rel='stylesheet')
+		link(href='../assets/vendor/OwlCarousel/assets/owl.theme.default.min.css' rel='stylesheet')
+		link(href='../assets/vendor/bootstrap/css/bootstrap.min.css' rel='stylesheet')
+		link(href='../assets/vendor/select2.min.css' rel='stylesheet')
+
+		meta(name="viewport" content="width=device-width, shrink-to-fit=9")
+
+
+		//- Title
+		block title
+			title Your project!
+
+	body
+		div.wrapper.wrapper--display
+			//- Menu
+			include ../components/headers/header
+				block category
+			include ../components/sidebar.pug
+				block sidebar
+					include ../components/sidebar-content.pug
+						block collapse
+					//- include ../components/sidebar-content.pug
+
+			//- block content
+
+			block content
+				.page-content
+					//- course viewe
+					//- course video
+					section.course-video
+						img(src="../../assets/images/sign.svg", alt="")
+						.container-fluid
+							.row
+								.col-lg-12
+									.course-video__wrapper
+										.row.justify-content-center
+											block courseVideo
+
+						//- section.course-video
+						//-   block courseVideo
+					section.wrapper-user
+						.container-fluid
+							.row
+								.col-lg-12
+										block userAccount
+					section.wrapper-tabs
+						.container-fluid
+							.row
+								.col-lg-12
+									block tabs
+
+					include ../components/footers/footer
+
+			//- block scripts
+		block scripts
+			//- script(src='https://unpkg.com/video.js/dist/video-js.min.css')
+
+
+
+

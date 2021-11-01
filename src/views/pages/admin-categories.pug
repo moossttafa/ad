@@ -1,0 +1,26 @@
+extends ../layouts/admin.pug
+block title
+  title Classifications
+
+
+block content
+  // page title bread-crumbs
+  include ../components/bread-crumbs.pug
+  +pageTitle("page-header--with-block")
+    .tabs.tabs--center.mb-0.mt-3
+      a(class="tab tab--active" href='#nav-categories') Categories
+      a(class="tab" href='#nav-tags') tags
+  .container
+    .row
+      .col-lg-12
+        .tabs-panels
+          #nav-categories.tab-panel.tab-panel--active
+            div(id='categories-list'
+              data-listing-url="http://localhost:3000/categories/"
+              data-create-url="http://localhost:3000/categories/" )
+            //tab 1
+          #nav-tags.tab-panel
+            div(id='tags-list'
+              data-listing-url="http://localhost:3000/tags/"
+              data-create-url="http://localhost:3000/tags/" )
+            //tab 2

@@ -1,0 +1,20 @@
+.owl-nav{
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: -1%;
+  transform: translateY(-50%);
+  width: 102%;
+  justify-content: space-between;
+  margin-top: 0 !important;
+  .owl-prev, .owl-next{
+    height: 30px !important;
+    width: 30px !important;
+    padding: 1px 0 !important;
+    color: #333 !important;
+    background: #fff !important;
+    border-radius: 100% !important;
+    border: 1px solid #e5e5e5 !important;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.07);
+  }
+}

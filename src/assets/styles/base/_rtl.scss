@@ -1,0 +1,1173 @@
+html[dir="rtl"] {
+  .course-card {
+    .course-card__card-media {
+      float: right;
+      // start card-img part1
+      .card-media__card-img {
+        float: right;
+        .card-img__card-overlay {
+          .card-overlay__badge-seller {
+            right: unset;
+            left: 0;
+            &::after {
+              left: unset;
+              right: -6px;
+              height: 15px;
+              width: 15px;
+              position: absolute;
+              top: 2px;
+            }
+          }
+          .card-overlay__reviews {
+            left: unset;
+            right: 10px;
+            text-align: center;
+            .crd-reviews i {
+              margin-left: 2px;
+              [class*=" uil-"]::before,
+              [class^="uil-"]::before {
+                margin-left: 0.2em;
+                margin-right: 0.2em;
+              }
+            }
+          }
+          span.card-overlay__play_btn1 {
+            float: right;
+            left: 40%;
+            padding: 12px 10px;
+            i.uil-play {
+              &::before {
+                margin-left: 0.2em;
+                margin-right: 0.2em;
+              }
+            }
+          }
+          .card-overlay__crd-timer {
+            right: unset;
+            left: 0;
+            margin-left: 10px;
+          }
+        }
+      }
+      // start card-content part2
+      .card-media__card-content {
+        float: right;
+        .card-content__card-details {
+          text-align: right;
+        }
+        .dropdown-content {
+          left: 0;
+          right: unset;
+        }
+        .eps_dots {
+          left: 0;
+          right: unset;
+        }
+        .more_dropdown a {
+          .dropdown-content {
+            z-index: 1;
+            left: 0;
+          }
+        }
+        a.card-content__card-description {
+          text-align: right;
+        }
+        a.card-content__card-title {
+          text-align: right;
+        }
+        .card-content__card-auth {
+          .card-auth__price {
+            float: left;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+
+  .field-wrapper {
+    &.field-wrapper--limit {
+      .text-field__content {
+        .text-field__limit {
+          right: unset;
+          left: 3px;
+        }
+      }
+    }
+  }
+  /*start sidebar*/
+  // .toggle-menu {
+  //   float: right;
+  //   i {
+  //     float: right;
+  //   }
+  // }
+  .vertical_nav {
+    right: -240px;
+    .menu--scrollbar {
+      .left_section {
+        ul {
+          .menu--item {
+            .menu--link {
+              .menu--icon {
+                float: right;
+              }
+            }
+          }
+          .menu--item__has_sub_menu {
+            .menu--link {
+              &::after {
+                left: 15px;
+                right: auto;
+              }
+            }
+            .sub_menu {
+              .sub_menu--item {
+                .sub_menu--link {
+                  padding-right: 50px;
+                  padding-left: 16px;
+                }
+              }
+            }
+          }
+        }
+        .left_title {
+          padding: 20px 17px 10px;
+          text-align: right;
+        }
+        ul {
+          .menu--item {
+            .user_img {
+              img {
+                margin-right: 17px;
+                margin-left: 15px;
+              }
+            }
+          }
+        }
+      }
+      .sidebar__footer {
+        ul.footer-list {
+          li.list-item {
+            a.item-link {
+              text-align: right;
+            }
+          }
+        }
+        .footer_content {
+          p {
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+  .vertical_nav__closed {
+    right: -240px !important;
+  }
+  .nav--opened {
+    right: 0 !important;
+    box-shadow: rgba(129, 42, 42, 0.2)-30px 0 30px 30px;
+  }
+  @media (min-width: 992px) {
+    /*wrapper conent*/
+    .wrapper {
+      // margin-right: 240px;
+      // margin-right: 240px;
+      margin-left: 0;
+      &.wrapper--video-player {
+        // margin-right: 285px;
+      }
+    }
+    .wrapper--minify {
+      margin-right: 0;
+    }
+    .collapse_menu {
+      float: right;
+      .collapse_menu--icon {
+        transform: rotate(180deg);
+        float: right;
+      }
+    }
+    .vertical_nav {
+      right: 0;
+    }
+    .vertical--minify {
+      .menu--label {
+        right: 0;
+        padding-right: 16px;
+        padding-left: 16px;
+      }
+      .menu--opened {
+        .sub_menu {
+          right: 50px;
+        }
+      }
+    }
+  }
+
+  /*End sidebar*/
+  /*start header*/
+  .header {
+    .header--main-logo {
+      float: right;
+      margin-right: 20px;
+    }
+    //
+    .header__top-category {
+      .top-category--menu-dropdown {
+        .menu-dropdown--item {
+          .item--menu {
+            .menu--item {
+              text-align: right;
+            }
+          }
+        }
+      }
+    }
+    //
+    .header__search {
+      float: right;
+      margin-right: 50px;
+      .search__wrapper {
+        .wrapper__inputs-form {
+          .inputs-form--input {
+            padding-right: 3.2em !important;
+            padding-left: 1em !important;
+            text-align: right;
+          }
+          .inputs-form--icon {
+            right: 1px;
+            left: auto;
+          }
+        }
+      }
+    }
+    // .header__notification {
+    //   margin-right: auto;
+    //   float: left;
+    //   // padding-left: 8px;
+    //   margin-left: 0;
+
+    //   .notification__list {
+    //     .list__list-item {
+    //       // .list-item--upload-course {
+    //       //   margin-left: 10px;
+    //       // }
+    //       .list-item--opencard {
+    //         .opencard__count-num {
+    //           left: 8px;
+    //         }
+    //       }
+    //     }
+    //     //item 3 massege
+    //     .list__massege {
+    //       text-align: right;
+    //       .massege__opencard {
+    //         .opencard__count-num {
+    //           left: 8px;
+    //         }
+    //       }
+    //       .massege__menu {
+    //         text-align: right;
+    //         right: auto !important;
+    //         left: 0 !important;
+    //         .menu--item {
+    //           text-align: right;
+    //           .item__profile-link {
+    //             .profile-link__img {
+    //               margin-left: 10px;
+    //             }
+    //             .profile-link__content {
+    //               .content__name {
+    //                 text-align: right;
+    //               }
+    //               .content__details {
+    //                 text-align: right;
+    //               }
+    //             }
+    //           }
+    //         }
+    //         .item__view-all {
+    //           float: right;
+    //         }
+    //       }
+    //     }
+    //     .list__profile {
+    //       text-align: right;
+    //       .profile__account {
+    //         float: left;
+    //         .accoutn__img {
+    //           margin-right: 10px;
+    //         }
+    //       }
+    //       .profile__menu {
+    //         right: auto !important;
+    //         left: 0 !important;
+    //         text-align: right;
+    //         .menu__channel-item {
+    //           .channel-item__profile {
+    //             .profile__img {
+    //               margin-left: 10px;
+    //             }
+    //             .profile__content {
+    //               .content__header {
+    //                 .header__name {
+    //                   text-align: right;
+    //                 }
+    //               }
+    //             }
+    //           }
+    //           .channel-item--view {
+    //             text-align: right;
+    //           }
+    //           .menu__night-mode {
+    //             margin-left: 10px;
+    //             .night-mode--btn-mode {
+    //               .btn-mode__icon {
+    //                 margin-left: 10px;
+    //               }
+    //               .btn-mode--switch-mode {
+    //                 left: 13px;
+    //                 .switch-mode--switch-btn {
+    //                   right: 0;
+    //                   left: 0;
+    //                 }
+    //               }
+    //             }
+    //           }
+    //         }
+    //         .channel-item--item {
+    //           text-align: right;
+    //         }
+    //       }
+    //     }
+    //   }
+    // }
+  }
+  @media (max-width: 1199px) {
+    .header__search {
+      margin-right: 0 !important;
+    }
+  }
+
+  /*End header*/
+  /*start component course*/
+  .course-content {
+    float: right;
+    h3 {
+      text-align: right;
+      float: right;
+    }
+    .course-content__details {
+      float: left;
+      .details__list {
+        li {
+          margin-left: 30px;
+          .list--expand-all {
+            text-align: right;
+          }
+          .list--list-content-number {
+            text-align: right;
+          }
+          .list--time-course {
+            text-align: right;
+          }
+        }
+      }
+    }
+    .course-content__course-list {
+      float: right;
+      .course-list__header {
+        float: right;
+        .header__header-title {
+          .header-title__title {
+            .title__icon {
+              margin-left: 5px;
+            }
+            .title__title-text {
+              padding-right: 8px;
+              padding-left: 10px;
+              color: $black;
+              font-weight: 500;
+            }
+          }
+        }
+        .header__header-details {
+          .header-details__num-item {
+            margin-left: 20px;
+          }
+          .header-details__length-item {
+            text-align: left !important;
+          }
+        }
+      }
+      .course-list__list-content {
+        float: right;
+        border-right: 1px solid $white;
+        border-left: 1px solid $white;
+        .left-content__top-title {
+          margin-right: 10px;
+        }
+        .content-item__details {
+          margin-right: auto;
+          .details__content-summary {
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+  /*start component about*/
+  .about-content {
+    .about-content__about-required {
+      .about-required__title {
+        text-align: right;
+      }
+      .about-required__list {
+        .list__list-item {
+          .list-item__details {
+            text-align: right;
+            &::before {
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+    }
+    .about-content__description {
+      .description__title {
+        text-align: right;
+      }
+      .description__name {
+        text-align: right;
+      }
+      .description__list {
+        padding-right: 30px !important;
+        .list__item-list {
+          .item-list__item {
+            text-align: right;
+            padding-right: 15px;
+            &::before {
+              margin-left: 10px;
+              right: -25px;
+            }
+          }
+        }
+      }
+    }
+    .about-content__about-course {
+      .about-course__title {
+        text-align: right;
+      }
+      .about-course__list {
+        padding-right: 30px !important;
+        .list__list-item {
+          .list-item__item {
+            text-align: right;
+            &::before {
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+    }
+    .about-content__about-learn {
+      .about-learn__title {
+        text-align: right;
+      }
+      .about-learn__content {
+        .content__list {
+          .list__list-item {
+            .list-item__title {
+              .title__name {
+                text-align: right;
+                margin-right: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  /* start component review */
+  .reviews {
+    float: right;
+    .reviews__all-reviews {
+      float: right;
+      .all-reviews__title {
+        text-align: right;
+      }
+      .all-reviews__total-rating {
+        .total-rating__number {
+          text-align: right;
+          margin-left: 10px;
+        }
+        .total-rating__rating-box {
+          .rating-box__rating-star {
+            float: right;
+            margin-left: 7px;
+          }
+          .rating-box--full-star {
+            &::before {
+              right: 0;
+            }
+          }
+          .rating-box--half-star {
+            &::before {
+              right: 0;
+            }
+            &::after {
+              right: 1.5rem;
+            }
+          }
+          .rating-box--empty-star {
+            &:before {
+              right: 0;
+            }
+          }
+        }
+        .total-rating__title {
+          text-align: right;
+          margin-right: 10px;
+        }
+      }
+      .all-reviews__details-rate {
+        .details-rate__rating {
+          .rating__progress {
+            margin-left: 20px;
+          }
+          .rating__rating-box {
+            .rating-box__rating-star {
+              float: right;
+              margin-left: 7px;
+            }
+            .rating-box--full-star {
+              &::before {
+                right: 0;
+              }
+            }
+            .rating-box--half-star {
+              &::before {
+                right: 0;
+              }
+              &::after {
+                right: 1.5rem;
+              }
+            }
+          }
+          .rating--total {
+            text-align: right;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+    .review__header {
+      float: right;
+      .header__header-content {
+        float: right;
+        .header-content__title {
+          text-align: right;
+          float: right;
+        }
+        .header-content__search {
+          float: left;
+          .search__input {
+            padding-left: 40px;
+          }
+          .search__btn {
+            left: 3px;
+          }
+        }
+      }
+    }
+    .review__all-reviews {
+      float: right;
+      .all-reviews__item {
+        .item__reviews-user {
+          .reviews-user__img {
+            margin-left: 15px;
+          }
+          .reviews-user__title {
+            .title__name {
+              text-align: right;
+            }
+          }
+        }
+        .item__rating-box {
+          .rating-box__rating-star {
+            float: right;
+            margin-left: 7px;
+          }
+          .rating-box--full-star {
+            &::before {
+              right: 0;
+            }
+          }
+          .rating-box--half-star {
+            &::before {
+              right: 0;
+            }
+            &::after {
+              right: 1.5rem;
+            }
+          }
+          .rating-box--empty-star {
+            &:before {
+              right: 0;
+            }
+          }
+        }
+        .item__comment {
+          text-align: right;
+        }
+        .item__helpful {
+          .helpful__ask {
+            margin-left: 10px;
+          }
+          .helpful__radio-group {
+            .radio-group__item {
+              margin-left: 10px;
+              .item__radio-label {
+                &::before {
+                  margin-left: 10px;
+                }
+              }
+            }
+          }
+          .helpful__text {
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
+  // start course-video
+  .course-video {
+    float: right;
+    .course-video__wrapper {
+      float: right;
+      .wrapper__preview-video {
+        float: right;
+        .preview-video__model-img {
+          float: right;
+          .model-img__course-overlay {
+            right: 0;
+            left: 0;
+            .course-overlay--seller {
+              right: 0;
+              &::after {
+                left: -5px;
+                border-bottom-right-radius: 2px;
+                border-top-right-radius: 3px;
+                border-bottom-left-radius: 3px;
+              }
+            }
+            .course-overlay--play {
+              float: right;
+              left: 40%;
+              padding: 12px 10px;
+              .play__fa {
+                &::before {
+                  margin-left: 0.2em;
+                  margin-right: 0.2em;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .preview-video__action {
+      float: right;
+      .action__save-video {
+        text-align: right;
+        float: right;
+        margin-left: 30px;
+        .save-video__icons {
+          .icons__fa {
+            margin-left: 5px;
+          }
+        }
+      }
+      .action__rebort-vedios {
+        text-align: right;
+        float: right;
+        .rebort-video__icons {
+          .icons__fa {
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+    .wrapper__header {
+      .header__title {
+        text-align: right;
+      }
+      .header__description {
+        text-align: right;
+      }
+    }
+    .wrapper__review-video {
+      text-align: right;
+      .review-video__review {
+        padding: 3px 10px 3px 15px;
+        .review__icon {
+          margin-left: 2px;
+        }
+      }
+    }
+    .wrapper__enrolled-text {
+      text-align: right;
+    }
+    .wrapper__language {
+      .language__lang {
+        margin-left: 20px;
+      }
+      .language__more-lang {
+        .more-lang__tooltip {
+          .tooltip--caption_tooltip {
+            .tooltip__caption-content {
+              left: 0;
+            }
+          }
+        }
+      }
+    }
+    .wrapper__last-update {
+      text-align: right;
+    }
+    .wrapper__btn-list {
+      .btn-list__list-item {
+        .list-item--btn-Enrole {
+          margin-left: 6px;
+        }
+        .list-item--btn-Enrole-childe {
+          margin-right: 10px;
+        }
+      }
+    }
+    .wrapper__title-buy {
+      text-align: right;
+    }
+  }
+  .user-wrapper__account {
+    float: right !important;
+    .account__live-user {
+      float: right;
+      .live-user__content {
+        text-align: right;
+        .user-img__img {
+          margin-left: 15px;
+        }
+      }
+      .live-user__content {
+        text-align: right !important;
+      }
+    }
+  }
+  .interactions-course {
+    float: left;
+  }
+  //start page chapter
+  // start comments component
+  .comments {
+    float: right;
+    .comments__header {
+      float: right;
+      .header__title {
+        float: right;
+        .title__name {
+          text-align: right;
+          float: right;
+        }
+      }
+    }
+    .comments__add-comment {
+      float: right;
+      .add-comment__group {
+        display: flex;
+        .group__textarea {
+          margin-right: 20px;
+        }
+      }
+    }
+    .btn {
+      float: left;
+    }
+    .comment__review-comment {
+      float: right;
+      .review-comment__item,
+      .review_reply {
+        .review-comment__comment {
+          text-align: right;
+        }
+        .item__actions {
+          .action__report {
+            margin-right: 5px;
+          }
+        }
+      }
+      .review_reply {
+        padding-left: 0;
+        padding: 0px 20px;
+        .review_item {
+          padding-left: 0;
+          padding-right: 20px;
+        }
+      }
+    }
+  }
+  // start list-dropdown
+  .more-dropdown {
+    position: relative;
+    .more-dropdown__content {
+      position: absolute;
+      right: -130px;
+      .content__item {
+        .item__icon {
+          margin-left: 6px;
+        }
+      }
+    }
+  }
+  // userAccount comment
+  .item__reviews-user {
+    .reviews-user__img {
+      margin-left: 15px;
+    }
+  }
+  // collaps
+  .sub__menu {
+    padding: 10px 0px;
+    .menu__list {
+      padding: 4px 2px 4px 6px;
+      .list__wrapper {
+        .list--link {
+          padding-right: 0 !important;
+        }
+      }
+    }
+  }
+  //footer-admin
+  .footer {
+    float: right;
+    .container-fluid {
+      .footer__item {
+        .item__link {
+          padding-right: 0px;
+        }
+      }
+    }
+  }
+  .footer-button__link {
+    .footer-button__logo {
+      .footer-button__img {
+        margin-left: 20px;
+      }
+    }
+  }
+  .footer-button__copyRight {
+    text-align: right;
+  }
+  .footer-button__social {
+    text-align: left;
+    .social__link {
+      padding-right: 15px;
+    }
+  }
+  //filter
+  .filter {
+    float: right;
+    // margin-top: 20px;
+  }
+  .filter__result {
+    padding: 13px 10px 15px;
+    float: right;
+    .result__title {
+      text-align: right;
+      float: right;
+    }
+  }
+
+  .filter__selector {
+    float: left;
+    .selector--dropdown {
+      text-align: right;
+    }
+  }
+  .selector--menu {
+    text-align: right;
+    right: -90px;
+    .selector__item {
+      text-align: right;
+    }
+  }
+  .filter-category {
+    float: right;
+    .filter__wrapper {
+      float: right;
+    }
+  }
+  .filter__panel {
+    float: right;
+  }
+  .panel__title {
+    .collapsed {
+      &::before {
+        float: left !important;
+        padding-left: 0;
+      }
+    }
+  }
+  .panel__title > a:before {
+    float: left !important;
+    padding-left: 0;
+  }
+  .collapse--wrapper {
+    .collapse__item {
+      text-align: right;
+    }
+  }
+  .collapse__group {
+    text-align: right;
+    .collapse__checkbox {
+      .collapse__input {
+        right: 0;
+      }
+    }
+  }
+  .collapse__title,
+  .collapse-rating {
+    &::before {
+      right: 0;
+    }
+    .collapse__counter {
+      margin-right: 25px;
+    }
+  }
+  .filter__button-wrapper {
+    .filter__btn {
+      margin-right: auto;
+    }
+  }
+  @media (max-width: 768px) {
+    .selector--menu {
+      left: 0 !important;
+      right: unset !important;
+    }
+    .filter {
+      right: 0;
+      transform: translate(100%, -167px);
+    }
+    .filter__wrapper {
+      right: 0;
+    }
+    .filter__opened {
+      transform: translate(0%, -167px);
+    }
+  }
+  @media (max-width: 325px) {
+    .filter {
+      transform: translate(-100%, -198px);
+    }
+    .filter__opened {
+      transform: translate(0, -198px);
+    }
+  }
+  // End Filter
+  // pagination
+  .pagination {
+    .pagination__navbar {
+      .pagination__list {
+        .pagination__item {
+          &:first-of-type {
+            .pagination__link {
+              transform: rotate(180deg);
+            }
+          }
+          &:last-of-type {
+            .pagination__link {
+              transform: rotate(180deg);
+            }
+          }
+        }
+      }
+    }
+  }
+  //sidebar admin
+  .vertical_nav {
+    right: 0;
+  }
+  .wrapper__minify-admin {
+    margin-right: 60px !important;
+  }
+  //sidebar admin
+  .sidebar {
+    right: -240px;
+    .menu__section {
+      padding: 0px 5px 0px 3px;
+    }
+  }
+  .sub-menu-item {
+    &::before {
+      left: 15px;
+      right: auto;
+    }
+  }
+  .list__sidebar {
+    .list__item {
+      .item__link {
+        .item__icon {
+          float: right;
+        }
+        &::before {
+          left: 15px;
+        }
+      }
+    }
+  }
+  .menu__link {
+    .menu__icon {
+      float: right;
+    }
+  }
+  .sub-menu {
+    .sub-menu__link {
+      padding-right: 50px;
+      padding-left: 16px;
+    }
+  }
+
+  @media (min-width: 992px) {
+    // sidebar admin
+    .sidebar {
+      right: 0;
+    }
+  }
+  .sidebar__closed {
+    right: -240px !important;
+  }
+  .sidebar__opened {
+    right: 0 !important;
+  }
+  // body
+  @media (min-width: 992px) {
+    body {
+      &.sidebar-with-icon {
+        .wrapper {
+          // margin-right: 60px;
+        }
+      }
+      &.open-side-nav {
+        .wrapper {
+          // margin-right: 240px;
+        }
+      }
+    }
+    .toggle__menu {
+      float: right;
+      .menu__icon {
+        float: right;
+      }
+    }
+    .sub-menu-item {
+      &::before {
+        left: 15px;
+        right: auto;
+      }
+    }
+  }
+  @media (max-width: 992px) {
+    .toggle__menu {
+      float: right;
+    }
+  }
+  .iti--allow-dropdown {
+    width: 100% !important;
+  }
+  .iti__flag-container {
+    right: 0;
+    left: auto;
+    padding-right: 8px;
+  }
+  .ui[class*="left icon"].input > i.icon {
+    right: 1px;
+    left: auto;
+    border-radius: 0.28571429rem 0 0 0.28571429rem;
+  }
+  .ui.form.checkbox_sign {
+    text-align: right;
+  }
+  .ui.checkbox input[type="checkbox"],
+  .ui.checkbox input[type="radio"] {
+    right: 0;
+  }
+  .ui.checkbox .box:after,
+  .ui.checkbox .box:before,
+  .ui.checkbox label:after,
+  .ui.checkbox label:before {
+    right: 0;
+  }
+  .ui.checkbox.icon .box,
+  .ui.checkbox.icon label {
+    padding-right: 1.85714em;
+  }
+  // thread
+
+  .details__wrapper {
+    padding: 5px 0px;
+    .thread__details {
+      margin-left: 16px;
+      .details__name {
+        padding-right: 5px;
+      }
+      .details__data {
+        padding-right: 5px;
+      }
+    }
+  }
+  .thread__wrapper {
+    &.thread--replay {
+      padding-right: 50px;
+    }
+  }
+  .thread__post {
+    .post__votecell {
+      padding: 10px 0px 10px 20px;
+    }
+  }
+
+  .qustion__tags {
+    .qustion__taglist {
+      .taglist__item {
+        margin: 2px 0px 2px 6;
+      }
+    }
+  }
+  //  @media (min-width: 767px) {
+  //  }
+  .comment--remov-mb {
+    .live-user__content {
+      .content__user-img {
+        .user-img__img {
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+  //header-player
+ 
+  .playlist {
+    right: -285px;
+  }
+  @media (min-width: 992px) {
+    .playlist {
+      right: 0px;
+    }
+  }
+  .playlist--opened {
+    right: 0 !important;
+  }
+}

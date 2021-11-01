@@ -1,0 +1,71 @@
+.hero {
+  width: 100%;
+  height: calc(100vh - 60px);
+  // margin-bottom: 80px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  // .title-h1{
+  //   color: #fff;
+  // }
+  .hero__bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    opacity: .8;
+  }
+
+  .hero__avatar {
+    position: absolute;
+    bottom: 0;
+    right: -20px;
+    width: 50%;
+    height: 80%;
+    @media(max-width: 992px) {
+      width: 70%;
+      right: 0;
+      // opacity: ;
+    }
+  }
+
+  .hero-content {
+    background-color: rgba(#333, .6);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    @media(max-width: 992px) {
+      // align-items: flex-start;
+    }
+  }
+}
+// .doners {
+//   padding: 40px 0;
+//   margin: 20px 0;
+
+//   .owl-carousel {
+//     display: flex;
+//     align-items: center;
+//   }
+
+//   .item {
+//     height: 180px;
+//     display: flex;
+//     align-items: center;
+//   }
+// }
+
+// .doner-slider {
+//   .item {
+
+//   }
+// }
+
+// .rate-display {
+//   display: flex;
+//   flex-wrap: nowrap;
+// }  

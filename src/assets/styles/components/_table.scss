@@ -1,0 +1,161 @@
+.table-responsive {
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 12px;
+  &.table-responsive-exams {
+    border: none;
+    border-radius: 0;
+  }
+}
+.table {
+  width: 100%;
+  th {
+    background-color: #1dbae626;
+    font-weight: 600;
+    color: $primary;
+  }
+  th,
+  td {
+    padding: 12px;
+    font-size: 14px;
+    line-height: 1;
+    text-align: center;
+
+    &.main-cell {
+      text-align: left;
+    }
+  }
+  th {
+    text-transform: capitalize;
+  }
+  td {
+    &.td--nowrap {
+      white-space: nowrap;
+    }
+  }
+  tbody {
+    background: $white;
+  }
+
+  i[class*="fa-"] {
+    color: $primary;
+    font-size: 14px;
+    padding: 4px;
+  }
+  &.table--exams {
+    border-collapse: collapse;
+    margin: auto;
+		position: relative;
+    overflow: auto;
+    tbody {
+      tr {
+				background-color: #f8f9fa;
+				border-bottom: 4px solid;
+				border-color: #FFF;
+      }
+    }
+    th,
+    td {
+      padding: 12px;
+      .check-field {
+        margin: auto;
+      }
+			&:first-of-type{
+				z-index: 2;
+				position: sticky;
+				left: 0px;
+				background-color: #f8f9fa;
+			}
+    }
+		th {
+      background-color: unset;
+			color: #202124;
+			&:first-of-type{
+				z-index: 2;
+				background-color: #FFF;
+			}
+    }
+    td {
+      font-weight: 600;
+      color: #202124;
+      padding: 12px;
+    }
+    @media (max-width: 767px) {
+      th,
+      td {
+        &:first-of-type{
+          box-shadow: 5px 0 5px -1px #d7d4d4;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .table-responsive {
+    overflow-x: scroll;
+  }
+}
+
+html[dir="rtl"] {
+  .table {
+    th,
+    td {
+      &.main-cell {
+        text-align: right;
+      }
+    }
+    &.table--exams {
+      td {
+        .field {
+          &[type="radio"],
+          &[type="checkbox"] {
+            & + label {
+              padding-right: 0;
+            }
+          }
+        }
+      }
+			th,
+			td {
+				&:first-of-type{
+					z-index: 2;
+					right: 0px;
+				}
+			}
+    }
+  }
+}
+.night-mode {
+  .table {
+    tbody {
+      background: #3a474f;
+      color: #fff;
+    }
+		&.table--exams {
+			tbody {
+				tr {
+					background-color:#43525c;
+					border-color: #576874;
+				}
+			}
+			th,
+			td {
+				&:first-of-type{
+					background-color: #43525c;
+					color: $white;
+				}
+			}
+			th {
+				background-color: unset;
+				color: $white;
+				&:first-of-type{
+					background-color: #43525c;
+				}
+			}
+			td {
+				color: #202124;
+			}
+		}
+  }
+}

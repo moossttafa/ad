@@ -1,0 +1,367 @@
+a.btn,
+button.btn,
+input[type="button"].btn {
+  position: relative;
+  padding: 0 16px;
+  height: 36px;
+  line-height: 34px;
+  border-radius: 5px;
+  border: none;
+  background-color: $default;
+  color: $gray;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  white-space: nowrap;
+  cursor: pointer;
+  letter-spacing: 1.25px;
+  transition: opacity .2s cubic-bezier(.4, 0, .6, 1);
+	margin: 0 14px 0 0;
+	margin-right: 16px;
+
+  &:hover:before {
+    opacity: 0.15;
+  }
+
+  &:before {
+    content: '';
+    display: block;
+    pointer-events: none;
+    border-radius: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    color: inherit;
+    background-color: currentColor;
+    transition: opacity .2s cubic-bezier(.4, 0, .6, 1);
+  }
+
+  &:focus {
+    outline: none;
+
+    &:before {
+      opacity: 0.24;
+    }
+  }
+
+  &.btn--rounded {
+    border-radius: 20px;
+  }
+
+  &.btn--text {
+    border: none;
+  }
+
+  &.btn--outlined {
+    border: 1px solid currentColor;
+  }
+  &.btn--double-line {
+    border: 4px double ;
+    border-color:currentColor ;
+  }
+
+  &.btn--text,
+  &.btn--outlined {
+    background-color: transparent;
+  }
+
+  &.btn--disabled,
+  &:disabled {
+    color: rgba(#000000, .26);
+    cursor: not-allowed;
+
+    &:focus:before {
+      opacity: 0;
+    }
+
+    &:hover:before {
+      opacity: 0;
+    }
+  }
+
+  &.btn--primary {
+    color: $white;
+    background-color: $primary; //#0d758e // #3D5467
+    border-color: $primary;
+
+    &.btn--text,
+    &.btn--outlined {
+      color: $primary;
+      background-color: transparent;
+    }
+  }
+
+  &.btn--accent {
+    color: $white;
+    background-color: $accent; //#0d758e // #3D5467
+    border-color: $accent;
+
+    &.btn--text,
+    &.btn--outlined {
+      color: $accent;
+      background-color: transparent;
+    }
+  }
+
+  &.btn--secondary {
+    color: $white;
+    background-color: $secondary; //#0d758e // #3D5467
+    border-color: $secondary;
+
+    &.btn--text,
+    &.btn--outlined {
+      color: $secondary;
+      background-color: transparent;
+    }
+  }
+
+  &.btn--success {
+    color: $white;
+    background-color: $success; //#0d758e // #3D5467
+    border-color: $success;
+
+    &.btn--text,
+    &.btn--outlined {
+      color: $success;
+      background-color: transparent;
+    }
+  }
+
+  &.btn--info {
+    color: $white;
+    background-color: $info; //#0d758e // #3D5467
+    border-color: $info;
+
+    &.btn--text,
+    &.btn--outlined {
+      color: $info;
+      background-color: transparent;
+    }
+  }
+
+  &.btn--warning {
+    color: $white;
+    background-color: $warning; //#0d758e // #3D5467
+    border-color: $warning;
+
+    &.btn--text,
+    &.btn--outlined {
+      color: $warning;
+      background-color: transparent;
+    }
+  }
+
+  &.btn--danger {
+    color: $white;
+    background-color: $danger; //#0d758e // #3D5467
+    border-color: $danger;
+
+    &.btn--text,
+    &.btn--outlined {
+      color: $danger;
+      background-color: transparent;
+    }
+  }
+
+  &.btn--xs {
+    height: 20px;
+    line-height: 20px;
+    padding: 0 8px;
+    font-size: 10px;
+  }
+
+  &.btn--sm {
+    height: 28px;
+    line-height: 28px;
+    padding: 0 12px;
+    font-size: 12px;
+  }
+
+  &.btn--lg {
+    height: 44px;
+    line-height: 44px;
+    padding: 0 20px;
+    font-size: 16px;
+  }
+
+  &.btn--xl {
+    height: 52px;
+    line-height: 52px;
+    padding: 0 24px;
+    font-size: 20px;
+  }
+
+  &.btn--icon {
+    width: 36px;
+    padding: 0;
+    border-radius: 50%;
+
+    &.btn--xs {
+      width: 20px;
+    }
+
+    &.btn--sm {
+      width: 28px;
+    }
+
+    &.btn--lg {
+      width: 44px;
+    }
+
+    &.btn--xl {
+      width: 52px;
+    }
+
+    svg,
+    i {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  svg,
+  i {
+    font-size: inherit;
+    margin-right: 5px;
+  }
+  &.btn--white{
+    color: #FFF;
+  }
+  &.btn--player {
+    width: 50px;
+    height: 50px;
+    color: $accent;
+    position: relative;
+    background-color: transparent;
+    border-radius: 50% ;
+    transition: .3s ease all;
+    * {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 60%;
+    }
+    &:hover {
+      cursor: pointer;
+      &::after {
+        background-color: rgba($color: $primary, $alpha: .3);
+      }
+    }
+
+    // &.btn--lg {
+    //   margin: 0;
+    //   padding: 0;
+    //   width: 70px;
+    //   height: 70px;
+
+    //   &::after {
+    //     width: 63px;
+    //     height: 63px;
+    //     top: 3px;
+    //     left: 3px;
+    //   }
+    // }
+  }
+}
+
+a.btn {
+  margin: 0 16px 0 0;
+  display: inline-block;
+
+  &:hover {
+    // color: inherit;
+  }
+}
+
+
+.btn-group {
+  margin: 5px;
+  display: inline-flex;
+  border-radius: 5px;
+  overflow: hidden;
+
+  &.btn-group--outlined {
+    border: 1px solid $primary;
+
+    .btn {
+      border: none;
+      border-right: 1px solid;
+
+      &:last-of-type {
+        border-right: 0;
+        border-radius: inherit;
+      }
+    }
+  }
+
+  &.btn-group--rounded {
+    border-radius: 30px;
+  }
+
+  .btn {
+    white-space: nowrap;
+    display: inline;
+    margin: 0;
+    border: none;
+    border-radius: 0 !important;
+  }
+
+}
+
+html[dir="rtl"] {
+  .btn--with-icon {
+    padding-right: 12px;
+
+    svg,
+    i {
+      margin-left: 5px;
+      transform: rotate(
+          180deg
+      );
+    }
+  }
+
+  .btn-group {
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    justify-content: right;
+  }
+
+  .btn {
+    &.btn--ml-auto {
+      margin-right: auto;
+      margin-left: 0;
+    }
+  }
+}
+
+
+
+.night-mode {
+  .btn{
+    background-color: #39444f;
+    //border: 1px solid #39444f;
+    color: #fff;
+  }
+  a.btn {
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+@media (max-width: 768.98px) {
+  .btn--player {
+    margin-top: 16px !important;
+    margin-right: auto !important;
+  }
+}
+html[dir="rtl"]{
+	.btn{
+		margin: 0 0 0 14px;
+	}
+}

@@ -1,0 +1,71 @@
+@import "./base/_variables.scss";
+@import "layouts/_normalize.scss";
+
+@import "layouts/_base";
+@import "layouts/_page-content";
+@import "layouts/_header";
+@import "layouts/_footer";
+@import "utils/mixins";
+@import "./custom/toastr";
+@import "./components/_tabs.scss";
+@import "./custom/_owl-slider.scss";
+@import "./components/_menu-responsive";
+@import "./components/_course-list";
+@import "./components/_about-list";
+@import "./components/_course-video";
+@import "./components/_content_list";
+@import "./components/_course-reviews";
+@import "./components/_review.scss";
+@import "./components/_comments";
+@import "./components/_category-course";
+@import "./components/_pagination.scss";
+@import "layouts/drawer";
+@import "./components/category-list";
+
+@import "./components/_list-dropdown";
+@import "./components/_course-card.scss";
+@import "./components/_enroll-card";
+@import "./components/_description-enroll";
+@import "./components/_filter";
+@import "./components/_card";
+@import "./components/_buttons";
+@import "./components/_card-collapse";
+@import "./components/_media-card";
+@import "./components/_thread";
+@import "./components/_social-icons";
+@import "./components/_tags";
+@import "./components/_info";
+@import "./components/_video-player";
+@import "./components/hero";
+//TODO Remove this file
+@import "./components/authentication-layout";
+
+@import "./components/new-inputs";
+@import "./components/_general-wrapper";
+@import "./components/_table";
+@import "./components/_rich-textarea";
+@import "./components/_general-playlist";
+@import "./components/_colleps";
+@import "./components/_dropdown.scss";
+@import "./components/menu-header.scss";
+@import "./components/dialog";
+@import "./components/toolbar";
+@import "./components/_bread-crumbs";
+@import "./components/_recommendation.scss";
+
+@import "./components/delete-page";
+@import "./components/single-course/interactions-course.scss";
+@import "./components/single-course/user-component";
+@import "./components/single-course/user-item";
+@import "./components/exam/exam.scss";
+@import "./base/typography";
+
+@import "./components/_images";
+// @import "./base/night-mode.css";
+@import "./components/_list.scss";
+@import "./components/_panel.scss";
+@import "./components/_survey.scss";
+@import "./components/survey-fields";
+@import "./components/loader";
+/* TODO DELETE */
+@import "./base/_rtl.scss";

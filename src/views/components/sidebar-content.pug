@@ -1,0 +1,201 @@
+.list-header 
+	include ./general-component/toggle-menu.pug
+	a(href="#" class="playlist__close")
+		.header__logo.logo--sidebar
+			a.header__img(href='index.html')
+				img(src='../../assets/images/Etqadem_Logo.svg' alt='')
+			a.header__img-small(href='index.html')
+				img(src='../../assets/images/Etqadem_Icon_Yellow.png' alt='')
+div(class="list__sidebar list condensed" data-link='[{"title":"Categories","has_children":false,"icon":"fa fa-home","url":"#","is_active":false},{"title":"Tags","has_children":false,"icon":"fa fa-home","url":"#","is_active":false},{"title":"Courses","has_children":false,"icon":"fa fa-home","url":"#","is_active":false},{"title":"Assessments and Surveys","has_children":true,"icon":"fas fa-layer-group","is_active":true,"children":[{"title":"Assessments and Surveys","has_children":false,"url":"#","is_active":true}]},{"title":"Users","has_children":true,"icon":"fas fa-layer-group","is_active":false,"children":[{"title":"Users","has_children":false,"url":"#","is_active":false},{"title":"Groups","has_children":false,"url":"#","is_active":false}]}]')
+//- ul(class="list__sidebar" data-link="http://localhost:3000/sideBar/")
+	li.list__item
+		a.item__link(href='index.html' title='Home')
+			i.fas.fa-home.item__icon
+			span.item__label Home
+	li.list__item
+		a.item__link(href='admin-course-chapter.html' title='Live Streams')
+			i.fas.fa-home.item__icon
+			span.item__label Course chapter
+	li.list__item
+		a.item__link(href='admin-course-content.html' title='Explore')
+			i.fas.fa-home.item__icon
+			span.item__label Admin content
+	li.list__item
+		a.item__link(href='category-course.html' title='Explore')
+			i.fas.fa-home.item__icon
+			span.item__label Category course
+	li.list__item
+		a.item__link(href='chapter.html' title='Explore')
+			i.fas.fa-home.item__icon
+			span.item__label Chapter
+	li.list__item
+		a.item__link(href='create-course.html' title='Explore')
+			i.fas.fa-home.item__icon
+			span.item__label Create course
+	li.list__item
+		a.item__link(href='delete.html' title='Explore')
+			i.fas.fa-home.item__icon
+			span.item__label Delete
+	li.list__item
+		a.item__link(href='enroll.html' title='Explore')
+			i.fas.fa-home.item__icon
+			span.item__label Enroll
+	li.list__item
+		a.item__link(href='media-library.html' title='Explore')
+			i.fas.fa-home.item__icon
+			span.item__label Medial Library
+	li.list__item
+		a.item__link(href='edit-media.html' title='Explore')
+			i.fas.fa-home.item__icon
+			span.item__label Edit medial
+	li.list__item
+		a.item__link(href='exams.html' title='Explore')
+			i.fas.fa-home.item__icon
+			span.item__label Exams
+	li.list__item
+		a.item__link(href='explore-categorys.html' title='Explore')
+			i.fas.fa-home.item__icon
+			span.item__label Explore category
+	li.list__item
+		a.item__link(href='single-course.html' title='Explore')
+			i.fas.fa-home.item__icon
+			span.item__label Single course
+	li.list__item
+		a.item__link(href='threads.html' title='Explore')
+			i.fas.fa-home.item__icon
+			span.item__label Thread
+	li.list__item
+		a.item__link(href='typo.html' title='Explore')
+			i.fas.fa-home.item__icon
+			span.item__label Typo
+	li.list__item.sub-menu-item
+		a.item__link(title='Categories')
+			i.fas.fa-home.item__icon
+			span.item__label Auth
+		ul.sub-menu
+			li.sum-menu__item
+				a.sub-menu__link(href='login.html') Login
+			li.sum-menu__item
+				a.sub-menu__link(href='signup.html') Sign up 
+			li.sum-menu__item
+				a.sub-menu__link(href='forget.html') Forget 
+			li.sum-menu__item
+				a.sub-menu__link(href='reset.html') Reset 
+	li.list__item.sub-menu-item
+		a.item__link(title='Tests')
+			i.fas.fa-home.item__icon
+			span.item__label Documentation
+		ul.sub-menu
+			li.sum-menu__item
+				a.sub-menu__link(href='ad-elements/cards.html') Cards
+			li.sum-menu__item
+				a.sub-menu__link(href='ad-elements/buttons.html') Buttons
+			li.sum-menu__item
+				a.sub-menu__link(href='ad-elements/Lists.html') Lists
+			li.sum-menu__item
+				a.sub-menu__link(href='ad-elements/play-list.html') Play List
+			li.sum-menu__item
+				a.sub-menu__link(href='http://www.gambolthemes.net/html-items/edututs+/Instructor_Dashboard/my_certificates.html') My Certification
+	li.list__item
+		a.item__link(href='saved_courses.html' title='Saved Courses')
+			.fas.fa-home.item__icon
+			span.item__label Saved Courses
+	li.list__item.sub-menu-item
+		a.item__link(title='Pages')
+			i.fas.fa-home.item__icon
+			span.item__label Pages
+		ul.sub-menu
+			li.sum-menu__item
+				a.sub-menu__link(href='about_us.html') About
+			li.sum-menu__item
+				a.sub-menu__link(href='sign_in.html') Sign In
+			li.sum-menu__item
+				a.sub-menu__link(href='sign_up.html') Sign Up
+			li.sum-menu__item
+				a.sub-menu__link(href='sign_up_steps.html') Sign Up Steps
+			li.sum-menu__item
+				a.sub-menu__link(href='membership.html') Paid Membership
+			li.sum-menu__item
+				a.sub-menu__link(href='course_detail_view.html') Course Detail View
+			li.sum-menu__item
+				a.sub-menu__link(href='checkout_membership.html') Checkout
+			li.sum-menu__item
+				a.sub-menu__link(href='invoice.html') Invoice
+			li.sum-menu__item
+				a.sub-menu__link(href='career.html') Career
+			li.sum-menu__item
+				a.sub-menu__link(href='apply_job.html') Job Apply
+			li.sum-menu__item
+				a.sub-menu__link(href='our_blog.html') Our Blog
+			li.sum-menu__item
+				a.sub-menu__link(href='blog_single_view.html') Blog Detail View
+			li.sum-menu__item
+				a.sub-menu__link(href='company_details.html') Company Details
+			li.sum-menu__item
+				a.sub-menu__link(href='press.html') Press
+//- ul.list__sidebar
+	li.list__item
+		a.item__link(href='setting.html' title='Setting')
+			i.fas.fa-home.item__icon
+			span.item__label Setting
+	li.list__item
+		a.item__link(href='help.html' title='Help')
+			i.fas.fa-home.item__icon
+			span.item__label Help
+	li.list__item
+		a.item__link(href='report_history.html' title='Report History')
+			i.fas.fa-home.item__icon
+			span.item__label Report History
+	li.list__item
+		a.item__link(href='feedback.html' title='Send Feedback')
+			i.fas.fa-home.item__icon
+			span.item__label Send Feedback
+	li.list__item
+		a.item__link(href='setting.html' title='Setting')
+			i.fas.fa-home.item__icon
+			span.item__label Setting
+	li.list__item
+		a.item__link(href='help.html' title='Help')
+			i.fas.fa-home.item__icon
+			span.item__label Help
+	li.list__item
+		a.item__link(href='report_history.html' title='Report History')
+			i.fas.fa-home.item__icon
+			span.item__label Report History
+	li.list__item
+		a.item__link(href='feedback.html' title='Send Feedback')
+			i.fas.fa-home.item__icon
+			span.item__label Send Feedback
+	li.list__item
+		a.item__link(href='setting.html' title='Setting')
+			i.fas.fa-home.item__icon
+			span.item__label Setting
+	li.list__item
+		a.item__link(href='help.html' title='Help')
+			i.fas.fa-home.item__icon
+			span.item__label Help
+	li.list__item
+		a.item__link(href='report_history.html' title='Report History')
+			i.fas.fa-home.item__icon
+			span.item__label Report History
+	li.list__item
+		a.item__link(href='feedback.html' title='Send Feedback')
+			i.fas.fa-home.item__icon
+			span.item__label Send Feedback
+	li.list__item
+		a.item__link(href='setting.html' title='Setting')
+			i.fas.fa-home.item__icon
+			span.item__label Setting
+	li.list__item
+		a.item__link(href='help.html' title='Help')
+			i.fas.fa-home.item__icon
+			span.item__label Help
+	li.list__item
+		a.item__link(href='report_history.html' title='Report History')
+			i.fas.fa-home.item__icon
+			span.item__label Report History
+	li.list__item
+		a.item__link(href='feedback.html' title='Send Feedback')
+			i.fas.fa-home.item__icon
+			span.item__label Send Feedback
+

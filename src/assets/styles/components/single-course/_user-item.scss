@@ -1,0 +1,28 @@
+.item__reviews-user{
+  display: flex;
+  position: relative;
+  .reviews-user__img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    // box-shadow: 0 2px 2px rgb(0 0 0 / 10%);
+    margin-right: 15px;
+  }
+  .reviews-user__title{
+    .title__name{
+      font-size: 16px;
+      font-weight: 500;
+        color: #333!important;
+      text-align: left;
+      margin-bottom: 0;
+    }
+    .title__time{
+      font-weight: 400;
+        color: #686f7a;
+      font-size: 13px;
+      display: block;
+      margin-top: 5px;
+    }
+  }
+}

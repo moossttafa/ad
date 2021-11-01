@@ -1,0 +1,401 @@
+{
+  "courses": [
+    {
+      "course": "course name",
+      "descreiption": "Description",
+      "noOfLectures": "402 leactures",
+      "totalDuration": "47:06:29",
+      "chapter": [
+        {
+          "id": 1,
+          "title": "chapter title",
+          "actions": {
+            "edit": "#",
+            "delete": "#",
+            "update": "#",
+            "move": "#"
+          },
+          "content": [
+            {
+              "type": "video",
+              "id": 1,
+              "title": "video title",
+              "duration": "22:06",
+              "description": "video description",
+              "actions": {
+                "edit": "#",
+                "delete": "#",
+                "translate": "#",
+                "moveToChapter": "#"
+              }
+            },
+            {
+              "type": "exam",
+              "id": 1,
+              "title": "exam title",
+              "grad": "70%",
+              "description": "exam description"
+            },
+            {
+              "type": "artical",
+              "id": 1,
+              "title": "artical title",
+              "description": "artical description"
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "title": "chapter title",
+          "actions": {
+            "edit": "#",
+            "delete": "#",
+            "update": "#",
+            "move": "#"
+          },
+          "content": [
+            {
+              "type": "video",
+              "id": 1,
+              "title": "video title",
+              "duration": "22:06",
+              "description": "video description",
+              "actions": {
+                "edit": "#",
+                "delete": "#",
+                "translate": "#",
+                "moveToChapter": "#"
+              }
+            },
+            {
+              "type": "exam",
+              "id": 1,
+              "title": "exam title",
+              "grad": "70%",
+              "description": "exam description"
+            },
+            {
+              "type": "artical",
+              "id": 1,
+              "title": "artical title",
+              "description": "artical description"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "recommendations": [
+    {
+      "id": 1,
+      "collection_id": 1,
+      "name": "recommendation title 1",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sequi laboriosam reiciendis. At quibusdam nisi rem eum, eveniet expedita nihil iste qui illum atque incidunt sunt eos architecto perferendis libero?",
+      "actions": [
+        {
+          "name": "edit",
+          "icon": "far fa-edit",
+          "class": "recommendations-edit",
+          "link": "http://localhost:3000/recommendations/1/"
+        },
+        {
+          "name": "delete",
+          "icon": "far fa-trash-alt",
+          "class": "btn--primary recommendations-delete",
+          "link": "/recommendations/1"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "collection_id": 1,
+      "name": "recommendation title 2",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sequi laboriosam reiciendis. At quibusdam nisi rem eum, eveniet expedita nihil iste qui illum atque incidunt sunt eos architecto perferendis libero?",
+      "actions": [
+        {
+          "name": "edit",
+          "icon": "far fa-edit",
+          "class": "recommendations-edit",
+          "link": "http://localhost:3000/recommendations/2"
+        },
+        {
+          "name": "delete",
+          "icon": "far fa-trash-alt",
+          "class": "recommendations-delete",
+          "link": "/recommendations/2"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "collection_id": 1,
+      "name": "recommendation title 3",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sequi laboriosam reiciendis. At quibusdam nisi rem eum, eveniet expedita nihil iste qui illum atque incidunt sunt eos architecto perferendis libero?",
+      "actions": [
+        {
+          "name": "edit",
+          "icon": "far fa-edit",
+          "class": "recommendations-edit",
+          "link": "/recommendations/3"
+        },
+        {
+          "name": "delete",
+          "icon": "far fa-trash-alt",
+          "class": "btn--primary recommendations-delete",
+          "link": "/recommendations/3"
+        }
+      ]
+    }
+  ],
+  "classifications": [
+    {
+      "id": 1,
+      "collection_id": 1,
+      "name": "classifications title 1",
+      "score": 1,
+      "actions": [
+        {
+          "name": "edit",
+          "icon": "far fa-edit",
+          "class": "classifications-edit",
+          "link": "/classifications/1/edit"
+        },
+        {
+          "name": "delete",
+          "icon": "far fa-trash-alt",
+          "class": "classifications-delete",
+          "link": "/classifications/1/delete"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "collection_id": 1,
+      "name": "classifications title 2",
+      "score": 2,
+      "actions": [
+        {
+          "name": "edit",
+          "icon": "far fa-edit",
+          "class": "classifications-edit",
+          "link": "/classifications/2/edit"
+        },
+        {
+          "name": "delete",
+          "icon": "far fa-trash-alt",
+          "class": "classifications-delete",
+          "link": "/classifications/2/delete"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "collection_id": 1,
+      "name": "classifications title 3",
+      "score": 3,
+      "actions": [
+        {
+          "name": "edit",
+          "icon": "far fa-edit",
+          "class": "classifications-edit",
+          "link": "/classifications/3/edit"
+        },
+        {
+          "name": "delete",
+          "icon": "far fa-trash-alt",
+          "class": "classifications-delete",
+          "link": "/classifications/3/delete"
+        }
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "id": 2,
+      "name": "Banker",
+      "slug": "en-banker-16354283931979148",
+      "parent": null,
+      "children": [
+        {
+          "id": 11,
+          "name": "lorem 3",
+          "slug": "en-human-resources-officer-16354283931953762",
+          "parent": null,
+          "children": [],
+          "actions": [
+            {
+              "name": "edit",
+              "icon": "far fa-edit",
+              "class": "categories-edit",
+              "link": "http://localhost:3000/categories/11/"
+            },
+            {
+              "name": "delete",
+              "icon": "far fa-trash-alt",
+              "class": "categories-delete toggle-dialog",
+              "link": "http://localhost:3000/categories/11/"
+            }
+          ],
+          "created_at": "2021-10-28T13:39:53.196064Z",
+          "updated_at": "2021-10-28T13:39:53.197503Z"
+        }
+      ],
+      "actions": [
+        {
+          "name": "edit",
+          "icon": "far fa-edit",
+          "class": "categories-edit",
+          "link": "http://localhost:3000/categories/2/"
+        },
+        {
+          "name": "delete",
+          "icon": "far fa-trash-alt",
+          "class": "categories-delete toggle-dialog",
+          "link": "http://localhost:3000/categories/2/"
+        }
+      ],
+      "created_at": "2021-10-28T13:39:53.198535Z",
+      "updated_at": "2021-10-28T13:39:53.201210Z"
+    },
+    {
+      "id": 4,
+      "name": "Personnel officer",
+      "slug": "en-personnel-officer-1635428393204223",
+      "parent": null,
+      "children": [],
+      "actions": [
+        {
+          "name": "edit",
+          "icon": "far fa-edit",
+          "class": "categories-edit",
+          "link": "http://localhost:3000/categories/4/"
+        },
+        {
+          "name": "delete",
+          "icon": "far fa-trash-alt",
+          "class": "categories-delete toggle-dialog",
+          "link": "http://localhost:3000/categories/4/"
+        }
+      ],
+      "created_at": "2021-10-28T13:39:53.204848Z",
+      "updated_at": "2021-10-28T13:39:53.206534Z"
+    },
+    {
+      "id": 5,
+      "name": "Programmer, applications",
+      "slug": "en-programmer-applications-1635428393206933",
+      "parent": null,
+      "children": [],
+      "actions": [
+        {
+          "name": "edit",
+          "icon": "far fa-edit",
+          "class": "categories-edit",
+          "link": "http://localhost:3000/categories/5/"
+        },
+        {
+          "name": "delete",
+          "icon": "far fa-trash-alt",
+          "class": "categories-delete toggle-dialog",
+          "link": "http://localhost:3000/categories/5/"
+        }
+      ],
+      "created_at": "2021-10-28T13:39:53.207564Z",
+      "updated_at": "2021-10-28T13:39:53.209227Z"
+    },
+    {
+      "id": 3,
+      "name": "Solicitor",
+      "slug": "en-solicitor-16354283932016718",
+      "parent": null,
+      "children": [],
+      "actions": [
+        {
+          "name": "edit",
+          "icon": "far fa-edit",
+          "class": "categories-edit",
+          "link": "http://localhost:3000/categories/3/"
+        },
+        {
+          "name": "delete",
+          "icon": "far fa-trash-alt",
+          "class": "categories-delete toggle-dialog",
+          "link": "http://localhost:3000/categories/3/"
+        }
+      ],
+      "created_at": "2021-10-28T13:39:53.202408Z",
+      "updated_at": "2021-10-28T13:39:53.203813Z"
+    }
+
+  ],
+  "sideBar": [
+    {
+      "title": "Documentation",
+      "has_children": true,
+      "icon": "fa fa-file",
+      "is_active": false,
+      "children": [
+        {
+          "title": "Buttons",
+          "url": "/ad-elements/buttons.html",
+          "is_active": false
+        }
+      ]
+    },
+    {
+      "title": "Categories",
+      "has_children": false,
+      "icon": "fa fa-home",
+      "url": "#",
+      "is_active": false
+    },
+    {
+      "title": "Tags",
+      "has_children": false,
+      "icon": "fa fa-home",
+      "url": "#",
+      "is_active": false
+    },
+    {
+      "title": "Courses",
+      "has_children": false,
+      "icon": "fa fa-home",
+      "url": "#",
+      "is_active": false
+    },
+    {
+      "title": "Assessments and Surveys",
+      "has_children": true,
+      "icon": "fas fa-layer-group",
+      "is_active": true,
+      "children": [
+        {
+          "title": "Assessments and Surveys",
+          "has_children": false,
+          "url": "#",
+          "is_active": true
+        }
+      ]
+    },
+    {
+      "title": "Users",
+      "has_children": true,
+      "icon": "fas fa-layer-group",
+      "is_active": false,
+      "children": [
+        {
+          "title": "Users",
+          "has_children": false,
+          "url": "#",
+          "is_active": false
+        },
+        {
+          "title": "Groups",
+          "has_children": false,
+          "url": "#",
+          "is_active": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,210 @@
+.course-content__title {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: left;
+   color: #333;
+  float: left;
+}
+.course-content__details {
+  float: right;
+  padding-top: 3px;
+  .details__list {
+		margin-top: 0;
+    .list__list-item {
+      display: inline-block;
+      margin-right: 30px;
+      vertical-align: middle;
+      .list--expand-all {
+        font-size: 14px;
+        font-weight: 500;
+            text-align: left;
+        margin-bottom: 0;
+        color: #333;
+        cursor: pointer;
+        &:hover {
+          color: #ed2a26;
+        }
+      }
+      .list--list-content-number {
+        font-size: 14px;
+        font-weight: 500;
+            text-align: left;
+        margin-bottom: 0;
+        color: #686f7a;
+      }
+      .list--time-course {
+        font-size: 14px;
+        font-weight: 500;
+            text-align: left;
+        margin-bottom: 0;
+        color: #686f7a;
+      }
+    }
+  }
+}
+.course-list__header {
+  float: left;
+  width: 100%;
+  align-items: center;
+  border: 1px solid #efefef;
+  cursor: pointer;
+  height: auto;
+  margin-top: 3px;
+  padding: 15px 30px 15px 20px;
+  background: #fff;
+  border-radius: 0;
+  display: flex;
+  .header__header-title {
+    display: flex;
+    -webkit-box-direction: normal;
+    flex-basis: 65%;
+    flex-direction: column;
+    -webkit-box-orient: vertical;
+    .header-title__title {
+      flex: 1 1 auto;
+      font-size: 18px;
+      font-weight: 600;
+      align-items: center;
+      color: #505763;
+      -webkit-box-flex: 1;
+      flex-direction: row;
+      -webkit-box-align: center;
+      -webkit-box-orient: horizontal;
+      .title__icon {
+        font-size: 110%;
+        margin-right: 5px;
+      }
+      .title__title-text {
+        font-size: 16px;
+        padding-left: 8px;
+        padding-right: 10px;
+        color: #333;
+        font-weight: 500;
+          }
+    }
+  }
+  .header__header-details {
+    display: flex;
+    justify-content: flex-end;
+    color: #505763;
+    flex-basis: 40%;
+    .header-details__num-item {
+      display: block;
+      margin-right: 20px;
+      white-space: nowrap;
+      font-size: 16px;
+      color: #686f7a;
+      font-weight: 400;
+      }
+    .header-details__length-item {
+      text-align: right;
+      width: 42%;
+      font-size: 16px;
+      color: #686f7a;
+      font-weight: 400;
+      }
+  }
+}
+.list-content__content-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 30px 12px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #efefef;
+  border-top: none;
+  color: #686f7a;
+  letter-spacing: 0.3px;
+  line-height: 1.33;
+  font-weight: 400;
+  .play-list__item{
+    margin-bottom: 0;
+  }
+  .content-item__content-name {
+    display: flex;
+    align-items: flex-start;
+    width: 50%;
+    .content-name__icon {
+      font-size: 18px;
+      line-height: 18px;
+      color: #afafaf;
+    }
+    .content-name__top-title {
+      flex-direction: column-reverse;
+      display: flex;
+      margin-left: 10px;
+      width: 100%;
+      .top-title__title {
+        color: #686f7a;
+        font-size: 14px;
+        margin-top: -2px;
+      }
+    }
+  }
+}
+.course-content {
+  float: left;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 20px;
+  .course-content__course-list {
+    margin-top: 4px;
+    float: left;
+    width: 100%;
+    .course-list__item{
+      height: 60px;
+    }
+    .course-list__list-content {
+      float: left;
+      width: 100%;
+      border-left: 1px solid #efefef;
+      border-right: 1px solid #efefef;
+      background: #fff;
+      display: block;
+    }
+  }
+}
+.content-item__details {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  margin-left: auto;
+  width: 50%;
+  font-size: 14px;
+  .details--preview-text {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    // color: #333;
+    // &:hover {
+    //   color: #ed2a26 !important;
+    // }
+  }
+  .details__content-summary {
+    color: #686f7a;
+    flex-direction: row-reverse;
+    display: flex;
+    text-align: right;
+    white-space: nowrap;
+    width: 40%;
+  }
+}
+@media (max-width: 575.98px) {
+  .course-list__header {
+    flex-wrap: wrap;
+  }
+  .header__header-title {
+    margin-bottom: 10px;
+  }
+  .header__header-details {
+    justify-content: flex-start;
+    padding-left: 7px;
+  }
+  .header-title__title {
+    display: flex;
+    align-items: self-end;
+  }
+  .title__icon{
+    display: block;
+  }
+}
+

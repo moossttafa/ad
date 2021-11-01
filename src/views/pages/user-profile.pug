@@ -1,0 +1,8 @@
+extends ../layouts/profile
+include ../components/bread-crumbs.pug
+block content
+  // page title bread-crumbs
+  +pageTitle("page-header--with-block")
+    .tabs.tabs--center
+      a(class="tab tab--active" href='#nav-categories') Categories
+      a(class="tab" href='#nav-tags') tags

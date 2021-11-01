@@ -1,0 +1,28 @@
+extends ../layouts/auth.pug  
+block title
+	title forget
+block content
+	h2.title-h4.semi-bold Request a Password Reset
+	form.form
+		.field-wrapper
+			label.field-wrapper__label Course Title
+				abbr(title="required") *
+			.field-wrapper__content
+				input(
+		  class="field field--with-icon"
+					type='email'
+					placeholder='Email Address'
+					name='email address'
+					maxlength=''
+					value=''
+					)
+				i.far.fa-envelope.field-wrapper__icon
+			ul.field-wrapper__messages
+				li Please provide a valid city.
+		.d-flex.justify-content-around
+			button(class="btn btn--primary btn--ripple btn--sm btn--rounded" type="submit")  Reset Password
+	p.title-2 Go Back 
+		a(href="login.html" class="text-3") Sign In
+
+
+

@@ -1,0 +1,193 @@
+//- extends ../layouts/course-display.pug
+
+//- block title
+//- 	title single-course
+//- block category
+//- 	include ../components/header-blocks/selectCategory.pug
+//- block btn-link
+//- 	include ../components/general-component/btn.pug
+//- 	+btn-link('btn btn--primary btn--rounded', 'Create New Course' , '#create_new_course.html')
+//- //- block sidebar
+//- //- 	include ../components/sidebar-content.pug
+//- block courseVideo
+//- 	.col-xl-4.col-lg-5.col-md-6
+//- 		block course-video
+//- 		include ../components/general-component/course-video.pug
+//- 		include ../components/general-component/video-action.pug
+//- 	.col-xl-8.col-lg-7.col-md-6
+//- 		article.wrapper__header
+//- 			h2.header__title The Web Developer Bootcamp
+//- 			span.header__description
+//- 				| The only course you need to learn web development - HTML, CSS, JS, Node, and More!
+//- 		.wrapper__review-video
+//- 			.review-video__review.mr-2
+//- 				i.uil.uil-star.review__icon
+//- 				| 4.5
+//- 			| &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;(81,665 ratings)
+//- 		.wrapper__enrolled-text
+//- 			| 114,521 students enrolled
+//- 		.wrapper__language
+//- 			.language__lang
+//- 				span.lang__icons
+//- 					i.uil.uil-comment.icons__fa
+//- 				| &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;English
+//- 			.language__more-lang
+//- 				span.more-lang__icons
+//- 					i.uil.uil-closed-captioning.icons__fa
+//- 				span.more-lang__tooltip
+//- 					| English, Dutch
+//- 					span.tooltip--caption_tooltip
+//- 						| 12 more
+//- 						span.tooltip__caption-content
+//- 							span.caption-content__lang-item French
+//- 							span.caption-content__lang-item Hindi
+//- 							span.caption-content__lang-item German [Auto-generated]
+//- 							span.caption-content__lang-item Indonesian [Auto-generated]
+//- 							span.caption-content__lang-item Italian [Auto-generated]
+//- 							span.caption-content__lang-item Japanese [Auto-generated]
+//- 							span.caption-content__lang-item Korean
+//- 							span.caption-content__lang-item Polish
+//- 							span.caption-content__lang-item Portuguese [Auto-generated]
+//- 							span.caption-content__lang-item Spanish [Auto-generated]
+//- 							span.caption-content__lang-item Traditional Chinese
+//- 							span.caption-content__lang-item Turkish [Auto-generated]
+//- 		.wrapper__last-update
+//- 			| Last updated 1/2020
+//- 		ul.wrapper__btn-list
+//- 			li.btn-list__list-item
+//- 				+btn('list-item--btn-Enrole', 'Enroll')
+//- 			//- li.btn-list__list-item
+//- 			//-   button.list-item--btn-Enrole-childe Enrol Chiled
+//- 		.wrapper__title-buy
+//- 			| 30-Day Money-Back Guarantee
+//- block userAccount
+//- 	.user-wrapper
+//- 		include ../components/general-component/user-account.pug
+//- 		include ../components/general-component/btn.pug
+//- 		+user-account("subscribe", "../../assets/images/hd_dp.jpg" , "Johnson Smith")
+//- 			+btn('user-content__subscribe-btn', 'subscribe')
+//- 		include ../components/general-component/interaction.pug
+//- 		section.interactions-course
+//- 			ul.interactions-course__list
+//- 				+interactions("uil uil-share-alt box--fa" , '9')
+//- 				+interactions( "uil uil-thumbs-up box--fa", '100')
+//- 				+interactions("uil uil-thumbs-down box--fa", '20')
+//- 				+interactions( "uil uil-eye box--fa",'1452')
+//- 	.course_tabs
+//- 		#nav-tab.nav.nav-tabs.tab_crse.justify-content-center(role='tablist')
+//- 			a#nav-about-tab.nav-item.nav-link.active(data-toggle='tab' href='#nav-about' role='tab' aria-selected='true') About
+//- 			a#nav-courses-tab.nav-item.nav-link(data-toggle='tab' href='#nav-courses' role='tab' aria-selected='false') Content
+//- 			a#nav-reviews-tab.nav-item.nav-link(data-toggle='tab' href='#nav-reviews' role='tab' aria-selected='false') Reviews
+//- 			a#nav-thread-tab.nav-item.nav-link(data-toggle='tab' href='#nav-thread' role='tab' aria-selected='false') Thread
+
+
+//- block tabs
+//- 	//- .container
+//- 	.row
+//- 		.col-lg-8
+//- 			.course_tab_content
+//- 				#nav-tabContent.tab-content
+//- 					#nav-about.tab-pane.fade.show.active(role='tabpanel')
+//- 						.d-flex.justify-content-between.align-items-center.w-100
+//- 							h3.course-content__title.mb-0 Thread Chapter content
+//- 							button.btn.btn--primary.btn--rounded create thread
+//- 						.row
+//- 							.col-lg-12
+//- 								//- .card.card--question
+//- 								//- 	.card__content 
+//- 								//- 		.card__body
+//- 								//- 			.card__content-header
+//- 								//- 				.user-data
+//- 								//- 					a.btn.btn--secondary.btn--link-text.text-2(href="#") Jose Portilla
+//- 								//- 					time.text-3.gray Jan 15 '18 at 13:56 
+//- 								//- 			.card__content--details
+//- 								//- 				h2.title-h3 Lorem ipsum dolor sit amet consectetur  
+//- 								//- 				.tags.tags--no-mb
+//- 								//- 					.tags__item #Development
+//- 								//- 					.tags__item #Development
+//- 								.card
+//- 									.card__content 
+//- 										.card__body
+//- 											.card__content-header
+//- 												.user-data
+//- 													h3.title-h4 Lorem ipsum dolor Lorem ipsum dolorLorem  Lorem ipsum dolor Lorem ipsum dolorLorem  Lorem ipsum dolor Lorem ipsum dolorLorem
+//- 													.tags.tags--no-mb
+//- 														.tags__item #Development
+//- 														.tags__item #Development
+//- 											.card__content--details
+//- 												a(class="text-1 btn btn--secondary btn--link-text " href="#") Jose Portilla
+//- 												time.text-3.gray Jan 15 '18 at 13:56
+ 
+//- 					#nav-courses.tab-pane.fade(role='tabpanel')
+//- 							//- start course list component
+//- 							include ../components/course.pug
+//- 							a.btn1458(href='#') 20 More Sections
+//- 					#nav-reviews.tab-pane.fade(role='tabpanel')
+//- 						//- start reviews
+//- 						.reviews
+//- 							.row
+//- 								.col-lg-12
+//- 									.review__header
+//- 										.header__header-content
+//- 											h3.header-content__title Reviews
+//- 											.header-content__search
+//- 												input.search__input(type='text' placeholder='Search reviews...')
+//- 												button.search__btn
+//- 													i.uil.uil-search
+//- 									section.comments__add-comment
+//- 										.add-comment__group
+//- 											.group__img-wrapper
+//- 												img.group__img(src="../../assets/images/hd_dp.jpg" alt="")
+//- 											textarea.group__textarea(placeholder="Add a public comment")
+//- 										button.btn.btn--primary.btn--rounded(type="submit") Add review
+//- 									include ../components/review.pug
+//- 									.review__all-reviews.mt-3
+//- 										include ../components/review-item.pug
+//- 										.all-reviews__review-item
+//- 											a.review-item__more-reviews(href='#') See More Reviews
+//- 					#nav-thread.tab-pane.fade(role='tabpanel')
+//- 						.d-flex.justify-content-between.align-items-center.w-100
+//- 							h3.course-content__title.mb-0 Thread Chapter content
+//- 							button.btn.btn--primary.btn--rounded create thread
+//- 						.row
+//- 							.col-lg-12
+//- 								.ad-card.ad-card--with-actions.mb-3
+//- 									.ad-card__title
+//- 										h4.title-h4 card title
+//- 									.ad-card__content
+//- 										.user-image
+//- 											img(src="../../assets/images/hd_dp.jpg" alt="")
+//- 											i.uil.uil-check-circle
+//- 										.ad-card__body
+//- 											.ad-card__content-header
+//- 												.user-data
+//- 													a.btn.btn--secondary.btn--link-text.text-2(href="#") Jose Portilla
+//- 													time.text-3.gray Jan 15 '18 at 13:56
+//- 												include ../components/list-dropdown.pug
+//- 											.ad-card__content--details
+//- 												p.text-1 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae soluta blanditiis quam eos alias. Illo dicta expedita culpa unde repellendus iste dolores quae, eos, cumque facilis maxime, voluptatem natus esse!
+//- 												.tags
+//- 													.tags__item #Development
+//- 													.tags__item #Development
+//- 								.ad-card.ad-card--with-actions.mb-3
+//- 									.ad-card__title
+//- 										h4.title-h4 card title
+//- 									.ad-card__content
+//- 										.user-image
+//- 											img(src="../../assets/images/hd_dp.jpg" alt="")
+//- 											i.uil.uil-check-circle
+//- 										.ad-card__body
+//- 											.ad-card__content-header
+//- 												.user-data
+//- 													a.btn.btn--secondary.btn--link-text.text-2(href="#") Jose Portilla
+//- 													time.text-3.gray Jan 15 '18 at 13:56
+//- 												include ../components/list-dropdown.pug
+//- 											.ad-card__content--details
+//- 												p.text-1 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae soluta blanditiis quam eos alias. Illo dicta expedita culpa unde repellendus iste dolores quae, eos, cumque facilis maxime, voluptatem natus esse!
+//- 												.tags
+//- 													.tags__item #Development
+//- 													.tags__item #Development
+
+//- 		.col-lg-4.mt-5
+//- 			h3.about-required__title Related courses
+//- 			include ../components/related-courses.pug

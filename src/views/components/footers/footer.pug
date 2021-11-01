@@ -1,0 +1,90 @@
+//- src/views/components/footer.pug
+
+footer.footer
+	img.footer__background(src="../../../assets/images/Pattern_4.svg", alt="", srcset="")
+	.container
+		.row
+			.col-lg-3.col-md-6.col-sm-6
+				.footer__content
+					//- a(href='about.pug') About
+					.footer-content__title Default Page
+					a.footer-content__link(href='/') Home
+					a.footer-content__link(href='/category.html') category
+					a.footer-content__link(href='/collection.html') collection
+					.footer-content__title courses
+					a.footer-content__link(href='/course.html') course
+					a.footer-content__link(href='/enroll.html') enroll
+					//- a(href='our_blog.html') Blog
+					
+			.col-lg-3.col-md-6.col-sm-6
+				.footer__content
+					.footer-content__title drawer pages
+					a.footer-content__link(href='/spa-player.html') Player
+					a.footer-content__link(href='/spa-survey-landing.html') survey Landing
+					a.footer-content__link(href='/surveys.html') surveys
+					a.footer-content__link(href='/spa-survey.html') spa-survey
+					a.footer-content__link(href='/survey.html') survey
+					a.footer-content__link(href='/delete.html') Delete
+					.footer-content__title Media
+					a.footer-content__link(href='/media-library.html') Media Library
+					a.footer-content__link(href='/edit-media.html') Edit Media
+					//- a.footer-content__link(href='/create-gallery.html') Create Gallery
+			.col-lg-3.col-md-6.col-sm-6
+				.footer__content
+					.footer-content__title Authentication
+					a.footer-content__link(href='/login.html') Login
+					a.footer-content__link(href='/signup.html') signup
+					a.footer-content__link(href='/reset.html') Reset
+					a.footer-content__link(href='/forget.html') Forget
+					.footer-content__title Elements Tools
+					a.footer-content__link(href='/ad-elements/buttons.html') Buttons
+					a.footer-content__link(href='/ad-elements/cards.html') Cards
+					a.footer-content__link(href='/ad-elements/lists.html') lists
+					a.footer-content__link(href='/ad-elements/survey-inputs.html') survey inputs
+					a.footer-content__link(href='/drawers.html') Drawers
+					a.footer-content__link(href='/inputs.html') inputs
+					a.footer-content__link(href='/typo.html') Typo
+			.col-lg-3.col-md-6.col-sm-6
+				.footer__content
+					.footer-content__title Admin Dashboard
+					a.footer-content__link(href='/admin-course-chapter.html') Admin Chapter
+					//- a.footer-content__link(href='/admin-course-content.html') Admin Content
+					a.footer-content__link(href='/admin-course-details.html') Admin Details
+					a.footer-content__link(href='/admin-dashboard.html') Admin Dashboard
+					.footer-content__title Social Media
+			.col-sm-12 
+				.social-links
+					a(href='#' class="btn btn--icon btn--text")
+						i.fab.fa-facebook-f
+					a(href='#' class="btn btn--icon btn--text")
+						i.fab.fa-twitter
+					a(href='#' class="btn btn--icon btn--text")
+						i.fab.fa-google-plus-g
+					a(href='#' class="btn btn--icon btn--text")
+						i.fab.fa-linkedin-in
+					a(href='#' class="btn btn--icon btn--text")
+						i.fab.fa-instagram
+					a(href='#' class="btn btn--icon btn--text")
+						i.fab.fa-youtube
+
+		.row
+			.col-lg-12
+				.footer-line
+					.row.align-items-center
+						.col-md-6.col-sm-12.col-xs-12
+							ul.copy-right
+								li.copy-right__list
+									a.list__link(href='index.html')
+										.footer__logo
+											img(src='../../assets/images/Etqadem_Icon_Yellow.svg' alt='')
+								li.copy-right__list
+									p.list__paragraph
+										| &copy; 2020
+										strong Itqadem
+										| . All Rights Reserved.
+
+						.col-md-6
+							.fritill
+								p.list__paragraph.white.my-0.text-3 Developed and designed by
+								a.my-0(style="height: 40px" href="https://fritill.com/")
+									img(class="fritill-logo" src="../../assets/images/fritill-logo.svg", alt="")

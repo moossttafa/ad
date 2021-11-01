@@ -1,0 +1,94 @@
+extends ../layouts/admin.pug
+
+
+block title
+  title drawers page
+
+//- block left
+//-   .drawer.drawer--left.drawer--partially-closed
+//-     //- .drawer__header
+//-     //- 	h5.title-h5 title
+//-       button.btn.btn--default.btn--icon.btn--ripple
+//-         i.fas.fa-times
+//-     div(class="list__sidebar list" data-link='[{"title":"Categories","has_children":false,"icon":"fa fa-home","url":"#","is_active":false},{"title":"Tags","has_children":false,"icon":"fa fa-home","url":"#","is_active":false},{"title":"Courses","has_children":false,"icon":"fa fa-home","url":"#","is_active":false},{"title":"Assessments and Surveys","has_children":true,"icon":"fas fa-layer-group","is_active":true,"children":[{"title":"Assessments and Surveys","has_children":false,"url":"#","is_active":true}]},{"title":"Users","has_children":true,"icon":"fas fa-layer-group","is_active":false,"children":[{"title":"Users","has_children":false,"url":"#","is_active":false},{"title":"Groups","has_children":false,"url":"#","is_active":false}]}]')
+
+//-     //- include ../components/list-video.pug
+//- block right
+//-   .drawer.drawer--right
+//-     .drawer__header
+//-       h5.title-h5 title
+//-       button.btn.btn--small.btn--icon.btn--primary
+//-         i.fas.fa-times
+//-     include ../components/list-video.pug
+block content
+  .container
+    .row
+      .col-lg-6
+        div(class="dialog" id="default-dialog")
+          .card
+            .card__title
+              h3 Lorem ipsum dolor.
+            .card__body
+              p
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur corporis cumque
+                | debitis dolore dolores ea fugiat magni odit optio sunt vel, voluptate. A alias
+                | assumenda, deserunt dolorem expedita ipsum temporibus.
+            .card__footer
+              button.btn.btn--text.btn--danger.close-dialog Cancel
+              button.btn.btn--primary.close-dialog Confirm
+
+        div(class="dialog dialog--sm" id="small-dialog")
+          .card
+            .card__title
+              h3 Lorem ipsum dolor.
+            .card__body
+              p
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur corporis cumque
+                | debitis dolore dolores ea fugiat magni odit optio sunt vel, voluptate. A alias
+                | assumenda, deserunt dolorem expedita ipsum temporibus.
+            .card__footer
+              button.btn.btn--text.btn--danger.close-dialog Cancel
+              button.btn.btn--primary.close-dialog Confirm
+
+        div(class="dialog dialog--lg" id="large-dialog")
+          .card
+            .card__title
+              h3 Lorem ipsum dolor.
+            .card__body
+              p
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur corporis cumque
+                | debitis dolore dolores ea fugiat magni odit optio sunt vel, voluptate. A alias
+                | assumenda, deserunt dolorem expedita ipsum temporibus.
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur corporis cumque
+                | debitis dolore dolores ea fugiat magni odit optio sunt vel, voluptate. A alias
+                | assumenda, deserunt dolorem expedita ipsum temporibus.
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur corporis cumque
+                | debitis dolore dolores ea fugiat magni odit optio sunt vel, voluptate. A alias
+                | assumenda, deserunt dolorem expedita ipsum temporibus.
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur corporis cumque
+                | debitis dolore dolores ea fugiat magni odit optio sunt vel, voluptate. A alias
+                | assumenda, deserunt dolorem expedita ipsum temporibus.
+            .card__footer
+              button.btn.btn--text.btn--danger.close-dialog Cancel
+              button.btn.btn--primary.close-dialog Confirm
+        p.body-1 open modal under header and sidebar
+        button(class="btn btn--primary toggle-dialog" data-target="#default-dialog") default dialog
+        button(class="btn btn--primary toggle-dialog" data-target="#small-dialog") small dialog
+        button(class="btn btn--primary toggle-dialog" data-target="#large-dialog") large dialog
+      .col-lg-6
+        p.body-1 open modal above header and sidebar
+        button.btn.btn--primary.open-modal--full full modal
+    .row
+      .col-lg-6
+        p.body-1 open from left
+        button.btn.btn--primary.left-open open drawer left
+      .col-lg-6
+        p.body-1 open from right
+        button.btn.btn--primary.right-open open drawer right
+    .row
+      .col-lg-6
+        p.body-1 open from left half page
+        button.btn.btn--primary.left-open-half open drawer left
+      .col-lg-6
+        p.body-1 open from right half page
+        button.btn.btn--primary.right-open-half open drawer right

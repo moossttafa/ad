@@ -1,0 +1,115 @@
+$linkColor: #333;
+$pColor: #686f7a;
+@mixin bg-property($path-image) {
+  background-image: url($path-image);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.rich-textarea {
+  font-size: 16px;
+  h1 {
+    font-size: 2.2em;
+    line-height: 1.25;
+    letter-spacing: -2px;
+    margin: .25em 0 .5em 0;
+  }
+  h2 {
+    font-size: 2em;
+    // line-height: 1.15384615;
+    margin: .25em 0 .5em 0;
+  }
+  h3 {
+    font-size: 1.8em;
+    // line-height: 1.13636364;
+    margin: .25em 0 .5em 0;
+  }
+  h4 {
+    font-size: 1.6em;
+    // line-height: 1.11111111;
+    margin: .25em 0 .5em 0;
+  }
+  h5 {
+    font-size: 1.4em;
+    // line-height: 1.1;
+    margin: .25em 0 .5em 0;
+  }
+  h6 {
+    font-size: 1.2em;
+    // line-height: 1.05;
+    margin: .25em 0 .5em 0;
+  }
+  p {
+    font-size: 0.9em;
+    // line-height: 26px;
+    color: $pColor;
+  }
+  strong {
+    font-weight: bold;
+  }
+  i {
+    font-style: italic;
+  }
+  ul {
+    text-decoration: underline;
+  }
+  .line-through {
+    text-decoration-line: line-through;
+  }
+  a {
+    color: $linkColor;
+    font-weight: 500;
+    &:hover {
+      color: $linkColor !important;
+      text-decoration: underline !important;
+    }
+  }
+  blockquote {
+    margin: 0;
+    font-size: 1.5em;
+    line-height: 1.45833333;
+    p {
+      padding: 0.9em;
+      background: #eee;
+      border-radius: 5px;
+      &::before {
+        content: "\201C";
+      }
+      &::after {
+        content: "\201D";
+      }
+    }
+  }
+  q {
+    font-size: 1.25em;
+    line-height: 1.25;
+    font-style: italic;
+  }
+  span {
+    color: #f00;
+  }
+
+  code {
+    background-color: #eee;
+    border-radius: 3px;
+    font-family: courier, monospace;
+    padding: 0 3px;
+  }
+  ol {
+    margin-bottom: 1px !important;
+  }
+  ul {
+    margin-bottom: 1px !important;
+  }
+  li {
+    display: inline-block;
+  }
+  // img {
+  //   @include bg-property("");
+  // }
+}
+html[dir="rtl"] {
+  .rich-textarea {
+    text-align: right;
+  }
+}

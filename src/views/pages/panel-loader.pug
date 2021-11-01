@@ -1,0 +1,13 @@
+extends ../layouts/site.pug
+
+
+block title
+  title Panel Loader
+//- block menu-header
+//-   include ../components/menu-list.pug
+
+block content
+  .container
+    .row
+      .col-md-7
+        div(class="panel" data-app-label="courses" data-model="Course" data-pk="pk")

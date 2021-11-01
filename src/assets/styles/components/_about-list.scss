@@ -1,0 +1,193 @@
+.wrapper-tabs {
+  float: left;
+  width: 100%;
+}
+.about-required__list {
+  .list__list-item {
+    display: block;
+    margin-bottom: 5px;
+    .list-item__details {
+      display: block;
+      font-size: 14px;
+      font-family: Open Sans, sans-serif;
+      font-weight: 400;
+      color: $light-gray;
+      text-align: left;
+      line-height: 26px;
+      &::before {
+        content: "\F111";
+        display: inline-block;
+        font-style: normal;
+        -webkit-font-feature-settings: normal;
+        font-feature-settings: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        font-family: Font awesome\5 Free;
+        font-weight: 900;
+        font-size: 6px;
+        color: $black;
+        vertical-align: bottom;
+        margin-right: 10px;
+        line-height: 26px;
+      }
+    }
+  }
+}
+.about-content__about-required {
+  .about-required__title {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: 15px;
+    color: $black;
+  }
+}
+.description__title {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: left;
+  margin-bottom: 15px;
+  color: $black;
+}
+.description__list {
+  padding-left: 5px !important;
+  .list__item-list {
+    display: block;
+    margin-bottom: 5px;
+    .item-list__item {
+      display: block;
+      font-size: 14px;
+      font-family: Open Sans, sans-serif;
+      font-weight: 400;
+      color: $darkGray;
+      text-align: left;
+      line-height: 26px;
+      position: relative;
+      padding-left: 15px;
+      &::before {
+        content: ".";
+        display: inline-block;
+        font-style: normal;
+        font-feature-settings: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        // font-family: Font awesome\5 Free;
+        font-weight: 900;
+        font-size: 35px;
+        color: $black;
+        vertical-align: bottom;
+        margin-right: 10px;
+        line-height: 26px;
+        position: absolute;
+        left: 0;
+        top: -10px;
+      }
+    }
+  }
+}
+.about-course__list {
+  padding-left: 30px !important;
+  .list__list-item {
+    display: block;
+    margin-bottom: 5px;
+    .list-item__item {
+      display: block;
+      font-size: 14px;
+      font-family: Open Sans, sans-serif;
+      font-weight: 400;
+      color: $darkGray;
+      text-align: left;
+      line-height: 26px;
+      &::before {
+        content: "\F111";
+        display: inline-block;
+        font-style: normal;
+        -webkit-font-feature-settings: normal;
+        font-feature-settings: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        font-family: Font awesome\5 Free;
+        font-weight: 900;
+        font-size: 6px;
+        color: $black;
+        vertical-align: bottom;
+        margin-right: 10px;
+        line-height: 26px;
+      }
+    }
+  }
+
+}
+
+.description__name {
+  text-align: left;
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  color: $black;
+}
+.description__details {
+  font-size: 14px;
+  font-weight: 400;
+  color: $darkGray;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  line-height: 26px;
+}
+.list-item__title {
+  display: flex;
+  position: relative;
+  .title__icon {
+    line-height: 28px;
+    font-size: 14px;
+    color: $black;
+    position: absolute;
+    top: 6px;
+  }
+  .title__name {
+    display: block;
+    font-size: 14px;
+    font-family: Open Sans, sans-serif;
+    font-weight: 400;
+    color: $darkGray;
+    text-align: left;
+    line-height: 26px;
+    margin-left: 15px;
+    padding-left: 8px;
+  }
+}
+.about-content {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  .about-content__about-course {
+    .about-course__title {
+      font-size: 20px;
+      font-weight: 500;
+        text-align: left;
+      margin-bottom: 15px;
+      color: $black;
+    }
+  }
+}
+.about-content__about-learn {
+  background: $white;
+  padding: 30px;
+  border: 1px solid $light-white;
+  border-radius: 10px;
+  .about-learn__title {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: 15px;
+    color: $black;
+  }
+  .about-learn__content {
+    .content__list {
+      .list__list-item {
+        padding-bottom: 10px;
+      }
+    }
+  }
+}

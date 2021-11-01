@@ -1,0 +1,386 @@
+extends ./layouts/site.pug
+
+block title
+	title My Page - Home
+block content
+
+	.hero
+		img(class="hero__bg" src="./assets/images/hero_bg.jpg", alt="")
+		.hero-content
+			.container
+				.row
+					.col-lg-6
+						h1.title-h1.white hello from itqadem
+						p.body-1.white Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus libero perferendis similique molestiae totam! Velit quasi consequuntur sint, dolorem eaque, alias iusto commodi dolor quia expedita enim ratione et earum!
+	.section.section--partners.section--with-bg
+		.container 
+			.row.justify-content-center
+				.col-lg-12
+					h2.title-h2 Our partner
+				.col-sm-6
+					.partner__item
+						img(class="image preview" src="../../assets/images/drosos.png" alt="")
+				.col-sm-6
+					.partner__item
+						img(class="image preview" src="../../assets/images/nbe.png" alt="")
+	.section
+		.container 
+			.row.justify-content-center
+				.col-lg-12
+					h2.title-h2 Popular surveys
+				.col-sm-6.col-lg-4
+					div(class="content-list-item" data-data='{"id":1,"type":"article", "enabled": true, "title": "article-title", "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis corporis aliquam voluptas cumque. Aperiam quo dolor ut iste nam a distinctio? Distinctio ad sint aperiam.", "thumb":"../../assets/images/exam.png", "url": "#"}')
+				.col-sm-6.col-lg-4
+					div(class="content-list-item" data-data='{"id":1,"type":"article", "enabled": true, "title": "article-title", "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis corporis aliquam voluptas cumque. Aperiam quo dolor ut iste nam a distinctio? Distinctio ad sint aperiam.", "thumb":"../../assets/images/exam.png", "url": "#"}')
+				.col-sm-6.col-lg-4
+					div(class="content-list-item" data-data='{"id":1,"type":"article", "enabled": true, "title": "article-title", "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis corporis aliquam voluptas cumque. Aperiam quo dolor ut iste nam a distinctio? Distinctio ad sint aperiam.", "thumb":"../../assets/images/exam.png", "url": "#"}')
+				.col-sm-6.col-lg-4
+					div(class="content-list-item" data-data='{"id":1,"type":"article", "enabled": true, "title": "article-title", "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis corporis aliquam voluptas cumque. Aperiam quo dolor ut iste nam a distinctio? Distinctio ad sint aperiam.", "thumb":"../../assets/images/exam.png", "url": "#"}')
+				.col-sm-6.col-lg-4
+					div(class="content-list-item" data-data='{"id":1,"type":"article", "enabled": true, "title": "article-title", "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis corporis aliquam voluptas cumque. Aperiam quo dolor ut iste nam a distinctio? Distinctio ad sint aperiam.", "thumb":"../../assets/images/exam.png", "url": "#"}')
+				.col-sm-6.col-lg-4
+					div(class="content-list-item" data-data='{"id":1,"type":"article", "enabled": true, "title": "article-title", "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis corporis aliquam voluptas cumque. Aperiam quo dolor ut iste nam a distinctio? Distinctio ad sint aperiam.", "thumb":"../../assets/images/exam.png", "url": "#"}')
+				.col-12 
+					a(class="btn btn--primary btn--xl gray" href="#") See all
+	.section.section--with-bg
+		.container 
+			.row.justify-content-center
+				.col-lg-12
+					h2.title-h2 Newest Courses
+				.col-sm-6.col-lg-4
+					div(class="course-card-container" data-count="1" data-data='{"id":1,"cover":"../../assets/images/get_img.jpg","video_id":"S7YqVez2sUw","title":"Complete Python Bootcamp1","url":"/course.html","category":"Web Development | Python","subscribers":"1 subscriber","total_rate":4.5,"is_favorite":true,"duration":"4 minutes","description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam sed similique quos illo nam","actions":{"action":"enroll","url":"#"}}')
+				.col-sm-6.col-lg-4
+					div(class="course-card-container" data-count="1" data-data='{"id":1,"cover":"../../assets/images/get_img.jpg","video_id":"S7YqVez2sUw","title":"Complete Python Bootcamp1","url":"/course.html","category":"Web Development | Python","subscribers":"1 subscriber","total_rate":4.5,"is_favorite":true,"duration":"4 minutes","description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam sed similique quos illo nam","actions":{"action":"enroll","url":"#"}}')
+				.col-sm-6.col-lg-4
+					div(class="course-card-container" data-count="1" data-data='{"id":1,"cover":"../../assets/images/get_img.jpg","video_id":"S7YqVez2sUw","title":"Complete Python Bootcamp1","url":"/course.html","category":"Web Development | Python","subscribers":"1 subscriber","total_rate":4.5,"is_favorite":true,"duration":"4 minutes","description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam sed similique quos illo nam","actions":{"action":"enroll","url":"#"}}')
+				.col-sm-6.col-lg-4
+					div(class="course-card-container" data-count="1" data-data='{"id":1,"cover":"../../assets/images/get_img.jpg","video_id":"S7YqVez2sUw","title":"Complete Python Bootcamp1","url":"/course.html","category":"Web Development | Python","subscribers":"1 subscriber","total_rate":4.5,"is_favorite":true,"duration":"4 minutes","description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam sed similique quos illo nam","actions":{"action":"enroll","url":"#"}}')
+				.col-sm-6.col-lg-4
+					div(class="course-card-container" data-count="1" data-data='{"id":1,"cover":"../../assets/images/get_img.jpg","video_id":"S7YqVez2sUw","title":"Complete Python Bootcamp1","url":"/course.html","category":"Web Development | Python","subscribers":"1 subscriber","total_rate":4.5,"is_favorite":true,"duration":"4 minutes","description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam sed similique quos illo nam","actions":{"action":"enroll","url":"#"}}')
+				.col-sm-6.col-lg-4
+					div(class="course-card-container" data-count="1" data-data='{"id":1,"cover":"../../assets/images/get_img.jpg","video_id":"S7YqVez2sUw","title":"Complete Python Bootcamp1","url":"/course.html","category":"Web Development | Python","subscribers":"1 subscriber","total_rate":4.5,"is_favorite":true,"duration":"4 minutes","description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam sed similique quos illo nam","actions":{"action":"enroll","url":"#"}}')
+
+				.col-12 
+					a(class="btn btn--primary btn--xl gray" href="#") See all
+	.section 
+		.container 
+			.row.justify-content-center
+				.col-lg-12
+					h2.title-h2 Testimonials
+				.col-xl-4.col-md-6.col-sm-12
+					.card.card--centered.card--icon
+						.card__content
+							.user-image.mb-2
+								i.fas.fa-history.card--user-icon
+							.card__body
+								.card__content-header
+									.user-data
+										p.title-h6.semi-bold.my-0 100,000 online courses
+								.card__content--details
+									p.text-1.gray.mb-0 lorem ipsum dolor sit amet  lorem ipsum dolor sit amet  lorem ipsum dolor sit amet
+				.col-xl-4.col-md-6.col-sm-12
+					.card.card--centered.card--icon
+						.card__content
+							.user-image.mb-2
+								i.fas.fa-user-check.card--user-icon
+							.card__body
+								.card__content-header
+									.user-data
+										p.title-h6.semi-bold.my-0 100,000 online courses
+								.card__content--details
+									p.text-1.gray.mb-0 lorem ipsum dolor sit amet  lorem ipsum dolor sit amet  lorem ipsum dolor sit amet
+				.col-xl-4.col-md-6.col-sm-12
+					.card.card--centered.card--icon
+						.card__content
+							.user-image.mb-2
+								i.fas.fa-video.card--user-icon
+							.card__body
+								.card__content-header
+									.user-data
+										p.title-h6.semi-bold.my-0 100,000 online courses
+								.card__content--details
+									p.text-1.gray.mb-0 lorem ipsum dolor sit amet  lorem ipsum dolor sit amet  lorem ipsum dolor sit amet
+				.col-xl-4.col-md-6.col-sm-12
+					.card.card--centered.card--icon
+						.card__content
+							.user-image.mb-2
+								i.far.fa-play-circle.card--user-icon
+							.card__body
+								.card__content-header
+									.user-data
+										p.title-h6.semi-bold.my-0 100,000 online courses
+								.card__content--details
+									p.text-1.gray.mb-0 lorem ipsum dolor sit amet  lorem ipsum dolor sit amet  lorem ipsum dolor sit amet
+				.col-xl-4.col-md-6.col-sm-12
+					.card.card--centered.card--icon
+						.card__content
+							.user-image.mb-2
+								i.fas.fa-puzzle-piece.card--user-icon
+							.card__body
+								.card__content-header
+									.user-data
+										p.title-h6.semi-bold.my-0 100,000 online courses
+								.card__content--details
+									p.text-1.gray.mb-0 lorem ipsum dolor sit amet  lorem ipsum dolor sit amet  lorem ipsum dolor sit amet
+				.col-xl-4.col-md-6.col-sm-12
+					.card.card--centered.card--icon
+						.card__content
+							.user-image.mb-2
+								i.fas.fa-seedling.card--user-icon
+							.card__body
+								.card__content-header
+									.user-data
+										p.title-h6.semi-bold.my-0 100,000 online courses
+								.card__content--details
+									p.text-1.gray.mb-0 lorem ipsum dolor sit amet  lorem ipsum dolor sit amet  lorem ipsum dolor sit amet
+
+				.col-12 
+					a(class="btn btn--primary btn--xl gray" href="#") See all
+	
+	.section.section--with-bg
+		.container 
+			.row.justify-content-center
+				.col-lg-12
+					h2.title-h2 Popular Instructors
+				.col-12
+					.owl-carousel.top_instrutors.owl-theme
+							.item
+								.card.card--centered.card--user
+									.card__content
+										img(class="image image--instructor-image" src="../../assets/images/profile.jpg" alt="")
+										.card__body
+											.card__content-header
+												.user-data
+													a.text-3.semi-bold(href="#") Jose Portilla
+														i.far.fa-check-circle.pl-1
+													p.text-3.gray Web Developer, Designer, and Teacher Jose
+													ul.social-icon
+														li.social-icon__list
+															a.social-icon__link.social-icon--fa-bg.mb-0(href="#")
+																i.fab.fa-facebook-f
+														li.social-icon__list
+															a.social-icon__link.social-icon--tw-bg.mb-0(href="#")
+																i.fab.fa-twitter
+														li.social-icon__list
+															a.social-icon__link.social-icon--li-bg.mb-0(href="#")
+																i.fab.fa-linkedin-in
+														li.social-icon__list
+															a.social-icon__link.social-icon--yu-bg.mb-0(href="#")
+																i.fab.fa-youtube
+													.details
+														span.total-students 615K Students
+														span.total-course 12 Courses
+													a.text-2.profile.mt-1.mb-0(href="#") Go To Profile
+							.item
+								.card.card--centered.card--user
+									.card__content
+										img(class="image image--instructor-image" src="../../assets/images/profile.jpg" alt="")
+										.card__body
+											.card__content-header
+												.user-data
+													a.text-3.semi-bold(href="#") Jose Portilla
+														i.far.fa-check-circle.pl-1
+													p.text-3.gray Web Developer, Designer, and Teacher Jose
+													ul.social-icon
+														li.social-icon__list
+															a.social-icon__link.social-icon--fa-bg.mb-0(href="#")
+																i.fab.fa-facebook-f
+														li.social-icon__list
+															a.social-icon__link.social-icon--tw-bg.mb-0(href="#")
+																i.fab.fa-twitter
+														li.social-icon__list
+															a.social-icon__link.social-icon--li-bg.mb-0(href="#")
+																i.fab.fa-linkedin-in
+														li.social-icon__list
+															a.social-icon__link.social-icon--yu-bg.mb-0(href="#")
+																i.fab.fa-youtube
+													.details
+														span.total-students 615K Students
+														span.total-course 12 Courses
+													a.text-2.profile.mt-1.mb-0(href="#") Go To Profile
+							.item
+								.card.card--centered.card--user
+									.card__content
+										img(class="image image--instructor-image" src="../../assets/images/profile.jpg" alt="")
+										.card__body
+											.card__content-header
+												.user-data
+													a.text-3.semi-bold(href="#") Jose Portilla
+														i.far.fa-check-circle.pl-1
+													p.text-3.gray Web Developer, Designer, and Teacher Jose
+													ul.social-icon
+														li.social-icon__list
+															a.social-icon__link.social-icon--fa-bg.mb-0(href="#")
+																i.fab.fa-facebook-f
+														li.social-icon__list
+															a.social-icon__link.social-icon--tw-bg.mb-0(href="#")
+																i.fab.fa-twitter
+														li.social-icon__list
+															a.social-icon__link.social-icon--li-bg.mb-0(href="#")
+																i.fab.fa-linkedin-in
+														li.social-icon__list
+															a.social-icon__link.social-icon--yu-bg.mb-0(href="#")
+																i.fab.fa-youtube
+													.details
+														span.total-students 615K Students
+														span.total-course 12 Courses
+													a.text-2.profile.mt-1.mb-0(href="#") Go To Profile
+							.item
+								.card.card--centered.card--user
+									.card__content
+										img(class="image image--instructor-image" src="../../assets/images/profile.jpg" alt="")
+										.card__body
+											.card__content-header
+												.user-data
+													a.text-3.semi-bold(href="#") Jose Portilla
+														i.far.fa-check-circle.pl-1
+													p.text-3.gray Web Developer, Designer, and Teacher Jose
+													ul.social-icon
+														li.social-icon__list
+															a.social-icon__link.social-icon--fa-bg.mb-0(href="#")
+																i.fab.fa-facebook-f
+														li.social-icon__list
+															a.social-icon__link.social-icon--tw-bg.mb-0(href="#")
+																i.fab.fa-twitter
+														li.social-icon__list
+															a.social-icon__link.social-icon--li-bg.mb-0(href="#")
+																i.fab.fa-linkedin-in
+														li.social-icon__list
+															a.social-icon__link.social-icon--yu-bg.mb-0(href="#")
+																i.fab.fa-youtube
+													.details
+														span.total-students 615K Students
+														span.total-course 12 Courses
+													a.text-2.profile.mt-1.mb-0(href="#") Go To Profile
+							.item
+								.card.card--centered.card--user
+									.card__content
+										img(class="image image--instructor-image" src="../../assets/images/profile.jpg" alt="")
+										.card__body
+											.card__content-header
+												.user-data
+													a.text-3.semi-bold(href="#") Jose Portilla
+														i.far.fa-check-circle.pl-1
+													p.text-3.gray Web Developer, Designer, and Teacher Jose
+													ul.social-icon
+														li.social-icon__list
+															a.social-icon__link.social-icon--fa-bg.mb-0(href="#")
+																i.fab.fa-facebook-f
+														li.social-icon__list
+															a.social-icon__link.social-icon--tw-bg.mb-0(href="#")
+																i.fab.fa-twitter
+														li.social-icon__list
+															a.social-icon__link.social-icon--li-bg.mb-0(href="#")
+																i.fab.fa-linkedin-in
+														li.social-icon__list
+															a.social-icon__link.social-icon--yu-bg.mb-0(href="#")
+																i.fab.fa-youtube
+													.details
+														span.total-students 615K Students
+														span.total-course 12 Courses
+													a.text-2.profile.mt-1.mb-0(href="#") Go To Profile
+				.col-12 
+					a(class="btn btn--primary btn--xl gray" href="#") See all
+	
+	.section 
+		.container 
+			.row.justify-content-center
+				.col-lg-12
+					h2.title-h2 What Our Student Have Today
+				.col-12 
+					.owl-carousel.Student_says.owl-theme
+						.item
+							.card.card--side-col.card__testimonial
+								.card__side-col
+									img(src="../../assets/images/profile.png" alt="" class="image image--rounded image--profile")
+								.card__content
+									.card__header
+										.card__header-multiline
+											a(href='#' class="bold")
+												| Jose Portilla
+												i.fa.fa-check-circle.ml-1
+											time.subtitle-2.gray Jan 15 &apos;18 at 13:56
+											//- .rate-display(data-rate="5")
+										//- .card__tools
+										//- 	+dropdown
+										//- 		i.fas.fa-ellipsis-h
+									p.text-3.mb-0
+										| Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam sed similique quos illo nam
+										| sint aut laudantium enim iste quod ad obcaecati error quisquam sequi eos, culpa, neque officiis modi?
+						.item
+							.card.card--side-col.card__testimonial
+								.card__side-col
+									img(src="../../assets/images/profile.png" alt="" class="image image--rounded image--profile")
+								.card__content
+									.card__header
+										.card__header-multiline
+											a(href='#' class="bold")
+												| Jose Portilla
+												i.fa.fa-check-circle.ml-1
+											time.subtitle-2.gray Jan 15 &apos;18 at 13:56
+											//- .rate-display(data-rate="5")
+										//- .card__tools
+										//- 	+dropdown
+										//- 		i.fas.fa-ellipsis-h
+									p.text-3.mb-0
+										| Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam sed similique quos illo nam
+										| sint aut laudantium enim iste quod ad obcaecati error quisquam sequi eos, culpa, neque officiis modi?
+						.item
+							.card.card--side-col.card__testimonial
+								.card__side-col
+									img(src="../../assets/images/profile.png" alt="" class="image image--rounded image--profile")
+								.card__content
+									.card__header
+										.card__header-multiline
+											a(href='#' class="bold")
+												| Jose Portilla
+												i.fa.fa-check-circle.ml-1
+											time.subtitle-2.gray Jan 15 &apos;18 at 13:56
+											//- .rate-display(data-rate="5")
+										//- .card__tools
+										//- 	+dropdown
+										//- 		i.fas.fa-ellipsis-h
+									p.text-3.mb-0
+										| Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam sed similique quos illo nam
+										| sint aut laudantium enim iste quod ad obcaecati error quisquam sequi eos, culpa, neque officiis modi?
+						.item
+							.card.card--side-col.card__testimonial
+								.card__side-col
+									img(src="../../assets/images/profile.png" alt="" class="image image--rounded image--profile")
+								.card__content
+									.card__header
+										.card__header-multiline
+											a(href='#' class="bold")
+												| Jose Portilla
+												i.fa.fa-check-circle.ml-1
+											time.subtitle-2.gray Jan 15 &apos;18 at 13:56
+											//- .rate-display(data-rate="5")
+										//- .card__tools
+										//- 	+dropdown
+										//- 		i.fas.fa-ellipsis-h
+									p.text-3.mb-0
+										| Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam sed similique quos illo nam
+										| sint aut laudantium enim iste quod ad obcaecati error quisquam sequi eos, culpa, neque officiis modi?
+						.item
+							.card.card--side-col.card__testimonial
+								.card__side-col
+									img(src="../../assets/images/profile.png" alt="" class="image image--rounded image--profile")
+								.card__content
+									.card__header
+										.card__header-multiline
+											a(href='#' class="bold")
+												| Jose Portilla
+												i.fa.fa-check-circle.ml-1
+											time.subtitle-2.gray Jan 15 &apos;18 at 13:56
+											//- .rate-display(data-rate="5")
+										//- .card__tools
+										//- 	+dropdown
+										//- 		i.fas.fa-ellipsis-h
+									p.text-3.mb-0
+										| Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam sed similique quos illo nam
+										| sint aut laudantium enim iste quod ad obcaecati error quisquam sequi eos, culpa, neque officiis modi?
+
+				.col-12
+					a(class="btn btn--primary btn--xl gray" href="#") See all
+	
+	

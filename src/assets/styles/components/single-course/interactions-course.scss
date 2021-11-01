@@ -1,0 +1,35 @@
+.interactions-course {
+  float: right;
+  .interactions-course__list {
+    .list__list-item {
+      display: inline-block;
+      .list-item__box {
+        display: block;
+        background: #fff;
+        height: 60px;
+        text-align: center;
+        padding: 8px 15px;
+        font-size: 14px;
+        font-weight: 500;
+            color: #686f7a;
+        border: 1px solid #efefef;
+        border-radius: 10px;
+        margin: 0 3px;
+        .box--fa {
+          font-size: 18px;
+        }
+        .box--number {
+          display: block;
+          margin-top: 2px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 575.98px) {
+  .interactions-course {
+    float: left !important;
+    width: 100%;
+    margin-top: 30px;
+  }
+}

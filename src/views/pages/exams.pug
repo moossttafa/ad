@@ -1,0 +1,551 @@
+extends ../layouts/site.pug
+
+
+block title
+	title exam page
+
+block content
+	.container
+		.exam
+			.exam__content
+				include ../mixins/card.pug
+				+card('card--with-label card--active')
+					.field-wrapper
+						label.field-wrapper__label Section Title*
+						.field-wrapper__content
+							input(class="field field--underline" type='text' placeholder='Insert your course title.' name='title' data-purpose='edit-course-title' maxlength='' id='main[title1]' value='')
+						ul.field-wrapper__messages
+							li
+								| Please provide a section name
+					.field-wrapper
+						label.field-wrapper__label Section description*
+						.field-wrapper__content
+							textarea( rows='5' name='description' placeholder='Insert your course description')
+						ul.field-wrapper__messages
+							li
+								| Please provide section description
+				.card.card--with-label
+					.card__label
+						div.card__label-inner
+							p section 1 of 3
+						div.body-2.card__label-outer
+							p after section 1
+							.dropdown.dropdown__activator
+								button.btn.btn--text.dropdown--btn
+									| next
+									i.fas.fa-chevron-down
+								.dropdown__content
+									a.content__link(href="#") lorem 1
+									a.content__link(href="#") lorem 2
+									a.content__link(href="#") lorem 3
+					.card--drag-vertical
+						i.fas.fa-grip-vertical
+					.card__header
+						h3.title-h3 Question title
+					.card__content
+						.field-wrapper
+							.check-field-group.check-field-group--horizontal
+								div
+									input(class="field" type="radio" id="radio-1" name="radioName")
+									label(for="radio-1") Lorem ipsum dolor.
+								div
+									input(class="field" type="radio" id="radio-2" name="radioName")
+									label(for="radio-2") Lorem ipsum dolor.
+								div
+									input(class="field" type="radio" id="radio-3" name="radioName")
+									label(for="radio-3") Lorem ipsum dolor.
+					div.dragging-placeholder
+						i.fas.fa-ellipsis-h
+
+				.card.card--with-label
+					.card__label
+						div.card__label-inner
+							p section 1 of 3
+						div.body-2.card__label-outer
+							p after section 1
+							.dropdown.dropdown__activator
+								button.btn.btn--text.dropdown--btn
+									| next
+									i.fas.fa-chevron-down
+								.dropdown__content
+									a.content__link(href="#") lorem 1
+									a.content__link(href="#") lorem 2
+									a.content__link(href="#") lorem 3
+					.card--drag-vertical
+						i.fas.fa-grip-vertical
+					.card__header
+						h3.title-h3 Question title
+					.card__content
+						.field-wrapper
+							.check-field-group.check-field-group--horizontal
+								div
+									input(class="field" type="radio" id="radio-1" name="radioName")
+									label(for="radio-1") Lorem ipsum dolor.
+								div
+									input(class="field" type="radio" id="radio-2" name="radioName")
+									label(for="radio-2") Lorem ipsum dolor.
+								div
+									input(class="field" type="radio" id="radio-3" name="radioName")
+									label(for="radio-3") Lorem ipsum dolor.
+
+					//- div.dragging-placeholder
+						i.fas.fa-ellipsis-h
+
+				.card-label
+					span.section-number section 1 of 3
+					p.body-2.card-label__outer after section 1
+					.dropdown.dropdown__activator
+						button.btn.btn--text.dropdown--btn
+							| next
+							i.fas.fa-chevron-down
+						.dropdown__content
+							a.content__link(href="#") lorem 1
+							a.content__link(href="#") lorem 2
+							a.content__link(href="#") lorem 3
+				.card.card-form.card-section
+					.card--drag-vertical
+						i.fas.fa-grip-vertical
+					.card__header
+						h3.title-h3.mt-0.mb-2 Question title
+					.card__content
+						.field-wrapper
+							.check-field-group.check-field-group--horizontal
+								div
+									input(class="field" type="checkbox" id="checkbox-1" name="checkname")
+									label(for="checkbox-1") Lorem ipsum dolor.
+								div
+									input(class="field" type="checkbox" id="checkbox-2" name="checkname")
+									label(for="checkbox-2") Lorem ipsum dolor.
+								div
+									input(class="field" type="checkbox" id="checkbox-3" name="checkname")
+									label(for="checkbox-3") Lorem ipsum dolor.
+							ul.field-wrapper__messages
+								li Please provide a valid city.
+
+				.card.question.question--dragable
+					.card--drag-vertical
+						//- i.fas.fa-braille
+						i.fas.fa-grip-vertical
+					.card__header.align-items-start
+						.field-wrapper.mr-3
+							label.field-wrapper__label Insert exam *
+							.field-wrapper__content
+								input.field(type='text' placeholder='Exam title' name='title' data-purpose='edit-course-title' maxlength='' id='main[title1]' value='')
+							ul.field-wrapper__messages
+								li.gray
+									| hint message for question.
+						.field-wrapper.mr-3
+							label.field-wrapper__label type *
+							.field-wrapper__content
+								select.field
+									option(value='Exam') Exam
+									option(value='Survey') Survey
+							ul.field-wrapper__messages
+								li.gray
+									| hint message for question.
+					.card__content
+						.field-wrapper
+							//- label.text-field__label Insert you question *
+							.field-wrapper__content
+								input.field(type='text' placeholder='Exam description' name='title' data-purpose='edit-course-title' maxlength='' id='main[title1]' value='')
+							ul.field-wrapper__messages
+								li.gray
+									| hint message for question.
+						.select-group
+							.field-wrapper.mr-3
+								label.field-wrapper__label Language *
+								.field-wrapper__content
+									select.field
+										option(value='English') English
+										option(value='Arabic') Arabic
+								ul.field-wrapper__messages
+									li.gray
+										| hint message for question.
+							.field-wrapper.mr-3
+								label.field-wrapper__label Status *
+								.field-wrapper__content
+									select.field
+										option(value='Status1') Status1
+										option(value='Status2') Status2
+								ul.field-wrapper__messages
+									li.gray
+										| hint message for question.
+							.field-wrapper.mr-3
+								label.field-wrapper__label Evaluation *
+								.field-wrapper__content
+									select.field
+										option(value='Evaluation1') Evaluation1
+										option(value='Evaluation2') Evaluation2
+								ul.field-wrapper__messages
+									li.gray
+										| hint message for question.
+							.field-wrapper.mr-3
+								label.field-wrapper__label Tags *
+								.field-wrapper__content
+									select.field
+										option(value='Tag1') Tag1
+										option(value='Tag2') Tag2
+								ul.field-wrapper__messages
+									li.gray
+										| hint message for question.
+							.field-wrapper.mr-3
+								label.field-wrapper__label Category *
+								.field-wrapper__content
+									select.field
+										option(value='Category1') Category1
+										option(value='Category2') Category2
+								ul.field-wrapper__messages
+									li.gray
+										| hint message for question.
+					.card__footer
+						div lorem
+						.card__footer-actions
+							button.btn.btn--text.btn--primary.icon--hover.mb-0
+								i.far.fa-trash-alt
+							button.btn.btn--text.btn--primary.icon--hover.mb-0
+								i.far.fa-clone
+							.switch
+								input#switch(type="checkbox", name="")
+								label(for="switch") Is required
+			include ../components/toolbar.pug
+
+			//- .container-fluid
+				.row
+					.col-lg-10
+						.card.question.question--dragable
+							.card--drag-vertical
+								//- i.fas.fa-braille
+								i.fas.fa-grip-vertical
+							.card__header.align-items-start
+								.field-wrapper.mr-3
+									label.field-wrapper__label Insert exam *
+									.field-wrapper__content
+										input.field(type='text' placeholder='Exam title' name='title' data-purpose='edit-course-title' maxlength='' id='main[title1]' value='')
+									ul.field-wrapper__messages
+										li.gray
+											| hint message for question.
+								.field-wrapper.mr-3
+									label.field-wrapper__label type *
+									.field-wrapper__content
+										select.field
+											option(value='Exam') Exam
+											option(value='Survey') Survey
+									ul.field-wrapper__messages
+										li.gray
+											| hint message for question.
+							.card__content
+								.field-wrapper
+									//- label.text-field__label Insert you question *
+									.field-wrapper__content
+										input.field(type='text' placeholder='Exam description' name='title' data-purpose='edit-course-title' maxlength='' id='main[title1]' value='')
+									ul.field-wrapper__messages
+										li.gray
+											| hint message for question.
+								.select-group
+									.field-wrapper.mr-3
+										label.field-wrapper__label Language *
+										.field-wrapper__content
+											select.field
+												option(value='English') English
+												option(value='Arabic') Arabic
+										ul.field-wrapper__messages
+											li.gray
+												| hint message for question.
+									.field-wrapper.mr-3
+										label.field-wrapper__label Status *
+										.field-wrapper__content
+											select.field
+												option(value='Status1') Status1
+												option(value='Status2') Status2
+										ul.field-wrapper__messages
+											li.gray
+												| hint message for question.
+									.field-wrapper.mr-3
+										label.field-wrapper__label Evaluation *
+										.field-wrapper__content
+											select.field
+												option(value='Evaluation1') Evaluation1
+												option(value='Evaluation2') Evaluation2
+										ul.field-wrapper__messages
+											li.gray
+												| hint message for question.
+									.field-wrapper.mr-3
+										label.field-wrapper__label Tags *
+										.field-wrapper__content
+											select.field
+												option(value='Tag1') Tag1
+												option(value='Tag2') Tag2
+										ul.field-wrapper__messages
+											li.gray
+												| hint message for question.
+									.field-wrapper.mr-3
+										label.field-wrapper__label Category *
+										.field-wrapper__content
+											select.field
+												option(value='Category1') Category1
+												option(value='Category2') Category2
+										ul.field-wrapper__messages
+											li.gray
+												| hint message for question.
+							.card__footer
+								div lorem
+								.card__footer-actions
+									button.btn.btn--text.btn--primary.icon--hover.mb-0
+										i.far.fa-trash-alt
+									button.btn.btn--text.btn--primary.icon--hover.mb-0
+										i.far.fa-clone
+									.switch
+										input#switch(type="checkbox", name="")
+										label(for="switch") Is required
+						.card.question--section
+							.card__header
+								i.fas.fa-grip-vertical.exam__icon
+								h3.title-h3.mt-0.mb-1 Question title
+					.col-lg-1
+					.col-lg-6
+						.card.question.question--dragabl
+							.card--drag-vertical
+								//- i.fas.fa-braille
+								i.fas.fa-grip-vertical
+							.card__header
+								.field-wrapper
+									//- label.field-wrapper__label Insert you question *
+									.field-wrapper__content
+										input.field(type='text' placeholder='Insert your question here.' name='title' data-purpose='edit-course-title' maxlength='' id='main[title1]' value='')
+									ul.field-wrapper__messages
+										li.gray
+											| hint message for question.
+								.upload-input
+									input(type="file", name="" id="file-input")
+									label.file-input(for="file-input")
+										i.far.fa-image.exam__icon
+								//- .field-wrapper
+								select.field
+									option(value='one') First
+									option(value='two' disabled='disabled') Second (disabled)
+								option(value='three') Third
+						.card__content
+							.field-wrapper
+								//- label.field-wrapper__label Course Description*
+								.field-wrapper__content
+									input.field(type='text' placeholder='Insert your question here.' name='title' data-purpose='edit-course-title' maxlength='' id='main[title1]' value='')
+									//- textarea.textarea#id_course_description(rows='5' name='description' placeholder='Insert your course description')
+								ul.field-wrapper__messages
+									li
+										| Please provide a valid city.
+
+							.field-wrapper.field-wrapper__input--text
+								//- label.field-wrapper__label Insert you question *
+								.field-wrapper__content
+									//- .drag-vertical
+									i.fas.fa-grip-vertical.exam__icon
+									//- input(type="checkbox", name="" id="checkbox-mcq")
+									.checkbox-mcq(for="checkbox-mcq")
+										i.fas.fa-check
+									input.field(type='text' placeholder='Insert your question here.' name='title' data-purpose='edit-course-title' maxlength='' id='main[title1]' value='')
+									.upload-input
+										input(type="file", name="" id="file-input")
+										label.file-input(for="file-input")
+											i.far.fa-image.exam__icon
+
+								ul.field-wrapper__messages
+									li.gray
+										| hint message for question.
+								.image.preview
+									img(src="../../assets/images/sign.svg", alt="")
+
+							.field-wrapper.field-wrapper__input--text
+								//- label.field-wrapper__label Insert you question *
+								.field-wrapper__content
+									//- .drag-vertical
+									i.fas.fa-grip-vertical.exam__icon
+									//- input(type="checkbox", name="" id="checkbox-mcq")
+									.checkbox-mcq.checkbox-mcq--radio(for="checkbox-mcq")
+										//- i.fas.fa-check
+									input.field(type='text' placeholder='Insert your question here.' name='title' data-purpose='edit-course-title' maxlength='' id='main[title1]' value='')
+									//- input(type="radio", name="" id="file-input")
+									.upload-input
+										input(type="file", name="" id="file-input")
+										label.file-input(for="file-input")
+											i.far.fa-image.exam__icon
+								ul.field-wrapper__messages
+									li.gray
+										| hint message for question.
+								.image.preview
+									img(src="../../assets/images/sign.svg", alt="")
+						div.dragging-placeholder
+							i.fas.fa-ellipsis-h
+						.card__footer
+							div lorem
+							.card__footer-actions
+								button.btn.btn--text.btn--primary.icon--hover.mb-0
+									i.far.fa-trash-alt
+								button.btn.btn--text.btn--primary.icon--hover.mb-0
+									i.far.fa-clone
+								.switch
+									input#switch(type="checkbox", name="")
+									label(for="switch") Is required
+
+
+					.card.question.question-dragging
+						.card--drag-vertical
+							i.fas.fa-grip-vertical
+						.card__header
+							.field-wrapper
+								//- label.field-wrapper__label Insert you question *
+								.field-wrapper__content
+									input.field(type='text' placeholder='Insert your question here.' name='title' data-purpose='edit-course-title' maxlength='' id='main[title1]' value='')
+								ul.field-wrapper__messages
+									li.gray
+										| hint message for question.
+							.upload-input
+								input(type="file", name="" id="file-input")
+								label.file-input(for="file-input")
+									i.far.fa-image.exam__icon
+							//- .field-wrapper
+							select.field
+								option(value='one') First
+								option(value='two' disabled='disabled') Second (disabled)
+								option(value='three') Third
+						.card__content
+							.field-wrapper
+								//- label.field-wrapper__label Course Description*
+								.field-wrapper__content
+									textarea.textarea#id_course_description(rows='5' name='description' placeholder='Insert your course description')
+								ul.field-wrapper__messages
+									li
+										| Please provide a valid city.
+
+							.field-wrapper.field-wrapper__input--text
+								//- label.field-wrapper__label Insert you question *
+								.field-wrapper__content
+									//- .drag-vertical
+									i.fas.fa-grip-vertical.exam__icon
+									//- input(type="checkbox", name="" id="checkbox-mcq")
+									.checkbox-mcq(for="checkbox-mcq")
+										i.fas.fa-check
+									input.field(type='text' placeholder='Insert your question here.' name='title' data-purpose='edit-course-title' maxlength='' id='main[title1]' value='')
+									.upload-input
+										input(type="file", name="" id="file-input")
+										label.file-input(for="file-input")
+											i.far.fa-image.exam__icon
+
+								ul.field-wrapper__messages
+									li.gray
+										| hint message for question.
+								.preview
+									img(src="../../assets/images/sign.svg", alt="")
+
+							.field-wrapper.field-wrapper__input--text
+								//- label.field-wrapper__label Insert you question *
+								.field-wrapper__content
+									//- .drag-vertical
+									i.fas.fa-grip-vertical.exam__icon
+									//- input(type="checkbox", name="" id="checkbox-mcq")
+									.checkbox-mcq.checkbox-mcq--radio(for="checkbox-mcq")
+										//- i.fas.fa-check
+									input.field(type='text' placeholder='Insert your question here.' name='title' data-purpose='edit-course-title' maxlength='' id='main[title1]' value='')
+									//- input(type="radio", name="" id="file-input")
+									.upload-input
+										input(type="file", name="" id="file-input")
+										label.file-input(for="file-input")
+											i.far.fa-image.exam__icon
+								ul.field-wrapper__messages
+									li.gray
+										| hint message for question.
+								.preview
+									img(src="../../assets/images/sign.svg", alt="")
+						div.dragging-placeholder
+							i.fas.fa-ellipsis-h
+						.card__footer
+							div lorem
+							.card__footer-actions
+								button.btn.btn--text.btn--primary.icon--hover.mb-0
+									i.far.fa-trash-alt
+								button.btn.btn--text.btn--primary.icon--hover.mb-0
+									i.far.fa-clone
+								.switch
+									input#switch(type="checkbox", name="")
+									label(for="switch") Is required
+
+
+					.card.question
+						.card--drag-vertical.mb-0
+							i.fas.fa-grip-vertical
+						.card__header
+							h3.title-h3.mt-0.mb-1 Question title
+						.card__content
+							.field-wrapper
+								.check-field-group.check-field-group--horizontal
+									div
+										input(class="field" type="radio" id="radio-1" name="radioName")
+										label(for="radio-1") Lorem ipsum dolor.
+									div
+										input(class="field" type="radio" id="radio-2" name="radioName")
+										label(for="radio-2") Lorem ipsum dolor.
+									div
+										input(class="field" type="radio" id="radio-3" name="radioName")
+										label(for="radio-3") Lorem ipsum dolor.
+								ul.field-wrapper__messages
+									li Please provide a valid city.
+						div.dragging-placeholder
+							i.fas.fa-ellipsis-h
+
+
+					.card.question
+						.card--drag-vertical.mb-0
+							i.fas.fa-grip-vertical
+						.card__header
+							h3.title-h3.mt-0.mb-2 Question title
+						.card__content
+							.field-wrapper
+								.check-field-group.check-field-group--horizontal
+									div
+										input(class="field" type="checkbox" id="checkbox-1" name="checkname")
+										label(for="checkbox-1") Lorem ipsum dolor.
+									div
+										input(class="field" type="checkbox" id="checkbox-2" name="checkname")
+										label(for="checkbox-2") Lorem ipsum dolor.
+									div
+										input(class="field" type="checkbox" id="checkbox-3" name="checkname")
+										label(for="checkbox-3") Lorem ipsum dolor.
+								ul.field-wrapper__messages
+									li Please provide a valid city.
+
+
+					.card.question.question-dragging-placeholder
+						.card--drag-vertical.mb-0
+							i.fas.fa-grip-vertical
+						.card__header
+							h3.title-h3.mt-0.mb-2 Question title
+
+						div.dragging-placeholder
+							i.fas.fa-ellipsis-h
+							//- .field-wrapper
+								//- label.field-wrapper__label Insert you question *
+								//- .field-wrapper__content
+									input.field-wrapper__input(type='text' placeholder='Insert your question here.' name='title' data-purpose='edit-course-title' maxlength='' id='main[title1]' value='')
+								//- ul.messages
+									li.gray
+										| hint message for question.
+							//- select.question__type
+								option(value='one') First
+								option(value='two' disabled='disabled') Second (disabled)
+								option(value='three') Third
+						//- .field-wrapper
+							//- label.field-wrapper__label Course Description*
+							.field-wrapper__content
+								textarea.textarea#id_course_description(rows='5' name='description' placeholder='Insert your course description')
+							ul.messages
+								li
+									| Please provide a valid city.
+					//- select.js-example-basic-single.select2(name='state')
+								option(value='eg') Egypt
+								option(value='AL') Alabama
+								option(value='WY') Wyoming
+
+
+
+
+
+
